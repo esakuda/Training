@@ -9,6 +9,7 @@
 #import "SecondViewController.h"
 
 @interface SecondViewController ()
+@property (weak, nonatomic) IBOutlet UIImageView *profileImageView;
 
 @end
 
@@ -17,6 +18,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    self.profileImageView.layer.cornerRadius = self.profileImageView.layer.frame.size.width/2;
+    self.profileImageView.clipsToBounds = YES;
 }
 
 - (void)didReceiveMemoryWarning {
