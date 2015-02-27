@@ -8,36 +8,12 @@
 
 #import "FormInputViewController.h"
 #import "InformationAPI.h"
-
-@interface FormInputViewController ()
-
-@end
+#define WOLOX @"http://www.wolox.com.ar"
 
 @implementation FormInputViewController
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    // Do any additional setup after loading the view.
-}
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
-
-/*
+    //este método debería estar en el vmodel
 - (BOOL)isValidEmail:(NSString *)email{
-    
     NSString *pattern = @"[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?";
     NSError *error = nil;
     NSRegularExpression *regex = [NSRegularExpression regularExpressionWithPattern:pattern options:NSRegularExpressionCaseInsensitive error:&error];
@@ -51,12 +27,11 @@
     
     // Did we find a matching range
     if (matchRange.location != NSNotFound)
-        didValidate = [self specialValidation:email];
+        didValidate = YES;
     
     return didValidate;
 }
 
-*/
 
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event{
     [self.view endEditing:YES];
@@ -77,9 +52,7 @@
 }
 
 - (IBAction)termsAction:(id)sender {
-    
-    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"http://www.wolox.com.ar"]];
-    
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:WOLOX]];
 }
 
 @end
