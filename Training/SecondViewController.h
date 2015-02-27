@@ -8,7 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SecondViewController : UIViewController
+@interface SecondViewController : UIViewController <UIGestureRecognizerDelegate> {
+    UITapGestureRecognizer *tap;
+    BOOL isFullScreen;
+    CGRect prevFrame;
+}
+
 
 
 @end
