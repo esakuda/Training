@@ -10,15 +10,10 @@
 
 @interface FormInputViewController : UIViewController
 
-//- (BOOL)isValidEmail:(NSString *)email;
-- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event;
+- (BOOL)isValidEmail:(NSString *)email;
+//- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event;
 - (void)setButtonAsLabelLink:(UIButton *)button;
 - (IBAction)termsAction:(id)sender;
 
 @end
 
-@protocol AbstractMethos
-
--(BOOL)specialValidation:(NSString*)email;
-
-@end
