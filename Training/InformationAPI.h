@@ -10,11 +10,13 @@
 
 @interface InformationAPI : NSObject
 
-@property NSMutableDictionary *userData;
-
 +(InformationAPI*)getData;
++(BOOL)isLogged;
 
 -(void)addUser:(NSString*)email addPassword:(NSString*)password;
--(void)persistData;
+-(void)userLogged;
+-(void)logout;
+-(BOOL)isAvaiableEmail:(NSString *)email;
+-(BOOL)chekCredentials:(NSString *)email password:(NSString *)password;
 
 @end

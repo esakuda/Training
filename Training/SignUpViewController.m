@@ -11,6 +11,7 @@
 #import "InformationAPI.h"
 
 @interface SignUpViewController ()
+
 @property (weak, nonatomic) IBOutlet UITextField *emailField;
 @property (weak, nonatomic) IBOutlet UITextField *passwordField;
 @property (weak, nonatomic) IBOutlet UITextField *confirmPasswordField;
@@ -26,29 +27,11 @@
     // Do any additional setup after loading the view.
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
-
 - (IBAction)joinPressed:(id)sender {
     if([self dataValidate]){
         [[InformationAPI getData]addUser:self.emailField.text addPassword: self.passwordField.text];
         [self performSegueWithIdentifier:@"tabBarSegue" sender:self];
-    } else {
-        [self.view makeToast:@"la información no es válida"];
     }
-        
 }
 
 //Arreglar esto!!
@@ -74,28 +57,11 @@
 }
 
 - (BOOL)isValidEmail:(NSString *)email{
-    
-    NSString *pattern = @"[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?";
-    NSError *error = nil;
-    NSRegularExpression *regex = [NSRegularExpression regularExpressionWithPattern:pattern options:NSRegularExpressionCaseInsensitive error:&error];
-    
-    NSAssert(regex, @"Unable to create regular expression");
-    
-    NSRange textRange = NSMakeRange(0, email.length);
-    NSRange matchRange = [regex rangeOfFirstMatchInString:email options:NSMatchingReportProgress range:textRange];
-    
-    BOOL didValidate = NO;
-    
-    // Did we find a matching range
-    if (matchRange.location != NSNotFound)
-        if (![[InformationAPI getData].userData objectForKey:email]) //El toast de la validación debería saltar acá o en el otro método.
-            didValidate = YES;
-    
-    return didValidate;
+    return [super isValidEmail:email] && [self specialValidate:email];
 }
 
 -(BOOL)specialValidate:(NSString*)email{
-    return ![[InformationAPI getData].userData objectForKey:email];
+    return ![[InformationAPI getData] isAvaiableEmail:email];
 }
 
 @end
