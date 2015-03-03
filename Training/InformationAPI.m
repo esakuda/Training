@@ -27,13 +27,10 @@
     return _sharedInstance;
 }
 
-+ (BOOL)isLogged{
-    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
-    return [defaults objectForKey:@"email"] != nil;
-}
-
 -(void)addUser:(NSString*)email addPassword:(NSString*)password{
     [self.userData setObject:password forKey:email];
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    [defaults setObject:self.userData forKey:@"userData"];
 }
 
 -(void)initializeData{
@@ -61,6 +58,12 @@
 
 - (BOOL)isAvaiableEmail:(NSString *)email{
     return ![self.userData objectForKey:email];
+}
+
+- (UserModel *)getUser{
+    UserModel *user = [[UserModel alloc] init];
+    [user name:@"Mario Trusso" location:@"Milano, Italy" description:@"prueba" profileImage:@"images.jpeg" headerImage:@"fondo.jpg"];
+    return user;
 }
 
 @end

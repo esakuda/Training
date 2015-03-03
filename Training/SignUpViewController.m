@@ -9,6 +9,7 @@
 #import "SignUpViewController.h"
 #import "UIView+Toast.h"
 #import "InformationAPI.h"
+#import "SignUpViewModel.h"
 
 @interface SignUpViewController ()
 
@@ -16,6 +17,7 @@
 @property (weak, nonatomic) IBOutlet UITextField *passwordField;
 @property (weak, nonatomic) IBOutlet UITextField *confirmPasswordField;
 @property (weak, nonatomic) IBOutlet UIButton *termsAndConditionsButton;
+@property SignUpViewModel* viewModel;
 
 @end
 
@@ -24,44 +26,18 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self setButtonAsLabelLink:self.termsAndConditionsButton];
-    // Do any additional setup after loading the view.
+    self.viewModel = [[SignUpViewModel alloc] init];
 }
 
 - (IBAction)joinPressed:(id)sender {
-    if([self dataValidate]){
-        [[InformationAPI getData]addUser:self.emailField.text addPassword: self.passwordField.text];
-        [self performSegueWithIdentifier:@"tabBarSegue" sender:self];
-    }
+    void(^successBlock)(void) = ^{[self performSegueWithIdentifier:@"tabBarSegue" sender:self];};
+    void(^failBlock)(NSString*) = ^(NSString *errorMsg){ [self.view makeToast:errorMsg]; };
+    [self.viewModel addUser:self.emailField.text
+                   password:self.passwordField.text
+            confirmPassword:self.confirmPasswordField.text
+               successBlock:successBlock
+                  failBlock: failBlock];
 }
 
-//Arreglar esto!!
--(BOOL)dataValidate{
-    NSString *errorMsg = nil;
-    if(!((self.emailField.text.length == 0) || (self.passwordField.text.length == 0) || (self.confirmPasswordField.text.length == 0))){
-        if([self isValidEmail:self.emailField.text]){
-            if([self.passwordField.text isEqualToString:self.confirmPasswordField.text]){
-                //es válido
-                return YES;
-            } else {
-                errorMsg = @"La confirmación de la contraseña no concuerda.";
-            }
-        } else {
-            errorMsg = @"El email ingresado no es válido o ya se encuentra utilizado";
-        }
-    } else {
-        errorMsg = @"Todos los campos son requeridos";
-    }
-    
-    [self.view makeToast:errorMsg];
-    return NO;
-}
-
-- (BOOL)isValidEmail:(NSString *)email{
-    return [super isValidEmail:email] && [self specialValidate:email];
-}
-
--(BOOL)specialValidate:(NSString*)email{
-    return ![[InformationAPI getData] isAvaiableEmail:email];
-}
 
 @end

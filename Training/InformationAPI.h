@@ -7,16 +7,17 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "UserModel.h"
 
 @interface InformationAPI : NSObject
 
 +(InformationAPI*)getData;
-+(BOOL)isLogged;
 
 -(void)addUser:(NSString*)email addPassword:(NSString*)password;
--(void)userLogged;
+-(void)userLogged:(NSString *)email;
 -(void)logout;
 -(BOOL)isAvaiableEmail:(NSString *)email;
 -(BOOL)chekCredentials:(NSString *)email password:(NSString *)password;
+-(UserModel *)getUser;
 
 @end

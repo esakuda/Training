@@ -49,8 +49,15 @@
 		F43E1A7F1A9F51F500EE944D /* topbar-arrow-back.png in Resources */ = {isa = PBXBuildFile; fileRef = F43E1A571A9F51F500EE944D /* topbar-arrow-back.png */; };
 		F43E1A801A9F51F500EE944D /* topbar-arrow-back@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F43E1A581A9F51F500EE944D /* topbar-arrow-back@2x.png */; };
 		F43E1A821A9F520300EE944D /* images.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = F43E1A811A9F520300EE944D /* images.jpeg */; };
+		F485B9D41AA0E3360051A197 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F485B9D31AA0E3360051A197 /* Localizable.strings */; };
 		F492E7391A9CAD890084029F /* InformationAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = F492E7381A9CAD890084029F /* InformationAPI.m */; };
 		F492E73C1A9CAFAC0084029F /* FormInputViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F492E73B1A9CAFAC0084029F /* FormInputViewController.m */; };
+		F4A454211AA6230600116B07 /* UserRepository.m in Sources */ = {isa = PBXBuildFile; fileRef = F4A454201AA6230600116B07 /* UserRepository.m */; };
+		F4A454251AA624D700116B07 /* LoginViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F4A454241AA624D700116B07 /* LoginViewModel.m */; };
+		F4A454281AA624F700116B07 /* FormViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F4A454271AA624F700116B07 /* FormViewModel.m */; };
+		F4A4542B1AA6396B00116B07 /* SignUpViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F4A4542A1AA6396B00116B07 /* SignUpViewModel.m */; };
+		F4A4542E1AA6440B00116B07 /* ProfileViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F4A4542D1AA6440B00116B07 /* ProfileViewModel.m */; };
+		F4A454351AA649E800116B07 /* UserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F4A454341AA649E800116B07 /* UserModel.m */; };
 		F4A801E61A9B6A840093D0CD /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4A801E51A9B6A840093D0CD /* LoginViewController.m */; };
 		F4AA7BF61A9E1CB70022D8E9 /* fondo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F4AA7BF51A9E1CB70022D8E9 /* fondo.jpg */; };
 		F4B4952C1A9788D6006132CB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F4B4952B1A9788D6006132CB /* main.m */; };
@@ -119,9 +126,22 @@
 		F43E1A571A9F51F500EE944D /* topbar-arrow-back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "topbar-arrow-back.png"; sourceTree = "<group>"; };
 		F43E1A581A9F51F500EE944D /* topbar-arrow-back@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "topbar-arrow-back@2x.png"; sourceTree = "<group>"; };
 		F43E1A811A9F520300EE944D /* images.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = images.jpeg; sourceTree = "<group>"; };
+		F485B9D31AA0E3360051A197 /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		F492E7381A9CAD890084029F /* InformationAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = InformationAPI.m; path = Training/InformationAPI.m; sourceTree = SOURCE_ROOT; };
 		F492E73A1A9CAFAC0084029F /* FormInputViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FormInputViewController.h; sourceTree = "<group>"; };
 		F492E73B1A9CAFAC0084029F /* FormInputViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FormInputViewController.m; sourceTree = "<group>"; };
+		F4A4541F1AA6230600116B07 /* UserRepository.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserRepository.h; sourceTree = "<group>"; };
+		F4A454201AA6230600116B07 /* UserRepository.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserRepository.m; sourceTree = "<group>"; };
+		F4A454231AA624D700116B07 /* LoginViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewModel.h; sourceTree = "<group>"; };
+		F4A454241AA624D700116B07 /* LoginViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewModel.m; sourceTree = "<group>"; };
+		F4A454261AA624F700116B07 /* FormViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FormViewModel.h; sourceTree = "<group>"; };
+		F4A454271AA624F700116B07 /* FormViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FormViewModel.m; sourceTree = "<group>"; };
+		F4A454291AA6396B00116B07 /* SignUpViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignUpViewModel.h; sourceTree = "<group>"; };
+		F4A4542A1AA6396B00116B07 /* SignUpViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignUpViewModel.m; sourceTree = "<group>"; };
+		F4A4542C1AA6440B00116B07 /* ProfileViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileViewModel.h; sourceTree = "<group>"; };
+		F4A4542D1AA6440B00116B07 /* ProfileViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileViewModel.m; sourceTree = "<group>"; };
+		F4A454331AA649E800116B07 /* UserModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserModel.h; sourceTree = "<group>"; };
+		F4A454341AA649E800116B07 /* UserModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserModel.m; sourceTree = "<group>"; };
 		F4A801E41A9B6A840093D0CD /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		F4A801E51A9B6A840093D0CD /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		F4AA7BF51A9E1CB70022D8E9 /* fondo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = fondo.jpg; sourceTree = "<group>"; };
@@ -228,6 +248,41 @@
 			path = "ASSETS 2";
 			sourceTree = "<group>";
 		};
+		F4A4541E1AA622E600116B07 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				F4A4541F1AA6230600116B07 /* UserRepository.h */,
+				F4A454201AA6230600116B07 /* UserRepository.m */,
+				F4EEA9B81A9BB562004F8BC8 /* InformationAPI.h */,
+				F492E7381A9CAD890084029F /* InformationAPI.m */,
+			);
+			name = Repositories;
+			sourceTree = "<group>";
+		};
+		F4A454221AA624B400116B07 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				F4A454231AA624D700116B07 /* LoginViewModel.h */,
+				F4A454241AA624D700116B07 /* LoginViewModel.m */,
+				F4A454261AA624F700116B07 /* FormViewModel.h */,
+				F4A454271AA624F700116B07 /* FormViewModel.m */,
+				F4A454291AA6396B00116B07 /* SignUpViewModel.h */,
+				F4A4542A1AA6396B00116B07 /* SignUpViewModel.m */,
+				F4A4542C1AA6440B00116B07 /* ProfileViewModel.h */,
+				F4A4542D1AA6440B00116B07 /* ProfileViewModel.m */,
+			);
+			name = ViewModel;
+			sourceTree = "<group>";
+		};
+		F4A4542F1AA6474E00116B07 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F4A454331AA649E800116B07 /* UserModel.h */,
+				F4A454341AA649E800116B07 /* UserModel.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
 		F4AA7BF21A9E1C7E0022D8E9 /* Imagenes prueba */ = {
 			isa = PBXGroup;
 			children = (
@@ -260,17 +315,19 @@
 		F4B495281A9788D6006132CB /* Training */ = {
 			isa = PBXGroup;
 			children = (
+				F4A4542F1AA6474E00116B07 /* Model */,
+				F4A454221AA624B400116B07 /* ViewModel */,
+				F4A4541E1AA622E600116B07 /* Repositories */,
 				F43E1A301A9F51F500EE944D /* ASSETS 2 */,
 				F4AA7BF21A9E1C7E0022D8E9 /* Imagenes prueba */,
 				F4B4952D1A9788D6006132CB /* AppDelegate.h */,
-				F4EEA9B81A9BB562004F8BC8 /* InformationAPI.h */,
-				F492E7381A9CAD890084029F /* InformationAPI.m */,
 				F4B4952E1A9788D6006132CB /* AppDelegate.m */,
 				F4B495301A9788D6006132CB /* FirstViewController.h */,
 				F4B495311A9788D6006132CB /* FirstViewController.m */,
 				F4B495331A9788D6006132CB /* SecondViewController.h */,
 				F4B495341A9788D6006132CB /* SecondViewController.m */,
 				F4B495361A9788D6006132CB /* Main.storyboard */,
+				F485B9D31AA0E3360051A197 /* Localizable.strings */,
 				F4EEA9B21A9BB22A004F8BC8 /* SignUpViewController.h */,
 				F4EEA9B31A9BB22A004F8BC8 /* SignUpViewController.m */,
 				F492E73A1A9CAFAC0084029F /* FormInputViewController.h */,
@@ -417,6 +474,7 @@
 				F4B4953D1A9788D6006132CB /* LaunchScreen.xib in Resources */,
 				F43E1A771A9F51F500EE944D /* i-user.png in Resources */,
 				F43E1A7C1A9F51F500EE944D /* signup_logo@2x.png in Resources */,
+				F485B9D41AA0E3360051A197 /* Localizable.strings in Resources */,
 				F43E1A751A9F51F500EE944D /* i-title.png in Resources */,
 				F43E1A5B1A9F51F500EE944D /* i-add-item.png in Resources */,
 				F43E1A821A9F520300EE944D /* images.jpeg in Resources */,
@@ -489,12 +547,18 @@
 			files = (
 				F4B495351A9788D6006132CB /* SecondViewController.m in Sources */,
 				F492E7391A9CAD890084029F /* InformationAPI.m in Sources */,
+				F4A454351AA649E800116B07 /* UserModel.m in Sources */,
 				F4B4952F1A9788D6006132CB /* AppDelegate.m in Sources */,
 				F4EEA9B41A9BB22A004F8BC8 /* SignUpViewController.m in Sources */,
 				F4B495321A9788D6006132CB /* FirstViewController.m in Sources */,
 				F4B4952C1A9788D6006132CB /* main.m in Sources */,
 				F4A801E61A9B6A840093D0CD /* LoginViewController.m in Sources */,
 				F492E73C1A9CAFAC0084029F /* FormInputViewController.m in Sources */,
+				F4A454211AA6230600116B07 /* UserRepository.m in Sources */,
+				F4A454251AA624D700116B07 /* LoginViewModel.m in Sources */,
+				F4A4542E1AA6440B00116B07 /* ProfileViewModel.m in Sources */,
+				F4A4542B1AA6396B00116B07 /* SignUpViewModel.m in Sources */,
+				F4A454281AA624F700116B07 /* FormViewModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

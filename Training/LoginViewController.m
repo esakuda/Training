@@ -10,6 +10,7 @@
 #import "UIView+Toast.h"
 #import "InformationAPI.h"
 #import "TTTAttributedLabel.h"
+#import "LoginViewModel.h"
 
 @interface LoginViewController ()
 
@@ -19,13 +20,21 @@
 @property (weak, nonatomic) IBOutlet TTTAttributedLabel *termsAndConditionsLabel;
 @property (weak, nonatomic) IBOutlet UIButton *termsAndConditionsButton;
 @property (weak, nonatomic) IBOutlet UIButton *signUpButton;
+@property LoginViewModel *viewModel;
 
 @end
 
 @implementation LoginViewController
 
+- (LoginViewController*)init{
+    self = [super init];
+    self.viewModel = [[LoginViewModel alloc] init];
+    return self;
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.viewModel = [[LoginViewModel alloc] init];
     
     [self showElements:NO];
     [self.view makeToastActivity];
@@ -36,25 +45,24 @@
     [self showElements:YES];
     
     [self viewConfiguration];
+    
+
 }
 
 - (IBAction)login:(id)sender {
-    if([[InformationAPI getData] chekCredentials:self.emailText.text
-                                        password:self.passwordText.text]){
-        [self performSegueWithIdentifier:@"tabBarSegue" sender:self];
-    } else {
+    LoginViewController * __weak weakSelf = self;
+    
+    void(^successBlock)(void) = ^{[weakSelf performSegueWithIdentifier:@"tabBarSegue" sender:self];};
+    void(^failBlock)(NSString *) = ^(NSString * errorMsg){
         dispatch_async(dispatch_get_main_queue(), ^{
-            [self.view makeToast:@"Email o contraseña incorrectas"];
+            [self.view makeToast:errorMsg];
         });
-    }
-}
-
-- (BOOL)isValidEmail:(NSString *)email{
-    return [super isValidEmail:email] && [self specialValidation:email];
-}
-
--(BOOL)specialValidation:(NSString *)email{
-    return [[InformationAPI getData] isAvaiableEmail:email];
+    };
+    
+    [self.viewModel chekCredentials:self.emailText.text
+                       password:self.passwordText.text
+                   successBlock:successBlock
+                      failBlock:failBlock];
 }
 
 -(void)showElements:(BOOL)show{
@@ -73,9 +81,11 @@
     [self setButtonAsLabelLink:self.termsAndConditionsButton];
 }
 
+//¿Está bien  que la validación vaya tan abajo?
 -(void)validateLogin{
-    if([InformationAPI isLogged])
-        [self performSegueWithIdentifier:@"tabBarSegue" sender:self];
+    LoginViewController * __weak weakSelf = self;
+    void(^successBlock)(void) = ^{  [weakSelf performSegueWithIdentifier:@"tabBarSegue" sender:self];};
+    [self.viewModel isLogged:successBlock];
 }
 
 @end
