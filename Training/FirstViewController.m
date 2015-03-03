@@ -24,4 +24,8 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)addButton:(id)sender {
+    NSLog(@"segue a otra view");
+}
+
 @end
