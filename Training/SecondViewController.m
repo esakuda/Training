@@ -7,6 +7,7 @@
 //
 
 #import "SecondViewController.h"
+#import "ProfileViewModel.h"
 
 @interface SecondViewController ()
 
@@ -17,6 +18,7 @@
 @property (weak, nonatomic) IBOutlet UIImageView *profileHeaderImageView;
 @property (weak, nonatomic) IBOutlet UIButton *editIconImageView;
 @property (weak, nonatomic) IBOutlet UIImageView *locationIconImageView;
+@property ProfileViewModel *viewModel;
 
 @end
 
@@ -24,6 +26,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.viewModel = [[ProfileViewModel alloc] init];
     [self setViewInformation];
     // Do any additional setup after loading the view, typically from a nib.
    }
@@ -47,18 +50,23 @@
     [self.profileHeaderImageView addGestureRecognizer:singleTap2];
     [self.profileImageView addGestureRecognizer:singleTap];
     
+    void(^successBlock)(NSString*, NSString*, NSString*, UIImage *, UIImage *) = ^(NSString *name, NSString *location, NSString *description, UIImage *profileImage, UIImage *headerImage){
+        self.nameLabel.text = name;
+        [self.nameLabel setTextColor: [UIColor blueColor]];
+        
+        self.locationLabel.text = location;
+        [self.locationLabel setTextColor:[UIColor lightGrayColor]];
+        
+        self.profileDescriptionText.text = description;
+        [self.profileHeaderImageView setImage:headerImage];
+        [self.profileImageView setImage:profileImage];
+    };
     
-    self.nameLabel.text = @"Mario Trusso";
-    [self.nameLabel setTextColor: [UIColor blueColor]];
+    [self.viewModel getDataSuccessBlock:successBlock failBlock:nil];
     
-    self.locationLabel.text = @"Milano, Italy";
-    [self.locationLabel setTextColor:[UIColor lightGrayColor]];
-    
-    self.profileDescriptionText.text = @"prueba";
 }
 
 -(void)tapImageDetected:(UIGestureRecognizer *)sender{
-    NSLog(@"single Tap on imageview");
     
     UIImageView *image = ((UIImageView *)[sender view]);
     if (!isFullScreen) {
