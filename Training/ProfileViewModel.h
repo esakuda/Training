@@ -1,5 +1,5 @@
 //
-//  profileViewModel.h
+//  ProfileViewModel.h
 //  Training
 //
 //  Created by María Eugenia Sakuda on 3/3/15.
@@ -11,6 +11,6 @@
 
 @interface ProfileViewModel : NSObject
 
--(void)getDataSuccessBlock:(void(^)(NSString*, NSString*, NSString*, UIImage *, UIImage *))success failBlock:(void(^)(NSString*))failBlock;
+-(void)getProfileDataSuccessBlock:(void(^)(NSString*, NSString*, NSString*, UIImage *, UIImage *))success failBlock:(void(^)(NSString*))failBlock;
 
 @end

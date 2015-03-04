@@ -5,3 +5,4 @@ inhibit_all_warnings!
 pod 'ObjectiveSugar'
 pod 'Toast', '~> 2.4'
 pod 'TTTAttributedLabel', '~> 1.2.1'
+pod 'EXPhotoViewer', '~> 1.1.2'

@@ -62,12 +62,12 @@
 		F4AA7BF61A9E1CB70022D8E9 /* fondo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F4AA7BF51A9E1CB70022D8E9 /* fondo.jpg */; };
 		F4B4952C1A9788D6006132CB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F4B4952B1A9788D6006132CB /* main.m */; };
 		F4B4952F1A9788D6006132CB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F4B4952E1A9788D6006132CB /* AppDelegate.m */; };
-		F4B495321A9788D6006132CB /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4B495311A9788D6006132CB /* FirstViewController.m */; };
-		F4B495351A9788D6006132CB /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4B495341A9788D6006132CB /* SecondViewController.m */; };
+		F4B495351A9788D6006132CB /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4B495341A9788D6006132CB /* ProfileViewController.m */; };
 		F4B495381A9788D6006132CB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4B495361A9788D6006132CB /* Main.storyboard */; };
 		F4B4953A1A9788D6006132CB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4B495391A9788D6006132CB /* Images.xcassets */; };
 		F4B4953D1A9788D6006132CB /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F4B4953B1A9788D6006132CB /* LaunchScreen.xib */; };
 		F4B495491A9788D6006132CB /* TrainingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F4B495481A9788D6006132CB /* TrainingTests.m */; };
+		F4E934AE1AA755160022F985 /* ValidationAnswerModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F4E934AD1AA755160022F985 /* ValidationAnswerModel.m */; };
 		F4EEA9B41A9BB22A004F8BC8 /* SignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4EEA9B31A9BB22A004F8BC8 /* SignUpViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -150,16 +150,16 @@
 		F4B4952B1A9788D6006132CB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F4B4952D1A9788D6006132CB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F4B4952E1A9788D6006132CB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		F4B495301A9788D6006132CB /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
-		F4B495311A9788D6006132CB /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
-		F4B495331A9788D6006132CB /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
-		F4B495341A9788D6006132CB /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		F4B495331A9788D6006132CB /* ProfileViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProfileViewController.h; sourceTree = "<group>"; };
+		F4B495341A9788D6006132CB /* ProfileViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProfileViewController.m; sourceTree = "<group>"; };
 		F4B495371A9788D6006132CB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F4B495391A9788D6006132CB /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		F4B4953C1A9788D6006132CB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		F4B495421A9788D6006132CB /* TrainingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TrainingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4B495471A9788D6006132CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F4B495481A9788D6006132CB /* TrainingTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TrainingTests.m; sourceTree = "<group>"; };
+		F4E934AC1AA755160022F985 /* ValidationAnswerModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ValidationAnswerModel.h; sourceTree = "<group>"; };
+		F4E934AD1AA755160022F985 /* ValidationAnswerModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ValidationAnswerModel.m; sourceTree = "<group>"; };
 		F4EEA9B21A9BB22A004F8BC8 /* SignUpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignUpViewController.h; sourceTree = "<group>"; };
 		F4EEA9B31A9BB22A004F8BC8 /* SignUpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignUpViewController.m; sourceTree = "<group>"; };
 		F4EEA9B81A9BB562004F8BC8 /* InformationAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InformationAPI.h; sourceTree = "<group>"; };
@@ -279,6 +279,8 @@
 			children = (
 				F4A454331AA649E800116B07 /* UserModel.h */,
 				F4A454341AA649E800116B07 /* UserModel.m */,
+				F4E934AC1AA755160022F985 /* ValidationAnswerModel.h */,
+				F4E934AD1AA755160022F985 /* ValidationAnswerModel.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -315,6 +317,7 @@
 		F4B495281A9788D6006132CB /* Training */ = {
 			isa = PBXGroup;
 			children = (
+				F4E934AF1AA75AC50022F985 /* Controler */,
 				F4A4542F1AA6474E00116B07 /* Model */,
 				F4A454221AA624B400116B07 /* ViewModel */,
 				F4A4541E1AA622E600116B07 /* Repositories */,
@@ -322,18 +325,8 @@
 				F4AA7BF21A9E1C7E0022D8E9 /* Imagenes prueba */,
 				F4B4952D1A9788D6006132CB /* AppDelegate.h */,
 				F4B4952E1A9788D6006132CB /* AppDelegate.m */,
-				F4B495301A9788D6006132CB /* FirstViewController.h */,
-				F4B495311A9788D6006132CB /* FirstViewController.m */,
-				F4B495331A9788D6006132CB /* SecondViewController.h */,
-				F4B495341A9788D6006132CB /* SecondViewController.m */,
 				F4B495361A9788D6006132CB /* Main.storyboard */,
 				F485B9D31AA0E3360051A197 /* Localizable.strings */,
-				F4EEA9B21A9BB22A004F8BC8 /* SignUpViewController.h */,
-				F4EEA9B31A9BB22A004F8BC8 /* SignUpViewController.m */,
-				F492E73A1A9CAFAC0084029F /* FormInputViewController.h */,
-				F492E73B1A9CAFAC0084029F /* FormInputViewController.m */,
-				F4A801E41A9B6A840093D0CD /* LoginViewController.h */,
-				F4A801E51A9B6A840093D0CD /* LoginViewController.m */,
 				F4B495391A9788D6006132CB /* Images.xcassets */,
 				F4B4953B1A9788D6006132CB /* LaunchScreen.xib */,
 				F4B495291A9788D6006132CB /* Supporting Files */,
@@ -365,6 +358,21 @@
 				F4B495471A9788D6006132CB /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F4E934AF1AA75AC50022F985 /* Controler */ = {
+			isa = PBXGroup;
+			children = (
+				F4B495331A9788D6006132CB /* ProfileViewController.h */,
+				F4EEA9B21A9BB22A004F8BC8 /* SignUpViewController.h */,
+				F4EEA9B31A9BB22A004F8BC8 /* SignUpViewController.m */,
+				F492E73A1A9CAFAC0084029F /* FormInputViewController.h */,
+				F492E73B1A9CAFAC0084029F /* FormInputViewController.m */,
+				F4A801E41A9B6A840093D0CD /* LoginViewController.h */,
+				F4A801E51A9B6A840093D0CD /* LoginViewController.m */,
+				F4B495341A9788D6006132CB /* ProfileViewController.m */,
+			);
+			name = Controler;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -545,12 +553,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F4B495351A9788D6006132CB /* SecondViewController.m in Sources */,
+				F4B495351A9788D6006132CB /* ProfileViewController.m in Sources */,
 				F492E7391A9CAD890084029F /* InformationAPI.m in Sources */,
+				F4E934AE1AA755160022F985 /* ValidationAnswerModel.m in Sources */,
 				F4A454351AA649E800116B07 /* UserModel.m in Sources */,
 				F4B4952F1A9788D6006132CB /* AppDelegate.m in Sources */,
 				F4EEA9B41A9BB22A004F8BC8 /* SignUpViewController.m in Sources */,
-				F4B495321A9788D6006132CB /* FirstViewController.m in Sources */,
 				F4B4952C1A9788D6006132CB /* main.m in Sources */,
 				F4A801E61A9B6A840093D0CD /* LoginViewController.m in Sources */,
 				F492E73C1A9CAFAC0084029F /* FormInputViewController.m in Sources */,
