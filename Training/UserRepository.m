@@ -24,13 +24,6 @@
     }
 }
 
--(void)isLogged:(void(^)(void))successBlock{
-    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
-    if([defaults objectForKey:@"email"] != nil){
-        successBlock();
-    }
-}
-
 - (void)addUser:(NSString *)email password:(NSString *)password successBlock:(void(^)(void))successBlock failBlock: (void(^)(NSString *))failBlock{
     if([[InformationAPI getData] isAvaiableEmail:email]){
         [[InformationAPI getData] addUser:email addPassword:password];

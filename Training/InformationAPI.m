@@ -1,5 +1,5 @@
 //
-//  Information.m
+//  InformationAPI.m
 //  Training
 //
 //  Created by María Eugenia Sakuda on 2/23/15.
@@ -42,11 +42,6 @@
     }
 }
 
-- (void)userLogged:(NSString *)email{
-    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
-    return [defaults setObject:email forKey:@"email"];
-}
-
 - (void)logout{
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
     [defaults removeObjectForKey:@"email"];
@@ -61,8 +56,13 @@
 }
 
 - (UserModel *)getUser{
-    UserModel *user = [[UserModel alloc] init];
-    [user name:@"Mario Trusso" location:@"Milano, Italy" description:@"prueba" profileImage:@"images.jpeg" headerImage:@"fondo.jpg"];
+    UserModel *user = [[UserModel alloc] initWithDictionary:@{
+                                                              @"name":@"Mario Trusso",
+                                                              @"location":@"Milano, Italy",
+                                                              @"description":@"prueba",
+                                                              @"profileImage":@"images.jpeg",
+                                                              @"headerImage":@"fondo.jpg"
+                                                            }];
     return user;
 }
 

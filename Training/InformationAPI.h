@@ -1,5 +1,5 @@
 //
-//  Information.h
+//  InformationAPI.h
 //  Training
 //
 //  Created by María Eugenia Sakuda on 2/23/15.
@@ -14,7 +14,6 @@
 +(InformationAPI*)getData;
 
 -(void)addUser:(NSString*)email addPassword:(NSString*)password;
--(void)userLogged:(NSString *)email;
 -(void)logout;
 -(BOOL)isAvaiableEmail:(NSString *)email;
 -(BOOL)chekCredentials:(NSString *)email password:(NSString *)password;

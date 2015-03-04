@@ -12,6 +12,6 @@
 @interface LoginViewModel : FormViewModel
 
 - (void)chekCredentials:(NSString *)email password:(NSString *)password successBlock:(void(^)(void))successBlock failBlock:(void(^)(NSString *))failBlock;
--(void)isLogged:(void(^)(void))successBlock;
+- (BOOL)isLogged;
 
 @end
