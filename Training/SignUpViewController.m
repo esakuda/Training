@@ -30,14 +30,16 @@
 }
 
 - (IBAction)joinPressed:(id)sender {
-    void(^successBlock)(void) = ^{[self performSegueWithIdentifier:@"tabBarSegue" sender:self];};
-    void(^failBlock)(NSString*) = ^(NSString *errorMsg){ [self.view makeToast:errorMsg]; };
-    [self.viewModel addUser:self.emailField.text
-                   password:self.passwordField.text
-            confirmPassword:self.confirmPasswordField.text
-               successBlock:successBlock
-                  failBlock: failBlock];
+    SignUpViewController * __weak weakSelf = self;
+    ValidationAnswerModel *answer = [self.viewModel validateEmail:self.emailField.text password:self.passwordField.text confirmPassword:self.confirmPasswordField.text];
+    if(answer.pass){
+        [self.viewModel addUser:self.emailField.text
+                       password:self.passwordField.text
+                   successBlock:^{[weakSelf performSegueWithIdentifier:@"tabBarSegue" sender:weakSelf];}
+                      failBlock:^(NSString *errorMsg){ [weakSelf.view makeToast:errorMsg]; }];
+    } else {
+        [self.view makeToast:answer.errorMsg];
+    }
 }
-
 
 @end

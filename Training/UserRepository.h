@@ -12,7 +12,6 @@
 @interface UserRepository : NSObject
 
 - (void)chekCredentials:(NSString *)email password:(NSString *)password successBlock:(void(^)(void))successBlock failBlock:(void(^)(NSString *))failBlock;
--(void)isLogged:(void(^)(void))successBlock;
 - (void)addUser:(NSString *)email password:(NSString *)password successBlock:(void(^)(void))successBlock failBlock: (void(^)(NSString *))failBlock;
 - (void)getProfileDataSuccess:(void(^)(UserModel *))success failBlock:(void(^)(NSString *))failBlock;
 

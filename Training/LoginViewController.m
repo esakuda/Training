@@ -28,7 +28,9 @@
 
 - (LoginViewController*)init{
     self = [super init];
-    self.viewModel = [[LoginViewModel alloc] init];
+    if(self != nil){
+        self.viewModel = [[LoginViewModel alloc] init];
+    }
     return self;
 }
 
@@ -45,24 +47,19 @@
     [self showElements:YES];
     
     [self viewConfiguration];
-    
-
 }
 
 - (IBAction)login:(id)sender {
     LoginViewController * __weak weakSelf = self;
     
-    void(^successBlock)(void) = ^{[weakSelf performSegueWithIdentifier:@"tabBarSegue" sender:self];};
-    void(^failBlock)(NSString *) = ^(NSString * errorMsg){
-        dispatch_async(dispatch_get_main_queue(), ^{
-            [self.view makeToast:errorMsg];
-        });
-    };
-    
     [self.viewModel chekCredentials:self.emailText.text
-                       password:self.passwordText.text
-                   successBlock:successBlock
-                      failBlock:failBlock];
+                           password:self.passwordText.text
+                       successBlock:^{[weakSelf performSegueWithIdentifier:@"tabBarSegue" sender:self];}
+                          failBlock:^(NSString * errorMsg){
+                                        dispatch_async(dispatch_get_main_queue(), ^{
+                                            [self.view makeToast:errorMsg];
+                                        });
+                                    }];
 }
 
 -(void)showElements:(BOOL)show{
@@ -74,7 +71,7 @@
     self.termsAndConditionsLabel.hidden = !show;
 }
 
-- (void)viewConfiguration{
+-(void)viewConfiguration{
     [self.loginButton.layer setBorderWidth:1.0f];
     [self.loginButton.layer setBorderColor:[UIColor blackColor].CGColor];
     
@@ -84,8 +81,8 @@
 //¿Está bien  que la validación vaya tan abajo?
 -(void)validateLogin{
     LoginViewController * __weak weakSelf = self;
-    void(^successBlock)(void) = ^{  [weakSelf performSegueWithIdentifier:@"tabBarSegue" sender:self];};
-    [self.viewModel isLogged:successBlock];
+    if([self.viewModel isLogged])
+        [weakSelf performSegueWithIdentifier:@"tabBarSegue" sender:self];
 }
 
 @end

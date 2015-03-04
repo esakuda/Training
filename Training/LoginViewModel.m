@@ -19,20 +19,27 @@
 
 -(LoginViewModel*)init{
     self = [super init];
-    self.repository = [[UserRepository alloc] init];
+    if(self != nil)
+        self.repository = [[UserRepository alloc] init];
     return self;
 }
 
 - (void)chekCredentials:(NSString *)email password:(NSString *)password successBlock:(void(^)(void))successBlock failBlock:(void(^)(NSString *))failBlock{
     if([self isValidEmail:email]){
-        [self.repository chekCredentials:email password:password successBlock:successBlock failBlock:failBlock];
+        [self.repository chekCredentials:email password:password successBlock:^{NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+                                                                                [defaults setObject:email forKey:@"email"];
+                                                                                successBlock();}
+                                                                    failBlock:failBlock];
     } else {
         failBlock(@"Email o contraseña incorrectas");
     }
 }
 
-- (void)isLogged:(void(^)(void))successBlock{
-    [self.repository isLogged:successBlock];
+- (BOOL)isLogged{
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    if([defaults objectForKey:@"email"] != nil)
+        return YES;
+    return NO;
 }
 
 @end

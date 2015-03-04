@@ -7,9 +7,11 @@
 //
 
 #import "FormViewModel.h"
+#import "ValidationAnswerModel.h"
 
 @interface SignUpViewModel : FormViewModel
 
-- (void)addUser:(NSString *)email password:(NSString *)password confirmPassword:(NSString *)confirmPassword successBlock:(void(^)(void))successBlock failBlock: (void(^)(NSString *))failBlock;
+- (void)addUser:(NSString *)email password:(NSString *)password successBlock:(void(^)(void))successBlock failBlock: (void(^)(NSString *))failBlock;
+- (ValidationAnswerModel *)validateEmail:(NSString *)email password:(NSString *)password confirmPassword:(NSString *)confirmPassword;
 
 @end
