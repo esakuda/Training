@@ -160,7 +160,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3089" y="1115"/>
+            <point key="canvasLocation" x="2472" y="1158"/>
         </scene>
         <!--Login View Controller-->
         <scene sceneID="kfd-MC-cod">
@@ -496,10 +496,74 @@
                             <outlet property="delegate" destination="fIP-Ts-Trm" id="ldI-2X-Uc2"/>
                         </connections>
                     </tableView>
+                    <connections>
+                        <segue destination="uBb-Dd-PZ8" kind="show" identifier="postShow" id="hvN-ma-GFN"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Oht-Te-uon" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3249" y="262"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="WGh-uU-0na">
+            <objects>
+                <viewController id="uBb-Dd-PZ8" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="LKj-62-gIq"/>
+                        <viewControllerLayoutGuide type="bottom" id="QNI-Os-Zc6"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8pc-hB-hAd">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="486"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7c8-wp-fmU">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="260"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="i-like-inactive.png" translatesAutoresizingMaskIntoConstraints="NO" id="VRZ-Fj-p5z">
+                                <rect key="frame" x="274" y="424" width="53" height="42"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jlk-yc-Vrr">
+                                <rect key="frame" x="16" y="268" width="113" height="35"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hNv-zP-Lsc">
+                                <rect key="frame" x="542" y="275" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0HJ-d8-svJ">
+                                <rect key="frame" x="16" y="311" width="574" height="91"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="hNv-zP-Lsc" firstAttribute="trailing" secondItem="8pc-hB-hAd" secondAttribute="trailingMargin" constant="4" id="4Il-o3-28c"/>
+                            <constraint firstItem="0HJ-d8-svJ" firstAttribute="top" secondItem="Jlk-yc-Vrr" secondAttribute="bottom" constant="8" id="6e4-uy-kAQ"/>
+                            <constraint firstItem="QNI-Os-Zc6" firstAttribute="top" secondItem="VRZ-Fj-p5z" secondAttribute="bottom" constant="40" id="AdO-w6-e8q"/>
+                            <constraint firstItem="hNv-zP-Lsc" firstAttribute="centerY" secondItem="Jlk-yc-Vrr" secondAttribute="centerY" id="UdY-fB-U85"/>
+                            <constraint firstItem="Jlk-yc-Vrr" firstAttribute="leading" secondItem="8pc-hB-hAd" secondAttribute="leadingMargin" constant="8" id="Ypa-j0-gwq"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="7c8-wp-fmU" secondAttribute="trailing" constant="-16" id="ZF5-pa-PHI"/>
+                            <constraint firstItem="0HJ-d8-svJ" firstAttribute="leading" secondItem="8pc-hB-hAd" secondAttribute="leadingMargin" constant="10" id="aSH-56-Khv"/>
+                            <constraint firstItem="Jlk-yc-Vrr" firstAttribute="top" secondItem="7c8-wp-fmU" secondAttribute="bottom" constant="20" id="bZZ-FH-eZk"/>
+                            <constraint firstAttribute="centerX" secondItem="VRZ-Fj-p5z" secondAttribute="centerX" id="gNi-KR-1nY"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="0HJ-d8-svJ" secondAttribute="trailing" constant="10" id="hNf-VB-gRj"/>
+                            <constraint firstItem="7c8-wp-fmU" firstAttribute="leading" secondItem="8pc-hB-hAd" secondAttribute="leadingMargin" constant="-16" id="nXG-cy-w7J"/>
+                            <constraint firstItem="7c8-wp-fmU" firstAttribute="top" secondItem="LKj-62-gIq" secondAttribute="bottom" id="tje-6l-zJ3"/>
+                            <constraint firstAttribute="centerY" secondItem="7c8-wp-fmU" secondAttribute="bottom" id="xJd-9a-ZjH"/>
+                            <constraint firstItem="VRZ-Fj-p5z" firstAttribute="top" secondItem="0HJ-d8-svJ" secondAttribute="bottom" constant="40" id="zXV-yy-AzS"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5y7-3B-und" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3249" y="948"/>
         </scene>
         <!--Profile-->
         <scene sceneID="PHg-MA-1qd">
