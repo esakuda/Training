@@ -393,6 +393,8 @@
 				F492E73B1A9CAFAC0084029F /* FormInputViewController.m */,
 				F4A801E41A9B6A840093D0CD /* LoginViewController.h */,
 				F4A801E51A9B6A840093D0CD /* LoginViewController.m */,
+				F4F855451AA8FABC005ADAA3 /* PostViewController.h */,
+				F4F855461AA8FABC005ADAA3 /* PostViewController.m */,
 				F4A454391AA65C0900116B07 /* NewsTableViewController.h */,
 				F4A4543A1AA65C0900116B07 /* NewsTableViewController.m */,
 				F4B495391A9788D6006132CB /* Images.xcassets */,
@@ -632,8 +634,9 @@
 				F4F855471AA8FABC005ADAA3 /* PostViewController.m in Sources */,
 				F40864EB1AA72CB000348B67 /* NewTableViewCell.m in Sources */,
 
-
 				F4A4543E1AA65C6F00116B07 /* NewsTableViewModel.m in Sources */,
+
+				F4F855471AA8FABC005ADAA3 /* PostViewController.m in Sources */,
 				F40864EB1AA72CB000348B67 /* NewTableViewCell.m in Sources */,
 				F4A4543E1AA65C6F00116B07 /* NewsTableViewModel.m in Sources */,
 				F4B495351A9788D6006132CB /* SecondViewController.m in Sources */,
