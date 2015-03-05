@@ -42,7 +42,6 @@
             successBlock();
         } else {
             failBlock(@"No hay noticias para mostrar");
-        }
     }
                               failBlock:failBlock];
 }
