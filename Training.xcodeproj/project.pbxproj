@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		39533B23739B397524FC8E7B /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DDEC3D75D486DCC06D14CC66 /* libPods.a */; };
+		F40864EB1AA72CB000348B67 /* NewTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F40864EA1AA72CB000348B67 /* NewTableViewCell.m */; };
 		F43E1A591A9F51F500EE944D /* header_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = F43E1A311A9F51F500EE944D /* header_logo.png */; };
 		F43E1A5A1A9F51F500EE944D /* header_logo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F43E1A321A9F51F500EE944D /* header_logo@2x.png */; };
 		F43E1A5B1A9F51F500EE944D /* i-add-item.png in Resources */ = {isa = PBXBuildFile; fileRef = F43E1A331A9F51F500EE944D /* i-add-item.png */; };
@@ -69,6 +70,10 @@
 		F4B4952C1A9788D6006132CB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F4B4952B1A9788D6006132CB /* main.m */; };
 		F4B4952F1A9788D6006132CB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F4B4952E1A9788D6006132CB /* AppDelegate.m */; };
 		F4B495321A9788D6006132CB /* NewsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4B495311A9788D6006132CB /* NewsViewController.m */; };
+<<<<<<< HEAD
+=======
+		F4B495351A9788D6006132CB /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4B495341A9788D6006132CB /* SecondViewController.m */; };
+>>>>>>> vista "News"
 		F4B495381A9788D6006132CB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4B495361A9788D6006132CB /* Main.storyboard */; };
 		F4B4953A1A9788D6006132CB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4B495391A9788D6006132CB /* Images.xcassets */; };
 		F4B4953D1A9788D6006132CB /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F4B4953B1A9788D6006132CB /* LaunchScreen.xib */; };
@@ -93,6 +98,10 @@
 		9C20BB7D8E4E45D25D6B9218 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		DDEC3D75D486DCC06D14CC66 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		F40864E91AA72CB000348B67 /* NewTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewTableViewCell.h; sourceTree = "<group>"; };
+<<<<<<< HEAD
+=======
+		F40864EA1AA72CB000348B67 /* NewTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewTableViewCell.m; sourceTree = "<group>"; };
+>>>>>>> vista "News"
 		F43E1A311A9F51F500EE944D /* header_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = header_logo.png; sourceTree = "<group>"; };
 		F43E1A321A9F51F500EE944D /* header_logo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "header_logo@2x.png"; sourceTree = "<group>"; };
 		F43E1A331A9F51F500EE944D /* i-add-item.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "i-add-item.png"; sourceTree = "<group>"; };
@@ -170,6 +179,11 @@
 		F4B4952E1A9788D6006132CB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		F4B495301A9788D6006132CB /* NewsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NewsViewController.h; sourceTree = "<group>"; };
 		F4B495311A9788D6006132CB /* NewsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NewsViewController.m; sourceTree = "<group>"; };
+<<<<<<< HEAD
+=======
+		F4B495331A9788D6006132CB /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		F4B495341A9788D6006132CB /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+>>>>>>> vista "News"
 		F4B495371A9788D6006132CB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F4B495391A9788D6006132CB /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		F4B4953C1A9788D6006132CB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -292,8 +306,11 @@
 				F4A4542D1AA6440B00116B07 /* ProfileViewModel.m */,
 				F4A4543C1AA65C6F00116B07 /* NewsTableViewModel.h */,
 				F4A4543D1AA65C6F00116B07 /* NewsTableViewModel.m */,
+<<<<<<< HEAD
 				F4B68FAB1AB07C2A00F7ABEF /* NewsViewModel.h */,
 				F4B68FAC1AB07C2A00F7ABEF /* NewsViewModel.m */,
+=======
+>>>>>>> vista "News"
 			);
 			name = ViewModel;
 			sourceTree = "<group>";
@@ -305,10 +322,15 @@
 				F4A454401AA661E100116B07 /* NewModel.m */,
 				F4A454331AA649E800116B07 /* UserModel.h */,
 				F4A454341AA649E800116B07 /* UserModel.m */,
+<<<<<<< HEAD
 				F4E934AC1AA755160022F985 /* ValidationAnswerModel.h */,
 				F4E934AD1AA755160022F985 /* ValidationAnswerModel.m */,
 				F40864E91AA72CB000348B67 /* NewTableViewCell.h */,
 				F4A44EFB1AAFA4CE003FA286 /* NewTableViewCell.m */,
+=======
+				F40864E91AA72CB000348B67 /* NewTableViewCell.h */,
+				F40864EA1AA72CB000348B67 /* NewTableViewCell.m */,
+>>>>>>> vista "News"
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -354,8 +376,25 @@
 				F4AA7BF21A9E1C7E0022D8E9 /* Imagenes prueba */,
 				F4B4952D1A9788D6006132CB /* AppDelegate.h */,
 				F4B4952E1A9788D6006132CB /* AppDelegate.m */,
+<<<<<<< HEAD
 				F4B495361A9788D6006132CB /* Main.storyboard */,
 				F485B9D31AA0E3360051A197 /* Localizable.strings */,
+=======
+				F4B495301A9788D6006132CB /* NewsViewController.h */,
+				F4B495311A9788D6006132CB /* NewsViewController.m */,
+				F4B495331A9788D6006132CB /* SecondViewController.h */,
+				F4B495341A9788D6006132CB /* SecondViewController.m */,
+				F4B495361A9788D6006132CB /* Main.storyboard */,
+				F485B9D31AA0E3360051A197 /* Localizable.strings */,
+				F4EEA9B21A9BB22A004F8BC8 /* SignUpViewController.h */,
+				F4EEA9B31A9BB22A004F8BC8 /* SignUpViewController.m */,
+				F492E73A1A9CAFAC0084029F /* FormInputViewController.h */,
+				F492E73B1A9CAFAC0084029F /* FormInputViewController.m */,
+				F4A801E41A9B6A840093D0CD /* LoginViewController.h */,
+				F4A801E51A9B6A840093D0CD /* LoginViewController.m */,
+				F4A454391AA65C0900116B07 /* NewsTableViewController.h */,
+				F4A4543A1AA65C0900116B07 /* NewsTableViewController.m */,
+>>>>>>> vista "News"
 				F4B495391A9788D6006132CB /* Images.xcassets */,
 				F4B4953B1A9788D6006132CB /* LaunchScreen.xib */,
 				F4B495291A9788D6006132CB /* Supporting Files */,
@@ -587,7 +626,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+<<<<<<< HEAD
 				F4A4543E1AA65C6F00116B07 /* NewsTableViewModel.m in Sources */,
+=======
+				F40864EB1AA72CB000348B67 /* NewTableViewCell.m in Sources */,
+				F4A4543E1AA65C6F00116B07 /* NewsTableViewModel.m in Sources */,
+				F4B495351A9788D6006132CB /* SecondViewController.m in Sources */,
+>>>>>>> vista "News"
 				F492E7391A9CAD890084029F /* InformationAPI.m in Sources */,
 				F4A44EF61AAF8ED9003FA286 /* ProfileViewController.m in Sources */,
 				F4E934AE1AA755160022F985 /* ValidationAnswerModel.m in Sources */,

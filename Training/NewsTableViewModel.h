@@ -11,6 +11,7 @@
 #import "NewModel.h"
 #import "NewsViewModel.h"
 
+
 @interface NewsTableViewModel : NSObject
 
 - (long)newsCount;
