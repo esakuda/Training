@@ -504,10 +504,10 @@
             </objects>
             <point key="canvasLocation" x="3249" y="262"/>
         </scene>
-        <!--View Controller-->
+        <!--Post View Controller-->
         <scene sceneID="WGh-uU-0na">
             <objects>
-                <viewController id="uBb-Dd-PZ8" sceneMemberID="viewController">
+                <viewController id="uBb-Dd-PZ8" customClass="PostViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="LKj-62-gIq"/>
                         <viewControllerLayoutGuide type="bottom" id="QNI-Os-Zc6"/>
@@ -560,6 +560,13 @@
                             <constraint firstItem="VRZ-Fj-p5z" firstAttribute="top" secondItem="0HJ-d8-svJ" secondAttribute="bottom" constant="40" id="zXV-yy-AzS"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="dataTextViewer" destination="0HJ-d8-svJ" id="j8r-Vg-AUw"/>
+                        <outlet property="favoriteImageViewr" destination="VRZ-Fj-p5z" id="Kyy-Ee-eqs"/>
+                        <outlet property="headerImageView" destination="7c8-wp-fmU" id="yiQ-HJ-JQg"/>
+                        <outlet property="nameLabel" destination="Jlk-yc-Vrr" id="iVa-ol-BlZ"/>
+                        <outlet property="timeLabel" destination="hNv-zP-Lsc" id="hcp-4x-cRH"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5y7-3B-und" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
