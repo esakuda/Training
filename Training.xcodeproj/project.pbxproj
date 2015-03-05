@@ -83,7 +83,11 @@
 		F4B495491A9788D6006132CB /* TrainingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F4B495481A9788D6006132CB /* TrainingTests.m */; };
 		F4B68FAD1AB07C2A00F7ABEF /* NewsViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F4B68FAC1AB07C2A00F7ABEF /* NewsViewModel.m */; };
 		F4EEA9B41A9BB22A004F8BC8 /* SignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4EEA9B31A9BB22A004F8BC8 /* SignUpViewController.m */; };
+
 		F4F6A2A71AAA32F5001AD01A /* NewEditorViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F4F6A2A61AAA32F5001AD01A /* NewEditorViewModel.m */; };
+
+		F4F855471AA8FABC005ADAA3 /* PostViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4F855461AA8FABC005ADAA3 /* PostViewController.m */; };
+
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -200,10 +204,12 @@
 		F4EEA9B21A9BB22A004F8BC8 /* SignUpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignUpViewController.h; sourceTree = "<group>"; };
 		F4EEA9B31A9BB22A004F8BC8 /* SignUpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignUpViewController.m; sourceTree = "<group>"; };
 		F4EEA9B81A9BB562004F8BC8 /* InformationAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InformationAPI.h; sourceTree = "<group>"; };
+
 		F4F6A2A51AAA32F5001AD01A /* NewEditorViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewEditorViewModel.h; sourceTree = "<group>"; };
 		F4F6A2A61AAA32F5001AD01A /* NewEditorViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewEditorViewModel.m; sourceTree = "<group>"; };
 		F4F6A2A81AAA33EC001AD01A /* NewEditorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewEditorViewController.h; sourceTree = "<group>"; };
 		F4F6A2A91AAA33EC001AD01A /* NewEditorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewEditorViewController.m; sourceTree = "<group>"; };
+
 		F4F855451AA8FABC005ADAA3 /* PostViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PostViewController.h; sourceTree = "<group>"; };
 		F4F855461AA8FABC005ADAA3 /* PostViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PostViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -414,6 +420,7 @@
 				F4A801E41A9B6A840093D0CD /* LoginViewController.h */,
 				F4A801E51A9B6A840093D0CD /* LoginViewController.m */,
 
+
 				F4F855451AA8FABC005ADAA3 /* PostViewController.h */,
 				F4F855461AA8FABC005ADAA3 /* PostViewController.m */,
 				F4F6A2A81AAA33EC001AD01A /* NewEditorViewController.h */,
@@ -421,6 +428,10 @@
 				F4A454391AA65C0900116B07 /* NewsTableViewController.h */,
 				F4A4543A1AA65C0900116B07 /* NewsTableViewController.m */,
 				F485269A1AAA20840053A0BC /* TableDelegateProtocol.h */,
+
+
+				F4F855451AA8FABC005ADAA3 /* PostViewController.h */,
+				F4F855461AA8FABC005ADAA3 /* PostViewController.m */,
 
 				F4A454391AA65C0900116B07 /* NewsTableViewController.h */,
 				F4A4543A1AA65C0900116B07 /* NewsTableViewController.m */,
@@ -648,10 +659,13 @@
 			buildActionMask = 2147483647;
 			files = (
 
+
 				F4299BAA1AB0C1A1008B0E09 /* NewEditorViewController.m in Sources */,
 
 
 				F4A4543E1AA65C6F00116B07 /* NewsTableViewModel.m in Sources */,
+
+				F4F855471AA8FABC005ADAA3 /* PostViewController.m in Sources */,
 				F40864EB1AA72CB000348B67 /* NewTableViewCell.m in Sources */,
 				F4A4543E1AA65C6F00116B07 /* NewsTableViewModel.m in Sources */,
 				F4B495351A9788D6006132CB /* SecondViewController.m in Sources */,

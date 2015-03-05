@@ -12,7 +12,6 @@
 #import "NewModel.h"
 #import "UIView+Toast.h"
 #import "PostViewController.h"
-#import "NewEditorViewController.h"
 
 @interface NewsTableViewController ()
 
@@ -112,6 +111,14 @@
     cell.profileImage.image = [newViewModel getImage];;
     cell.favoriteImage.tag = index;
     cell.favoriteImage.image = [newViewModel favoriteImage];
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    // Get the new view controller using [segue destinationViewController].
+    // Pass the selected object to the new view controller.
+    if([segue.identifier isEqualToString:@"postShow"]){
+        ((PostViewController *)[segue destinationViewController]).nModel = ((NewModel *)sender);
+    }
 }
 
 @end
