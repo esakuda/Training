@@ -43,4 +43,17 @@
     }
 }
 
+- (void)showNew:(NewModel*)nModel{
+    self.nToShow = nModel;
+    [self performSegueWithIdentifier:@"postShow" sender:self];
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    if([segue.identifier isEqualToString:@"embedNewsTable"]){
+        ((NewsTableViewController *)[segue destinationViewController]).delegate = self;
+    } else if([segue.identifier isEqualToString:@"postShow"]){
+        [((PostViewController *)[segue destinationViewController])defineViewModel:[[NewViewModel alloc]initWithModel:self.nToShow]];
+    }
+}
+
 @end

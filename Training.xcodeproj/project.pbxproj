@@ -309,6 +309,7 @@
 				F4B68FAC1AB07C2A00F7ABEF /* NewsViewModel.m */,
 				F49232A21AA902C800D58135 /* NewViewModel.h */,
 				F49232A31AA902C800D58135 /* NewViewModel.m */,
+
 			);
 			name = ViewModel;
 			sourceTree = "<group>";
@@ -397,6 +398,7 @@
 				F4F855461AA8FABC005ADAA3 /* PostViewController.m */,
 				F4A454391AA65C0900116B07 /* NewsTableViewController.h */,
 				F4A4543A1AA65C0900116B07 /* NewsTableViewController.m */,
+				F485269A1AAA20840053A0BC /* TableDelegateProtocol.h */,
 				F4B495391A9788D6006132CB /* Images.xcassets */,
 				F4B4953B1A9788D6006132CB /* LaunchScreen.xib */,
 				F4B495291A9788D6006132CB /* Supporting Files */,

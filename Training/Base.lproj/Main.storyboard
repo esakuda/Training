@@ -525,12 +525,14 @@
                                 <rect key="frame" x="24" y="320" width="65" height="33"/>
 
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="243"/>
+                                <rect key="frame" x="0.0" y="64" width="600" height="236"/>
+
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="i-like-inactive.png" translatesAutoresizingMaskIntoConstraints="NO" id="VRZ-Fj-p5z">
-                                <rect key="frame" x="286" y="418" width="28" height="28"/>
+                                <rect key="frame" x="286" y="483" width="28" height="28"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jlk-yc-Vrr">
-                                <rect key="frame" x="24" y="263" width="65" height="33"/>
+                                <rect key="frame" x="24" y="320" width="65" height="33"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="27"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -541,15 +543,21 @@
 
                                 <rect key="frame" x="546" y="269" width="42" height="21"/>
 
+
+                                <rect key="frame" x="546" y="326" width="42" height="21"/>
+
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0HJ-d8-svJ">
 
+
                                 <rect key="frame" x="26" y="361" width="548" height="82"/>
 
                                 <rect key="frame" x="26" y="304" width="548" height="74"/>
+
+                                <rect key="frame" x="26" y="361" width="548" height="82"/>
 
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>

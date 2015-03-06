@@ -29,7 +29,6 @@
     [super viewDidLoad];
     [self chargeData];
     [self setfavoriteImageViewAspect];
-}
 
 - (void)chargeData{
     NewsViewModel *nModel = [self.viewModel getNew];
@@ -79,6 +78,12 @@
 - (void)defineViewModel:(NewViewModel *)newViewModel{
     if(self != nil)
         self.viewModel = newViewModel;
+}
+
+- (void)setfavoriteImageViewAspect{
+    UITapGestureRecognizer *singleTap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapImageDetected:)];
+    [self.favoriteImageViewr addGestureRecognizer:singleTap];
+    self.favoriteImageViewr.userInteractionEnabled = YES;
 }
 
 @end

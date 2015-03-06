@@ -11,5 +11,6 @@
 
 @interface NewsViewController : UIViewController <tableDelegate>
 
+
 @end
 
