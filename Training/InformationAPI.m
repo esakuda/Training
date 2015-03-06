@@ -102,8 +102,6 @@
     self.nId ++;
     [self.user.news addObject:n1];
     return [[ValidationAnswerModel alloc] initPass];
-}
-
-
+}       
 
 @end

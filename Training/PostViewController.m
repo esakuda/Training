@@ -11,7 +11,6 @@
 #import "NewsViewModel.h"
 #import "UIView+Toast.h"
 
-
 @interface PostViewController ()
 
 @property (weak, nonatomic) IBOutlet UIImageView *headerImageView;
@@ -41,6 +40,7 @@
     self.favoriteImageViewr.image = [nModel favoriteImage];
 }
 
+
 - (void)tapImageDetected:(UIGestureRecognizer *)sender{
     [self.viewModel favoriteStateChangeSuccess:^(BOOL favorite){    if(favorite){
                                                                         ((UIImageView *)[sender view]).image = [UIImage imageNamed:@"i-like-active.png"];
@@ -62,6 +62,5 @@
     UITapGestureRecognizer *singleTap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapImageDetected:)];
     [self.favoriteImageViewr addGestureRecognizer:singleTap];
     self.favoriteImageViewr.userInteractionEnabled = YES;
-}
 
 @end
