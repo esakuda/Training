@@ -87,6 +87,4 @@
     self.user = user;
 }
 
-
-
 @end

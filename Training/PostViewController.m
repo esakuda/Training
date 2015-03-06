@@ -63,4 +63,22 @@
     self.favoriteImageViewr.userInteractionEnabled = YES;
 }
 
+- (void)tapImageDetected:(UIGestureRecognizer *)sender{
+    NSLog(@"tap");
+    [self.viewModel favoriteStateChangeSuccess:^(BOOL favorite){    if(favorite){
+                                                                        ((UIImageView *)[sender view]).image = [UIImage imageNamed:@"i-like-active.png"];
+                                                                    } else {
+                                                                        ((UIImageView *)[sender view]).image = [UIImage imageNamed:@"i-like-inactive.png"];
+                                                                    }
+                                                                }
+                                     failBlock:^{
+                                            [self.view makeToast:@"No hay conección disponible"];
+                                        }];
+}
+
+- (void)defineViewModel:(NewViewModel *)newViewModel{
+    if(self != nil)
+        self.viewModel = newViewModel;
+}
+
 @end

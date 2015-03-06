@@ -13,7 +13,6 @@
 
 +(InformationAPI*)getData;
 
-
 - (void)addUser:(NSString*)email addPassword:(NSString*)password;
 - (void)logout;
 - (BOOL)isAvaiableEmail:(NSString *)email;
