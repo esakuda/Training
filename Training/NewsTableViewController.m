@@ -39,7 +39,6 @@
     return self.count;
 }
 
-
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     NewTableViewCell *cell = (NewTableViewCell *)[tableView dequeueReusableCellWithIdentifier:@"newsCell"];
     
@@ -80,10 +79,7 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     [tableView deselectRowAtIndexPath:indexPath animated:NO];
-<<<<<<< HEAD
-=======
-    [self performSegueWithIdentifier:@"postShow" sender:[self.viewModel objectAtIndex:indexPath.row]];
->>>>>>> conexión entre la tabla y el post
+    [self.delegate showNew:[self.viewModel objectAtIndex:indexPath.row]];
 }
 
 - (void)reloadTable:(NSNotification *)notification {
@@ -115,14 +111,6 @@
     cell.profileImage.image = [newViewModel getImage];;
     cell.favoriteImage.tag = index;
     cell.favoriteImage.image = [newViewModel favoriteImage];
-}
-
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-    if([segue.identifier isEqualToString:@"postShow"]){
-        [((PostViewController *)[segue destinationViewController])defineViewModel:[[NewViewModel alloc]initWithModel:((NewModel *)sender)]];
-    }
 }
 
 @end

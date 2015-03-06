@@ -7,7 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "TableDelegateProtocol.h"
 
 @interface NewsTableViewController : UITableViewController
 
+@property id<tableDelegate> delegate;
+
 @end
+
+
+

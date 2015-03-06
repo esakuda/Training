@@ -27,15 +27,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self chargeData];
-    
-    UITapGestureRecognizer *singleTap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapImageDetected:)];
-    [self.favoriteImageViewr addGestureRecognizer:singleTap];
-    self.favoriteImageViewr.userInteractionEnabled = YES;
-}
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    [self setfavoriteImageViewAspect];
 }
 
 - (void)chargeData{
@@ -65,6 +57,12 @@
 - (void)defineViewModel:(NewViewModel *)newViewModel{
     if(self != nil)
         self.viewModel = newViewModel;
+}
+
+- (void)setfavoriteImageViewAspect{
+    UITapGestureRecognizer *singleTap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapImageDetected:)];
+    [self.favoriteImageViewr addGestureRecognizer:singleTap];
+    self.favoriteImageViewr.userInteractionEnabled = YES;
 }
 
 @end

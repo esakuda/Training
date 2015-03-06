@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "TableDelegateProtocol.h"
 
-@interface NewsViewController : UIViewController
+@interface NewsViewController : UIViewController <tableDelegate>
 
 
 @end

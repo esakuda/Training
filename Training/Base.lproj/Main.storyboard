@@ -61,11 +61,12 @@
                     <navigationItem key="navigationItem" id="Fee-3A-AwI"/>
                     <connections>
                         <outlet property="addButton" destination="caO-uW-X2S" id="iDd-n1-WmI"/>
+                        <segue destination="uBb-Dd-PZ8" kind="show" identifier="postShow" id="vz7-dy-4Jv"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3249" y="-463"/>
+            <point key="canvasLocation" x="3134" y="-463"/>
         </scene>
         <!--Profile View Controller-->
         <scene sceneID="wg7-f3-ORb">
@@ -160,7 +161,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2472" y="1158"/>
+            <point key="canvasLocation" x="2438" y="1138"/>
         </scene>
         <!--Login View Controller-->
         <scene sceneID="kfd-MC-cod">
@@ -277,7 +278,7 @@
                         <outlet property="signUpButton" destination="FqP-hl-PMi" id="37G-yB-r2n"/>
                         <outlet property="termsAndConditionsButton" destination="Trg-rI-Mfu" id="LKq-cu-oGf"/>
                         <outlet property="termsAndConditionsLabel" destination="dHa-Pu-JQs" id="RMY-aX-diB"/>
-                        <segue destination="49e-Tb-3d3" kind="show" identifier="tabBarSegue" id="gXy-Nw-leq"/>
+                        <segue destination="49e-Tb-3d3" kind="presentation" identifier="tabBarSegue" id="gXy-Nw-leq"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZdT-K2-TeP" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -378,7 +379,7 @@
                         <outlet property="emailField" destination="grz-mq-84z" id="uCD-Sn-fT0"/>
                         <outlet property="passwordField" destination="3Pi-lb-kqp" id="GcR-eB-Aap"/>
                         <outlet property="termsAndConditionsButton" destination="LwL-IP-TRb" id="nWN-67-une"/>
-                        <segue destination="49e-Tb-3d3" kind="show" identifier="tabBarSegue" id="lrh-dF-NuD"/>
+                        <segue destination="49e-Tb-3d3" kind="presentation" identifier="tabBarSegue" id="lrh-dF-NuD"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="E7o-XL-cl8" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -402,7 +403,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1798" y="271"/>
+            <point key="canvasLocation" x="1721" y="272"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="UNa-93-FmC">
@@ -420,7 +421,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LXl-aW-dek" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="155" y="0.0"/>
+            <point key="canvasLocation" x="179" y="0.0"/>
         </scene>
         <!--News Table View Controller-->
         <scene sceneID="eCF-Ra-Uu8">
@@ -496,13 +497,10 @@
                             <outlet property="delegate" destination="fIP-Ts-Trm" id="ldI-2X-Uc2"/>
                         </connections>
                     </tableView>
-                    <connections>
-                        <segue destination="uBb-Dd-PZ8" kind="show" identifier="postShow" id="hvN-ma-GFN"/>
-                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Oht-Te-uon" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3249" y="262"/>
+            <point key="canvasLocation" x="3134" y="204"/>
         </scene>
         <!--Post View Controller-->
         <scene sceneID="WGh-uU-0na">
@@ -513,29 +511,29 @@
                         <viewControllerLayoutGuide type="bottom" id="QNI-Os-Zc6"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8pc-hB-hAd">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="486"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="7c8-wp-fmU">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="243"/>
+                                <rect key="frame" x="0.0" y="64" width="600" height="236"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="i-like-inactive.png" translatesAutoresizingMaskIntoConstraints="NO" id="VRZ-Fj-p5z">
-                                <rect key="frame" x="286" y="418" width="28" height="28"/>
+                                <rect key="frame" x="286" y="483" width="28" height="28"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jlk-yc-Vrr">
-                                <rect key="frame" x="24" y="263" width="65" height="33"/>
+                                <rect key="frame" x="24" y="320" width="65" height="33"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="27"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hNv-zP-Lsc">
-                                <rect key="frame" x="546" y="269" width="42" height="21"/>
+                                <rect key="frame" x="546" y="326" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0HJ-d8-svJ">
-                                <rect key="frame" x="26" y="304" width="548" height="74"/>
+                                <rect key="frame" x="26" y="361" width="548" height="82"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -570,7 +568,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5y7-3B-und" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3249" y="948"/>
+            <point key="canvasLocation" x="3808" y="-463"/>
         </scene>
         <!--Profile-->
         <scene sceneID="PHg-MA-1qd">
@@ -589,7 +587,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Hth-b8-8HO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2472" y="362"/>
+            <point key="canvasLocation" x="2438" y="418"/>
         </scene>
         <!--News-->
         <scene sceneID="BFY-mL-p4P">
@@ -608,7 +606,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QxP-mI-pfQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2437" y="-463"/>
+            <point key="canvasLocation" x="2424" y="-463"/>
         </scene>
     </scenes>
     <resources>
