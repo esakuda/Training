@@ -18,6 +18,7 @@
         self.favorite = NO;
         self.data = newsData[@"text"];
         self.image = [UIImage imageNamed:newsData[@"image"]];
+        self.newId = [(NSNumber *)newsData[@"newId"] longValue];
     }
     return self;
 }

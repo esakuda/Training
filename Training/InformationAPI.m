@@ -12,6 +12,7 @@
 @interface InformationAPI()
 
 @property NSMutableDictionary *userData;
+@property UserModel *user;
 
 @end
 
@@ -24,6 +25,7 @@
     dispatch_once(&oncePredicate, ^{
          _sharedInstance = [[InformationAPI alloc] init];
         [_sharedInstance initializeData];
+        [_sharedInstance initializeUser];
     });
     return _sharedInstance;
 }
@@ -57,21 +59,31 @@
 }
 
 - (UserModel *)getUser{
+    return self.user;
+}
+
+- (void)favoriteStateChangeIndex:(unsigned long)index success:(void(^)(BOOL))successBlock fail:(void(^)(void))failBlock{
+    BOOL favorite = [[self.user.news objectAtIndex:index] favoriteStateChange];
+    NSLog(@"api");
+    successBlock(favorite);
+}
+
+- (void)initializeUser{
     NSMutableArray *news = [[NSMutableArray alloc] init];
-    NewModel *n1 = [[NewModel alloc] initWithArray:@{
-                                                     @"authorName":@"Sakura",
-                                                     @"time": [NSDate dateWithTimeInterval:10000 sinceDate:[NSDate date]],
-                                                     @"text":@"Probando Noticias",
-                                                     @"image":@"sakura.jpg"
-                                                     }];
-    for(int i = 0; i < 10 ; i++){
+    
+    for(unsigned long i = 0; i < 10 ; i++){
+        NewModel *n1 = [[NewModel alloc] initWithArray:@{
+                                                         @"authorName":@"Sakura",
+                                                         @"time": [NSDate dateWithTimeInterval:10000 sinceDate:[NSDate date]],
+                                                         @"text":[NSString stringWithFormat:@"%ld Mensaje de prueba", (unsigned long)i],
+                                                         @"image":@"sakura.jpg",
+                                                         @"newId":[NSNumber numberWithLong:i]
+                                                         }];
         [news addObject:n1];
     }
     UserModel *user = [[UserModel alloc] init];
     [user name:@"Mario Trusso" location:@"Milano, Italy" description:@"prueba" profileImage:@"images.jpeg" headerImage:@"fondo.jpg" news:news];
-    return user;
+    self.user = user;
 }
-
-
 
 @end

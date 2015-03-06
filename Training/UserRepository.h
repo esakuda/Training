@@ -14,5 +14,6 @@
 - (void)chekCredentials:(NSString *)email password:(NSString *)password successBlock:(void(^)(void))successBlock failBlock:(void(^)(NSString *))failBlock;
 - (void)addUser:(NSString *)email password:(NSString *)password successBlock:(void(^)(void))successBlock failBlock: (void(^)(NSString *))failBlock;
 - (void)getUserDataSuccess:(void(^)(UserModel *))success failBlock:(void(^)(NSString *))failBlock;
+- (void)favoriteStateChange:(unsigned long)newId success:(void(^)(BOOL))successBlock fail:(void(^)(void))failBlock;
 
 @end

@@ -13,10 +13,13 @@
 
 +(InformationAPI*)getData;
 
--(void)addUser:(NSString*)email addPassword:(NSString*)password;
--(void)logout;
--(BOOL)isAvaiableEmail:(NSString *)email;
--(BOOL)chekCredentials:(NSString *)email password:(NSString *)password;
--(UserModel *)getUser;
+
+- (void)addUser:(NSString*)email addPassword:(NSString*)password;
+- (void)logout;
+- (BOOL)isAvaiableEmail:(NSString *)email;
+- (BOOL)chekCredentials:(NSString *)email password:(NSString *)password;
+- (UserModel *)getUser;
+- (void)favoriteStateChangeIndex:(unsigned long)index success:(void(^)(BOOL))successBlock fail:(void(^)(void))failBlock;
+
 
 @end

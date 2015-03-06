@@ -33,4 +33,9 @@
     success([[InformationAPI getData] getUser]);
 }
 
+- (void)favoriteStateChange:(unsigned long)index success:(void(^)(BOOL))successBlock fail:(void(^)(void))failBlock{
+    NSLog(@"Repo");
+    [[InformationAPI getData] favoriteStateChangeIndex:index success:successBlock fail:failBlock];
+}
+
 @end

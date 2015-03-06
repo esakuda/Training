@@ -16,6 +16,7 @@
 @property NSDate *time;
 @property UIImage *image;
 @property BOOL favorite;
+@property unsigned long newId;
 
 - (NewModel *)initWithArray:(NSDictionary *)newsData;
 

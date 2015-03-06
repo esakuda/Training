@@ -7,10 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "NewModel.h"
+#import "NewViewModel.h"
 
 @interface PostViewController : UIViewController
 
-@property NewModel *nModel;
+- (void)defineViewModel:(NewViewModel *)newViewModel;
 
 @end
