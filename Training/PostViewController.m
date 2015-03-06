@@ -62,5 +62,7 @@
     UITapGestureRecognizer *singleTap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapImageDetected:)];
     [self.favoriteImageViewr addGestureRecognizer:singleTap];
     self.favoriteImageViewr.userInteractionEnabled = YES;
+}
+
 
 @end

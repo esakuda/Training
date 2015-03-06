@@ -9,6 +9,7 @@
 
 #ifndef Training_TableDelegateProtocol_h
 #define Training_TableDelegateProtocol_h
+
 #include "NewsViewModel.h"
 
 @protocol tableDelegate <NSObject>
