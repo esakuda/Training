@@ -1,5 +1,5 @@
 //
-//  ProfileViewController.h
+//  NewsViewController.h
 //  Training
 //
 //  Created by María Eugenia Sakuda on 2/20/15.
@@ -8,7 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ProfileViewController : UIViewController <UIGestureRecognizerDelegate>
+@interface NewsViewController : UIViewController
 
 
 @end
+

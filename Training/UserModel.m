@@ -10,17 +10,18 @@
 
 @implementation UserModel
 
-- (UserModel *)initWithDictionary:(NSDictionary *)userDictionary{
-    self = [super init];
-    if(self != nil){
-        self.name = userDictionary[@"name"];
-        self.location = userDictionary[@"location"];
-        self.profileDescription = userDictionary[@"description"];
-        self.profileImage = [UIImage imageNamed:userDictionary[@"profileImage"]];
-        self.news = [[NSMutableArray alloc] init];
-        self.headerImage = [UIImage imageNamed:userDictionary[@"headerImage"]];
-    }
-    return self;
+- (void)name:(NSString *)name location:(NSString *)location description:(NSString *)description profileImage:(NSString *)profileImage headerImage:(NSString *)headerImage{
+    self.name = name;
+    self.location = location;
+    self.profileDescription = description;
+    self.profileImage = [UIImage imageNamed:profileImage];
+    self.news = [[NSMutableArray alloc] init];
+    self.headerImage = [UIImage imageNamed:headerImage];
+}
+
+- (void)name:(NSString *)name location:(NSString *)location description:(NSString *)description profileImage:(NSString *)profileImage headerImage:(NSString *)headerImage news:(NSMutableArray *)news{
+    [self name:name location:location description:description profileImage:profileImage headerImage:headerImage];
+    self.news = news;
 }
 
 @end

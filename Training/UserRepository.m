@@ -29,7 +29,7 @@
     }
 }
 
-- (void)getProfileDataSuccess:(void(^)(UserModel *))success failBlock:(void(^)(NSString *))failBlock{
+- (void)getUserDataSuccess:(void(^)(UserModel *))success failBlock:(void(^)(NSString *))failBlock{
     success([[InformationAPI getData] getUser]);
 }
 

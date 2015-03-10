@@ -7,6 +7,7 @@
 //
 
 #import "InformationAPI.h"
+#import "NewModel.h"
 
 @interface InformationAPI()
 
@@ -56,13 +57,18 @@
 }
 
 - (UserModel *)getUser{
-    UserModel *user = [[UserModel alloc] initWithDictionary:@{
-                                                              @"name":@"Mario Trusso",
-                                                              @"location":@"Milano, Italy",
-                                                              @"description":@"prueba",
-                                                              @"profileImage":@"images.jpeg",
-                                                              @"headerImage":@"fondo.jpg"
-                                                            }];
+    NSMutableArray *news = [[NSMutableArray alloc] init];
+    NewModel *n1 = [[NewModel alloc] initWithArray:@{
+                                                     @"authorName":@"Sakura",
+                                                     @"time": [NSDate dateWithTimeInterval:10000 sinceDate:[NSDate date]],
+                                                     @"text":@"Probando Noticias",
+                                                     @"image":@"sakura.jpg"
+                                                     }];
+    for(int i = 0; i < 10 ; i++){
+        [news addObject:n1];
+    }
+    UserModel *user = [[UserModel alloc] init];
+    [user name:@"Mario Trusso" location:@"Milano, Italy" description:@"prueba" profileImage:@"images.jpeg" headerImage:@"fondo.jpg" news:news];
     return user;
 }
 

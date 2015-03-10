@@ -18,6 +18,8 @@
 @property  UIImage *profileImage;
 @property  UIImage *headerImage;
 
-- (UserModel *)initWithDictionary:(NSDictionary *)userDictionary;
+- (void)name:(NSString *)name location:(NSString *)location description:(NSString *)description profileImage:(NSString *)profileImage headerImage:(NSString *)headerImage;
+
+- (void)name:(NSString *)name location:(NSString *)location description:(NSString *)description profileImage:(NSString *)profileImage headerImage:(NSString *)headerImage news:(NSMutableArray *)news;
 
 @end
