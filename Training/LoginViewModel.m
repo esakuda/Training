@@ -17,7 +17,7 @@
 
 @implementation LoginViewModel
 
--(LoginViewModel*)init{
+- (LoginViewModel*)init{
     self = [super init];
     if(self != nil)
         self.repository = [[UserRepository alloc] init];
