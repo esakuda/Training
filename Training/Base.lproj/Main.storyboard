@@ -614,6 +614,7 @@
                     </view>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" title="Creat a new" id="sW7-fD-Mjx">
+
                         <barButtonItem key="rightBarButtonItem" image="top-bar-add.png" id="fLK-6t-5UG">
                             <connections>
                                 <action selector="createNew:" destination="Bak-eG-dsL" id="yKC-KG-TmD"/>
