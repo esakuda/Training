@@ -80,9 +80,9 @@
 
 //¿Está bien  que la validación vaya tan abajo?
 -(void)validateLogin{
-    LoginViewController * __weak weakSelf = self;
-    if([self.viewModel isLogged])
-        [weakSelf performSegueWithIdentifier:@"tabBarSegue" sender:self];
+    if([self.viewModel isLogged]){
+        [self performSegueWithIdentifier:@"tabBarSegue" sender:self];
+    }
 }
 
 @end
