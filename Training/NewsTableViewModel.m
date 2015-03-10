@@ -49,7 +49,9 @@
 }
 
 - (BOOL)favoriteStateChange:(unsigned long)index{
-    return [[self.news objectAtIndex:index] favoriteStateChange];
+    NewModel *new = [self.news objectAtIndex:index];
+    [new favoriteStateChange: !new.favorite];
+    return new.favorite;
 }
 
 - (NSString *)getAuthorNameIndex:(unsigned long)index{

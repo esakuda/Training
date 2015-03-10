@@ -18,6 +18,6 @@
 @property BOOL favorite;
 
 - (NewModel *)initWithArray:(NSDictionary *)newsData;
-- (BOOL)favoriteStateChange;
+- (void)favoriteStateChange:(BOOL)state;
 
 @end
