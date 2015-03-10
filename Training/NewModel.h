@@ -19,6 +19,5 @@
 
 - (NewModel *)initWithArray:(NSDictionary *)newsData;
 - (BOOL)favoriteStateChange;
-- (NSString*)timeToString;
 
 @end

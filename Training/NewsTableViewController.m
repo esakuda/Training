@@ -11,6 +11,7 @@
 #import "NewTableViewCell.h"
 #import "NewModel.h"
 #import "UIView+Toast.h"
+#import "NSDate+TimeAgo.h"
 
 @interface NewsTableViewController ()
 
@@ -112,7 +113,7 @@
     NewModel *new = [self.viewModel objectAtIndex:index];
     cell.nameTextField.text = new.authorName;
     cell.descriptionLabel.text = new.data;
-    cell.timeLabel.text = [new timeToString];
+    cell.timeLabel.text = new.time.timeAgoSimple;
     cell.profileImage.image = new.image;
     cell.favoriteImage.tag = index;
     

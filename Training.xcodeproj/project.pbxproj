@@ -349,20 +349,8 @@
 				F4AA7BF21A9E1C7E0022D8E9 /* Imagenes prueba */,
 				F4B4952D1A9788D6006132CB /* AppDelegate.h */,
 				F4B4952E1A9788D6006132CB /* AppDelegate.m */,
-				F4B495301A9788D6006132CB /* NewsViewController.h */,
-				F4B495311A9788D6006132CB /* NewsViewController.m */,
 				F4B495361A9788D6006132CB /* Main.storyboard */,
 				F485B9D31AA0E3360051A197 /* Localizable.strings */,
-				F4EEA9B21A9BB22A004F8BC8 /* SignUpViewController.h */,
-				F4EEA9B31A9BB22A004F8BC8 /* SignUpViewController.m */,
-				F4A44EF41AAF8ED9003FA286 /* ProfileViewController.h */,
-				F4A44EF51AAF8ED9003FA286 /* ProfileViewController.m */,
-				F492E73A1A9CAFAC0084029F /* FormInputViewController.h */,
-				F492E73B1A9CAFAC0084029F /* FormInputViewController.m */,
-				F4A801E41A9B6A840093D0CD /* LoginViewController.h */,
-				F4A801E51A9B6A840093D0CD /* LoginViewController.m */,
-				F4A454391AA65C0900116B07 /* NewsTableViewController.h */,
-				F4A4543A1AA65C0900116B07 /* NewsTableViewController.m */,
 				F4B495391A9788D6006132CB /* Images.xcassets */,
 				F4B4953B1A9788D6006132CB /* LaunchScreen.xib */,
 				F4B495291A9788D6006132CB /* Supporting Files */,
@@ -399,6 +387,18 @@
 		F4E934AF1AA75AC50022F985 /* Controler */ = {
 			isa = PBXGroup;
 			children = (
+				F4B495301A9788D6006132CB /* NewsViewController.h */,
+				F4B495311A9788D6006132CB /* NewsViewController.m */,
+				F4EEA9B21A9BB22A004F8BC8 /* SignUpViewController.h */,
+				F4EEA9B31A9BB22A004F8BC8 /* SignUpViewController.m */,
+				F4A44EF41AAF8ED9003FA286 /* ProfileViewController.h */,
+				F4A44EF51AAF8ED9003FA286 /* ProfileViewController.m */,
+				F492E73A1A9CAFAC0084029F /* FormInputViewController.h */,
+				F492E73B1A9CAFAC0084029F /* FormInputViewController.m */,
+				F4A801E41A9B6A840093D0CD /* LoginViewController.h */,
+				F4A801E51A9B6A840093D0CD /* LoginViewController.m */,
+				F4A454391AA65C0900116B07 /* NewsTableViewController.h */,
+				F4A4543A1AA65C0900116B07 /* NewsTableViewController.m */,
 			);
 			name = Controler;
 			sourceTree = "<group>";
