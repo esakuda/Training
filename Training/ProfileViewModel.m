@@ -26,9 +26,9 @@
 }
 
 -(void)getProfileDataSuccessBlock:(void(^)(NSString*, NSString*, NSString*, UIImage *, UIImage *))success failBlock:(void(^)(NSString*))failBlock{
-    void(^successBlock)(UserModel*) = ^(UserModel *userModel){
-        success(userModel.name, userModel.location, userModel.profileDescription, userModel.profileImage, userModel.headerImage);};
-    [self.repository getProfileDataSuccess:successBlock failBlock:failBlock];
+    [self.repository getProfileDataSuccess:^(UserModel *userModel){
+                                                success(userModel.name, userModel.location, userModel.profileDescription, userModel.profileImage, userModel.headerImage);}
+                                 failBlock:failBlock];
 }
 
 @end

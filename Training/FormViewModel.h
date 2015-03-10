@@ -9,5 +9,7 @@
 #import <Foundation/Foundation.h>
 
 @interface FormViewModel : NSObject
+
 - (BOOL)isValidEmail:(NSString *)email;
+
 @end
