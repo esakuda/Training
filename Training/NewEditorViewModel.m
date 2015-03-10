@@ -28,7 +28,7 @@
 - (ValidationAnswerModel *)checkInformationTitle:(NSString *)title data:(NSString *)data{
     //Debería devolver la clase de respuescta que está en otra branch. Hay que esperar el pull request.
     //Falta ver que no ingrese sólo espacios con alguna expresión regular.
-    if([self validateString:title] || [self validateString:data]){
+    if(![self validateString:title] || ![self validateString:data]){
         NSLog(@"String vacío. No valido");
         return [[ValidationAnswerModel alloc] initWithErrorMsg:@"Todos los campos son requeridos"];
     }
@@ -47,6 +47,7 @@
 
 - (BOOL)validateString:(NSString *)str{
     if(str.length == 0){
+        NSLog(str);
         NSLog(@"string vacío");
         return NO;
     }
@@ -60,11 +61,11 @@
     NSRange textRange = NSMakeRange(0, str.length);
     NSRange matchRange = [regex rangeOfFirstMatchInString:str options:NSMatchingReportProgress range:textRange];
     
-    BOOL didValidate = NO;
+    BOOL didValidate = YES;
     
     // Did we find a matching range
     if (matchRange.location != NSNotFound){
-        didValidate = YES;
+        didValidate = NO;
         NSLog(@"No matchea, espacios");
     }
     

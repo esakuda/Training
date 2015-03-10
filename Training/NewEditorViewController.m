@@ -30,8 +30,9 @@
 }
 
 - (IBAction)createNew:(id)sender {
-    NSLog(@"entre");
-    ValidationAnswerModel *ans = [self.viewModel checkInformationTitle:self.titleTextField.text data:self.dataTextView.text];
+    NSString *data = [NSString stringWithFormat:@"%@", self.dataTextView.text];
+    NSLog(data);
+    ValidationAnswerModel *ans = [self.viewModel checkInformationTitle:self.titleTextField.text data:data];
     if(ans.pass){
         NSLog(@"valido??");
         [self.viewModel createNewWithArray:@{@"title":self.titleTextField.text,

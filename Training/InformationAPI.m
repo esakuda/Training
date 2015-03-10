@@ -97,7 +97,7 @@
                                                      @"authorName":self.user.name,
                                                      @"time":[NSDate date],
                                                      @"text":nArray[@"data"],
-                                                     @"image":nArray[@"imageNew"],
+                                                     //@"image":nArray[@"imageNew"],
                                                      @"title":nArray[@"title"],
                                                      @"newId":[NSNumber numberWithLong:self.nId]
                                                      }];
