@@ -11,10 +11,6 @@
 
 @implementation UserRepository
 
--(void)getUserData{
-    
-}
-
 //En la vida real debería ser asincrónico
 - (void)chekCredentials:(NSString *)email password:(NSString *)password successBlock:(void(^)(void))successBlock failBlock:(void(^)(NSString *))failBlock{
     if([[InformationAPI getData] chekCredentials:email password:password]){
@@ -36,7 +32,5 @@
 - (void)getProfileDataSuccess:(void(^)(UserModel *))success failBlock:(void(^)(NSString *))failBlock{
     success([[InformationAPI getData] getUser]);
 }
-
-
 
 @end

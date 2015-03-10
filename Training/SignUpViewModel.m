@@ -19,8 +19,9 @@
 
 -(SignUpViewModel *)init{
     self = [super init];
-    if(self != nil)
+    if(self != nil){
         self.repository = [[UserRepository alloc] init];
+    }
     return self;
 }
 

@@ -20,13 +20,8 @@
     NSRange textRange = NSMakeRange(0, email.length);
     NSRange matchRange = [regex rangeOfFirstMatchInString:email options:NSMatchingReportProgress range:textRange];
     
-    BOOL didValidate = NO;
-    
     // Did we find a matching range
-    if (matchRange.location != NSNotFound)
-        didValidate = YES;
-    
-    return didValidate;
+    return matchRange.location != NSNotFound;
 }
 
 @end
