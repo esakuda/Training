@@ -17,7 +17,9 @@
 @property UIImage *image;
 @property BOOL favorite;
 @property unsigned long newId;
+@property NSString *title;
 
 - (NewModel *)initWithArray:(NSDictionary *)newsData;
+- (NewModel *)initWithArrayTitle:(NSDictionary *)newsData;
 
 @end

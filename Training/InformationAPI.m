@@ -14,6 +14,7 @@
 
 @property NSMutableDictionary *userData;
 @property UserModel *user;
+@property long nId;
 
 @end
 
@@ -27,6 +28,7 @@
          _sharedInstance = [[InformationAPI alloc] init];
         [_sharedInstance initializeData];
         [_sharedInstance initializeUser];
+        _sharedInstance.nId = 0;
     });
     return _sharedInstance;
 }
@@ -81,10 +83,27 @@
                                                          @"newId":[NSNumber numberWithLong:i]
                                                          }];
         [news addObject:n1];
+        self.nId ++;
     }
     UserModel *user = [[UserModel alloc] init];
     [user name:@"Mario Trusso" location:@"Milano, Italy" description:@"prueba" profileImage:@"images.jpeg" headerImage:@"fondo.jpg" news:news];
     self.user = user;
+}
+
+//Preguntar bien qué se debe mostrar :/
+- (BOOL)createNewWithArray:(NSDictionary *)nArray{
+    NSLog(@"creando la noticia");
+    NewModel *n1 = [[NewModel alloc] initWithArrayTitle:@{
+                                                     @"authorName":self.user.name,
+                                                     @"time":[NSDate date],
+                                                     @"text":nArray[@"data"],
+                                                     @"image":nArray[@"imageNew"],
+                                                     @"title":nArray[@"title"],
+                                                     @"newId":[NSNumber numberWithLong:self.nId]
+                                                     }];
+    self.nId ++;
+    [self.user.news addObject:n1];
+    return YES;
 }
 
 @end

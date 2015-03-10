@@ -12,6 +12,7 @@
 #import "NewModel.h"
 #import "UIView+Toast.h"
 #import "PostViewController.h"
+#import "NewEditorViewController.h"
 
 @interface NewsTableViewController ()
 

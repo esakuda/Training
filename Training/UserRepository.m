@@ -37,4 +37,15 @@
     [[InformationAPI getData] favoriteStateChangeIndex:index success:successBlock fail:failBlock];
 }
 
+- (void)createNewWithArray:(NSDictionary *)nArray success:(void (^)(void))successBlock fail:(void (^)(NSString *))failBlock{
+    BOOL ans = [[InformationAPI getData] createNewWithArray:nArray];
+    if(ans){
+        NSLog(@"estaría llegando a ejecutar el bloque");
+        successBlock();
+    } else {
+        NSLog(@"No me ejecuto");
+        //failBlock(ans.msgError);
+    }
+}
+
 @end

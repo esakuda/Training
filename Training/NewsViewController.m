@@ -27,7 +27,7 @@
 }
 
 - (IBAction)addButton:(id)sender {
-
+    [self performSegueWithIdentifier:@"editorNewShow" sender:self];
 }
 
 - (void)showNew:(NewsViewModel*)nModel{
@@ -43,17 +43,15 @@
     }
 }
 
-- (void)showNew:(NewModel*)nModel{
-    self.nToShow = nModel;
-    [self performSegueWithIdentifier:@"postShow" sender:self];
-}
-
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    if([segue.identifier isEqualToString:@"embedNewsTable"]){
-        ((NewsTableViewController *)[segue destinationViewController]).delegate = self;
-    } else if([segue.identifier isEqualToString:@"postShow"]){
-        [((PostViewController *)[segue destinationViewController])defineViewModel:[[NewViewModel alloc]initWithModel:self.nToShow]];
-    }
+-(IBAction)unwindToTable:(UIStoryboardSegue *)segue{
+    /*
+     NewEditorViewController *source = [segue sourceViewController];
+     NewModel *new = source.new;
+     if (item != nil) {
+     [self.toDoItems addObject:item];
+     [self.tableView reloadData];
+     }*/
+    NSLog(@"volvi");
 }
 
 @end

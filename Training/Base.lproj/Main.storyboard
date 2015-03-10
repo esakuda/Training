@@ -62,11 +62,12 @@
                     <connections>
                         <outlet property="addButton" destination="caO-uW-X2S" id="iDd-n1-WmI"/>
                         <segue destination="uBb-Dd-PZ8" kind="show" identifier="postShow" id="vz7-dy-4Jv"/>
+                        <segue destination="Bak-eG-dsL" kind="show" identifier="editorNewShow" id="H1f-lI-NU3"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3134" y="-463"/>
+            <point key="canvasLocation" x="3127" y="-463"/>
         </scene>
         <!--Profile View Controller-->
         <scene sceneID="wg7-f3-ORb">
@@ -500,7 +501,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Oht-Te-uon" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3134" y="204"/>
+            <point key="canvasLocation" x="3134" y="227"/>
         </scene>
         <!--Post View Controller-->
         <scene sceneID="WGh-uU-0na">
@@ -595,6 +596,68 @@
             </objects>
             <point key="canvasLocation" x="3808" y="-463"/>
         </scene>
+        <!--New Editor View Controller-->
+        <scene sceneID="TzC-kL-R02">
+            <objects>
+                <viewController id="Bak-eG-dsL" customClass="NewEditorViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="g7h-fP-RbR"/>
+                        <viewControllerLayoutGuide type="bottom" id="hLX-hK-GS7"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="rhE-c3-dOu">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fondo.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="SDb-e2-pBY">
+                                <rect key="frame" x="24" y="81" width="552" height="219"/>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Title" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DJe-fW-7DV">
+                                <rect key="frame" x="24" y="321" width="552" height="30"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ywg-kd-Slu">
+                                <rect key="frame" x="24" y="368" width="552" height="143"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="DJe-fW-7DV" secondAttribute="trailing" constant="8" id="0XP-N6-bIi"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="SDb-e2-pBY" secondAttribute="trailing" constant="8" id="1jO-aj-5Pv"/>
+                            <constraint firstItem="Ywg-kd-Slu" firstAttribute="leading" secondItem="rhE-c3-dOu" secondAttribute="leadingMargin" constant="8" id="6S8-Nl-vzg"/>
+                            <constraint firstItem="SDb-e2-pBY" firstAttribute="top" secondItem="rhE-c3-dOu" secondAttribute="topMargin" constant="81" id="H9w-0F-EIH"/>
+                            <constraint firstItem="DJe-fW-7DV" firstAttribute="leading" secondItem="rhE-c3-dOu" secondAttribute="leadingMargin" constant="8" id="Lcy-WH-t1f"/>
+                            <constraint firstAttribute="centerY" secondItem="SDb-e2-pBY" secondAttribute="bottom" id="aUa-VZ-jor"/>
+                            <constraint firstItem="SDb-e2-pBY" firstAttribute="leading" secondItem="rhE-c3-dOu" secondAttribute="leadingMargin" constant="8" id="ijf-U1-9gG"/>
+                            <constraint firstItem="DJe-fW-7DV" firstAttribute="top" secondItem="SDb-e2-pBY" secondAttribute="bottom" constant="21" id="lH7-My-mZC"/>
+                            <constraint firstItem="Ywg-kd-Slu" firstAttribute="top" secondItem="DJe-fW-7DV" secondAttribute="bottom" constant="17" id="oED-42-7ap"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Ywg-kd-Slu" secondAttribute="trailing" constant="8" id="u9W-yf-esa"/>
+                            <constraint firstItem="hLX-hK-GS7" firstAttribute="top" secondItem="Ywg-kd-Slu" secondAttribute="bottom" constant="45" id="y9X-SW-RUg"/>
+                        </constraints>
+                    </view>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="sW7-fD-Mjx">
+                        <barButtonItem key="rightBarButtonItem" image="top-bar-add.png" id="fLK-6t-5UG">
+                            <connections>
+                                <action selector="createNew:" destination="Bak-eG-dsL" id="yKC-KG-TmD"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="dataTextView" destination="Ywg-kd-Slu" id="o5x-X5-fTd"/>
+                        <outlet property="nImageView" destination="SDb-e2-pBY" id="6dD-AO-3go"/>
+                        <outlet property="titleTextField" destination="DJe-fW-7DV" id="mFi-vN-hsH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wrA-xy-S8c" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3814" y="289"/>
+        </scene>
         <!--Profile-->
         <scene sceneID="PHg-MA-1qd">
             <objects>
@@ -643,6 +706,7 @@
         <image name="i-title.png" width="45" height="45"/>
         <image name="images.jpeg" width="200" height="200"/>
         <image name="login_logo.png" width="210" height="150"/>
+        <image name="top-bar-add.png" width="22" height="22"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="lrh-dF-NuD"/>

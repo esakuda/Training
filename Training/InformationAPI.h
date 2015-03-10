@@ -19,5 +19,6 @@
 - (BOOL)chekCredentials:(NSString *)email password:(NSString *)password;
 - (UserModel *)getUser;
 - (void)favoriteStateChangeIndex:(unsigned long)index success:(void(^)(BOOL))successBlock fail:(void(^)(void))failBlock;
+- (BOOL)createNewWithArray:(NSDictionary *)nArray;
 
 @end
