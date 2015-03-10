@@ -9,6 +9,7 @@
 #import "NewsTableViewModel.h"
 #import "UserRepository.h"
 #import "NewModel.h"
+#import "NSDate+TimeAgo.h"
 
 @interface NewsTableViewModel()
 
@@ -49,6 +50,26 @@
 
 - (BOOL)favoriteStateChange:(unsigned long)index{
     return [[self.news objectAtIndex:index] favoriteStateChange];
+}
+
+- (NSString *)getAuthorNameIndex:(unsigned long)index{
+    return ((NewModel*)[self.news objectAtIndex:index]).authorName;
+}
+
+- (NSString *)getDescriptionLabelIndex:(unsigned long)index{
+    return ((NewModel*)[self.news objectAtIndex:index]).data;
+}
+
+- (NSString *)getTimeIndex:(unsigned long)index{
+    return ((NewModel*)[self.news objectAtIndex:index]).time.timeAgoSimple;
+}
+
+- (UIImage *)getImageIndex:(unsigned long)index{
+    return ((NewModel*)[self.news objectAtIndex:index]).image;
+}
+
+- (BOOL)getFavoriteIndex:(unsigned long)index{
+    return ((NewModel*)[self.news objectAtIndex:index]).favorite;
 }
 
 @end

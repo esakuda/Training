@@ -16,5 +16,10 @@
 - (NewModel *)objectAtIndex:(unsigned long)index;
 - (void)getAllNewsSuccess:(void(^)(void))successBlock fail:(void(^)(NSString*))failBlock;
 - (BOOL)favoriteStateChange:(unsigned long)inde;
+- (NSString *)getAuthorNameIndex:(unsigned long)index;
+- (NSString *)getDescriptionLabelIndex:(unsigned long)index;
+- (NSString *)getTimeIndex:(unsigned long)index;
+- (UIImage *)getImageIndex:(unsigned long)index;
+- (BOOL)getFavoriteIndex:(unsigned long)index;
 
 @end

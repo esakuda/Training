@@ -11,7 +11,6 @@
 #import "NewTableViewCell.h"
 #import "NewModel.h"
 #import "UIView+Toast.h"
-#import "NSDate+TimeAgo.h"
 
 @interface NewsTableViewController ()
 
@@ -107,14 +106,13 @@
 }
 
 - (void)chargeCellData:(NewTableViewCell*)cell index:(unsigned long)index{
-    NewModel *new = [self.viewModel objectAtIndex:index];
-    cell.nameTextField.text = new.authorName;
-    cell.descriptionLabel.text = new.data;
-    cell.timeLabel.text = new.time.timeAgoSimple;
-    cell.profileImage.image = new.image;
+    cell.nameTextField.text = [self.viewModel getAuthorNameIndex:index];
+    cell.descriptionLabel.text = [self.viewModel getDescriptionLabelIndex:index];
+    cell.timeLabel.text = [self.viewModel getTimeIndex:index];
+    cell.profileImage.image = [self.viewModel getImageIndex:index];;
     cell.favoriteImage.tag = index;
     
-    if(new.favorite){
+    if([self.viewModel getFavoriteIndex:index]){
         cell.favoriteImage.image = [UIImage imageNamed:@"i-like-active.png"];
     }
 }
