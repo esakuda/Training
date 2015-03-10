@@ -10,10 +10,4 @@
 
 @implementation NewTableViewCell
 
-@synthesize favoriteImage = _favoriteImage;
-@synthesize descriptionLabel = _descriptionLabel;
-@synthesize nameTextField = _nameTextField;
-@synthesize profileImage = _profileImage;
-@synthesize timeLabel = _timeLabel;
-
 @end

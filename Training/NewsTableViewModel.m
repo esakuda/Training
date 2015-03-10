@@ -21,7 +21,9 @@
 
 -(NewsTableViewModel *)init{
     self = [super init];
-    self.repository = [[UserRepository alloc] init];
+    if (self != nil){
+        self.repository = [[UserRepository alloc] init];
+    }
     return self;
 }
 
@@ -36,10 +38,11 @@
 - (void)getAllNewsSuccess:(void(^)(void))successBlock fail:(void(^)(NSString*))failBlock{
     [self.repository getUserDataSuccess:^(UserModel *user){
         self.news = user.news;
-        if(self.news != nil && [self.news count])
+        if(self.news != nil && [self.news count]){
             successBlock();
-        else
+        } else {
             failBlock(@"No hay noticias para mostrar");
+        }
     }
                               failBlock:failBlock];
 }

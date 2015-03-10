@@ -31,12 +31,10 @@
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    // Return the number of sections.
     return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    // Return the number of rows in the section.
     self.count = [self.viewModel newsCount];
     return self.count;
 }
@@ -44,10 +42,6 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     NewTableViewCell *cell = (NewTableViewCell *)[tableView dequeueReusableCellWithIdentifier:@"newsCell"];
-    if (cell == nil){
-        NSArray *nib = [[NSBundle mainBundle] loadNibNamed:@"newsCell" owner:self options:nil];
-        cell = [nib objectAtIndex:0];
-    }
     
     [self chargeCellData:cell index:indexPath.row];
     
@@ -59,13 +53,17 @@
 
 - (void)getAllNewsCritical:(BOOL)critical{
     if(critical){
-        [self.viewModel getAllNewsSuccess:^{[self.refreshControl endRefreshing];}
+        [self.viewModel getAllNewsSuccess:^{
+                                            [self.refreshControl endRefreshing];
+                                            }
                                      fail:^(NSString *msg){
                                                             [self.refreshControl endRefreshing];
                                                             [self.view makeToast:msg];
                                                         }];
     } else {
-        [self.viewModel getAllNewsSuccess:^{[self.refreshControl endRefreshing];}
+        [self.viewModel getAllNewsSuccess:^{
+                                            [self.refreshControl endRefreshing];
+                                            }
                                      fail:nil];
     }
 }
@@ -85,7 +83,6 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     [tableView deselectRowAtIndexPath:indexPath animated:NO];
-    NSLog(@"Tap done");
 }
 
 - (void)reloadTable:(NSNotification *)notification {
