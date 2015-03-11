@@ -1,0 +1,81 @@
+
+/* Class = "IBUITextView"; text = "Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda."; ObjectID = "0HJ-d8-svJ"; */
+"0HJ-d8-svJ.text" = "Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.";
+
+/* Class = "IBUITextField"; placeholder = "Contraseña"; ObjectID = "3Pi-lb-kqp"; */
+"3Pi-lb-kqp.placeholder" = "Password";
+
+/* Class = "IBUINavigationItem"; title = "Sing up"; ObjectID = "AVW-Zm-yJo"; */
+"AVW-Zm-yJo.title" = "Sing up";
+
+/* Class = "IBUILabel"; text = "By joining you agree to our "; ObjectID = "AhG-Ca-Qqg"; */
+"AhG-Ca-Qqg.text" = "By joining you agree to our ";
+
+/* Class = "IBUITextField"; placeholder = "Title"; ObjectID = "DJe-fW-7DV"; */
+"DJe-fW-7DV.placeholder" = "Title";
+
+/* Class = "IBUIButton"; normalTitle = "Log in"; ObjectID = "Dhv-ZS-bwn"; */
+"Dhv-ZS-bwn.normalTitle" = "Log in";
+
+/* Class = "IBUILabel"; text = "Name"; ObjectID = "EUi-u2-8Ql"; */
+"EUi-u2-8Ql.text" = "Name";
+
+/* Class = "IBUIButton"; normalTitle = "Sign up"; ObjectID = "FqP-hl-PMi"; */
+"FqP-hl-PMi.normalTitle" = "Sign up";
+
+/* Class = "IBUILabel"; text = "Description"; ObjectID = "I9i-Es-Uhe"; */
+"I9i-Es-Uhe.text" = "Description";
+
+/* Class = "IBUILabel"; text = "Time"; ObjectID = "IhM-Wb-aHf"; */
+"IhM-Wb-aHf.text" = "Time";
+
+/* Class = "IBUILabel"; text = "Label"; ObjectID = "Jlk-yc-Vrr"; */
+"Jlk-yc-Vrr.text" = "Label";
+
+/* Class = "IBUILabel"; text = "Label"; ObjectID = "K0k-0Z-LFm"; */
+"K0k-0Z-LFm.text" = "Label";
+
+/* Class = "IBUIButton"; normalTitle = "Terms & Conditions"; ObjectID = "LwL-IP-TRb"; */
+"LwL-IP-TRb.normalTitle" = "Terms & Conditions";
+
+/* Class = "IBUITextField"; placeholder = "Confirmación de contraseña"; ObjectID = "MUl-Jd-4gi"; */
+"MUl-Jd-4gi.placeholder" = "Confirm your password";
+
+/* Class = "IBUITextField"; placeholder = "Contraseña"; ObjectID = "NTn-he-bfG"; */
+"NTn-he-bfG.placeholder" = "Password";
+
+/* Class = "IBUIButton"; normalTitle = " Terms & Conditions"; ObjectID = "Trg-rI-Mfu"; */
+"Trg-rI-Mfu.normalTitle" = " Terms & Conditions";
+
+/* Class = "IBUINavigationItem"; title = "Title"; ObjectID = "WK6-Ap-6HL"; */
+"WK6-Ap-6HL.title" = "Title";
+
+/* Class = "IBUITabBarItem"; title = "News"; ObjectID = "acW-dT-cKf"; */
+"acW-dT-cKf.title" = "News";
+
+/* Class = "IBUIButton"; normalTitle = "Join"; ObjectID = "cE1-Gq-uad"; */
+"cE1-Gq-uad.normalTitle" = "Join";
+
+/* Class = "IBUITabBarItem"; title = "Profile"; ObjectID = "cPa-gy-q4n"; */
+"cPa-gy-q4n.title" = "Profile";
+
+/* Class = "IBUIButton"; normalTitle = "+"; ObjectID = "caO-uW-X2S"; */
+"caO-uW-X2S.normalTitle" = "+";
+
+/* Class = "IBUILabel"; text = "By joining you agree to our "; ObjectID = "dHa-Pu-JQs"; */
+"dHa-Pu-JQs.text" = "By joining you agree to our ";
+
+/* Class = "IBUITextField"; placeholder = "Email"; ObjectID = "grz-mq-84z"; */
+"grz-mq-84z.placeholder" = "Email";
+
+/* Class = "IBUILabel"; text = "Label"; ObjectID = "h1F-1o-5bq"; */
+"h1F-1o-5bq.text" = "Label";
+
+/* Class = "IBUILabel"; text = "Label"; ObjectID = "hNv-zP-Lsc"; */
+"hNv-zP-Lsc.text" = "Label";
+
+/* Class = "IBUITextField"; placeholder = "Email"; ObjectID = "iVf-C7-7Jk"; */
+"iVf-C7-7Jk.placeholder" = "Email";
+
+/* Class = "IBUITextView"; text = "Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda."; ObjectID = "u0I-SV-8oX"; */
+"u0I-SV-8oX.text" = "Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.";

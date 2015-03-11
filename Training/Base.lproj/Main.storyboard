@@ -7,7 +7,7 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--News View Controller-->
+        <!--News-->
         <scene sceneID="hNz-n2-bh7">
             <objects>
                 <viewController id="9pv-A4-QxB" customClass="NewsViewController" sceneMemberID="viewController">
@@ -58,7 +58,7 @@
                             <constraint firstAttribute="trailingMargin" secondItem="caO-uW-X2S" secondAttribute="trailing" constant="20" id="zeT-bF-LY8"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="Fee-3A-AwI"/>
+                    <navigationItem key="navigationItem" title="News" id="Fee-3A-AwI"/>
                     <connections>
                         <outlet property="addButton" destination="caO-uW-X2S" id="iDd-n1-WmI"/>
                         <segue destination="uBb-Dd-PZ8" kind="show" identifier="postShow" id="vz7-dy-4Jv"/>
@@ -69,7 +69,8 @@
             </objects>
             <point key="canvasLocation" x="3127" y="-463"/>
         </scene>
-        <!--Profile View Controller-->
+
+        <!--Profile-->
         <scene sceneID="wg7-f3-ORb">
             <objects>
                 <viewController id="8rJ-Kc-sve" customClass="ProfileViewController" sceneMemberID="viewController">
@@ -149,7 +150,7 @@
                             <constraint firstItem="VPC-nw-PGM" firstAttribute="bottom" secondItem="K0k-0Z-LFm" secondAttribute="bottom" id="w5H-yC-tNg"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="suS-lN-KVK"/>
+                    <navigationItem key="navigationItem" title="Profile" id="suS-lN-KVK"/>
                     <connections>
                         <outlet property="editIconImageView" destination="42z-1c-d73" id="tW3-Kd-Mwk"/>
                         <outlet property="locationIconImageView" destination="VPC-nw-PGM" id="tj6-gS-L3Y"/>
@@ -517,6 +518,8 @@
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="7c8-wp-fmU">
 
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="defaultCharge.png" translatesAutoresizingMaskIntoConstraints="NO" id="7c8-wp-fmU">
+
                                 <rect key="frame" x="0.0" y="64" width="600" height="236"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="i-like-inactive.png" translatesAutoresizingMaskIntoConstraints="NO" id="VRZ-Fj-p5z">
@@ -558,10 +561,12 @@
 
                                 <rect key="frame" x="26" y="304" width="548" height="74"/>
 
+
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="text" translatesAutoresizingMaskIntoConstraints="NO" id="0HJ-d8-svJ">
+
                                 <rect key="frame" x="26" y="361" width="548" height="82"/>
 
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -596,7 +601,7 @@
             </objects>
             <point key="canvasLocation" x="3808" y="-463"/>
         </scene>
-        <!--New Editor View Controller-->
+        <!--Creat a new-->
         <scene sceneID="TzC-kL-R02">
             <objects>
                 <viewController id="Bak-eG-dsL" customClass="NewEditorViewController" sceneMemberID="viewController">
@@ -608,15 +613,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fondo.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="SDb-e2-pBY">
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="defaultCharge.png" translatesAutoresizingMaskIntoConstraints="NO" id="SDb-e2-pBY">
                                 <rect key="frame" x="24" y="81" width="552" height="219"/>
                             </imageView>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Title" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DJe-fW-7DV">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Title" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DJe-fW-7DV">
                                 <rect key="frame" x="24" y="321" width="552" height="30"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" scrollEnabled="NO" text="hola" translatesAutoresizingMaskIntoConstraints="NO" id="Ywg-kd-Slu">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" verticalHuggingPriority="249" scrollEnabled="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ywg-kd-Slu">
                                 <rect key="frame" x="24" y="368" width="552" height="143"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -639,7 +644,7 @@
                         </constraints>
                     </view>
                     <toolbarItems/>
-                    <navigationItem key="navigationItem" id="sW7-fD-Mjx">
+                    <navigationItem key="navigationItem" title="Creat a new" id="sW7-fD-Mjx">
                         <barButtonItem key="rightBarButtonItem" image="top-bar-add.png" id="fLK-6t-5UG">
                             <connections>
                                 <action selector="createNew:" destination="Bak-eG-dsL" id="yKC-KG-TmD"/>
@@ -697,6 +702,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="defaultCharge.png" width="264" height="191"/>
         <image name="fondo.jpg" width="1920" height="1280"/>
         <image name="i-like-inactive.png" width="28" height="28"/>
         <image name="i-location.png" width="10" height="15"/>

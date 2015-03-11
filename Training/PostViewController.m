@@ -27,6 +27,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.navigationItem.title = NSLocalizedString(@"Post", nil);
     [self chargeData];
     [self setfavoriteImageViewAspect];
 
@@ -71,7 +72,7 @@
                                                                     }
                                                                 }
                                      failBlock:^{
-                                            [self.view makeToast:@"No hay conección disponible"];
+                                            [self.view makeToast:NSLocalizedString(@"No hay conección disponible", nil)];
                                         }];
 }
 

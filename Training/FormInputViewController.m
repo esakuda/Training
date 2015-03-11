@@ -17,7 +17,7 @@
 }
 
 - (void)setButtonAsLabelLink: (UIButton *)button{
-    NSMutableAttributedString *titleString = [[NSMutableAttributedString alloc] initWithString:@"Terms & Conditions"];
+    NSMutableAttributedString *titleString = [[NSMutableAttributedString alloc] initWithString:NSLocalizedString(@"Terms & Conditions", nil)];
     
     // making text property to underline text-
     [titleString addAttribute:NSUnderlineStyleAttributeName value:[NSNumber numberWithInteger:NSUnderlineStyleSingle] range:NSMakeRange(0, [titleString length])];

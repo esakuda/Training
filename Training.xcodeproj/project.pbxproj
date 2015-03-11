@@ -58,7 +58,12 @@
 		F49232A41AA902C800D58135 /* NewViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F49232A31AA902C800D58135 /* NewViewModel.m */; };
 		F492E7391A9CAD890084029F /* InformationAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = F492E7381A9CAD890084029F /* InformationAPI.m */; };
 		F492E73C1A9CAFAC0084029F /* FormInputViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F492E73B1A9CAFAC0084029F /* FormInputViewController.m */; };
+
 		F4A44EF61AAF8ED9003FA286 /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4A44EF51AAF8ED9003FA286 /* ProfileViewController.m */; };
+
+		F4A44EFC1AAFA4CE003FA286 /* NewTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F4A44EFB1AAFA4CE003FA286 /* NewTableViewCell.m */; };
+
+		F4A44EF81AAF9556003FA286 /* defaultCharge.png in Resources */ = {isa = PBXBuildFile; fileRef = F4A44EF71AAF9556003FA286 /* defaultCharge.png */; };
 		F4A454211AA6230600116B07 /* UserRepository.m in Sources */ = {isa = PBXBuildFile; fileRef = F4A454201AA6230600116B07 /* UserRepository.m */; };
 		F4A454251AA624D700116B07 /* LoginViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F4A454241AA624D700116B07 /* LoginViewModel.m */; };
 		F4A454281AA624F700116B07 /* FormViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F4A454271AA624F700116B07 /* FormViewModel.m */; };
@@ -157,6 +162,8 @@
 		F4A44EF41AAF8ED9003FA286 /* ProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileViewController.h; sourceTree = "<group>"; };
 		F4A44EF51AAF8ED9003FA286 /* ProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileViewController.m; sourceTree = "<group>"; };
 		F4A44EFB1AAFA4CE003FA286 /* NewTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewTableViewCell.m; sourceTree = "<group>"; };
+		F4A44EF71AAF9556003FA286 /* defaultCharge.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = defaultCharge.png; sourceTree = "<group>"; };
+		F4A44EFA1AAF98C3003FA286 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
 		F4A4541F1AA6230600116B07 /* UserRepository.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserRepository.h; sourceTree = "<group>"; };
 		F4A454201AA6230600116B07 /* UserRepository.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserRepository.m; sourceTree = "<group>"; };
 		F4A454231AA624D700116B07 /* LoginViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewModel.h; sourceTree = "<group>"; };
@@ -355,6 +362,7 @@
 		F4AA7BF21A9E1C7E0022D8E9 /* Imagenes prueba */ = {
 			isa = PBXGroup;
 			children = (
+				F4A44EF71AAF9556003FA286 /* defaultCharge.png */,
 				F462F7EF1AA761CC0014E9D1 /* sakura.jpg */,
 				F43E1A811A9F520300EE944D /* images.jpeg */,
 				F4AA7BF51A9E1CB70022D8E9 /* fondo.jpg */,
@@ -555,6 +563,7 @@
 				F43E1A601A9F51F500EE944D /* i-description@2x.png in Resources */,
 				F43E1A5C1A9F51F500EE944D /* i-add-item@2x.png in Resources */,
 				F43E1A5E1A9F51F500EE944D /* i-clock@2x.png in Resources */,
+				F4A44EF81AAF9556003FA286 /* defaultCharge.png in Resources */,
 				F43E1A6F1A9F51F500EE944D /* i-social-t.png in Resources */,
 				F43E1A5A1A9F51F500EE944D /* header_logo@2x.png in Resources */,
 				F43E1A671A9F51F500EE944D /* i-location.png in Resources */,
@@ -709,6 +718,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				F4B495371A9788D6006132CB /* Base */,
+				F4A44EFA1AAF98C3003FA286 /* en */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";

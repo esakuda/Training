@@ -29,12 +29,12 @@
     //Debería devolver la clase de respuescta que está en otra branch. Hay que esperar el pull request.
     //Falta ver que no ingrese sólo espacios con alguna expresión regular.
     if(![self validateString:title] || ![self validateString:data]){
-        return [[ValidationAnswerModel alloc] initWithErrorMsg:@"Todos los campos son requeridos"];
+        return [[ValidationAnswerModel alloc] initWithErrorMsg:NSLocalizedString(@"Todos los campos son requeridos", nil)];
     }
     if(title.length > 60){
-        return [[ValidationAnswerModel alloc] initWithErrorMsg:@"El título puede tener hasta 60 caracteres"];;
+        return [[ValidationAnswerModel alloc] initWithErrorMsg:NSLocalizedString(@"El título puede tener hasta 60 caracteres",nil)];
     } else if(data.length > 250){
-        return [[ValidationAnswerModel alloc] initWithErrorMsg:@"La noticia puede tener hasta 250 caracteres"];;
+        return [[ValidationAnswerModel alloc] initWithErrorMsg:NSLocalizedString(@"La noticia puede tener hasta 250 caracteres", nil)];
     }
     return [[ValidationAnswerModel alloc] initPass];
 }

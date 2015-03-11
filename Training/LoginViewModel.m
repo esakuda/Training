@@ -31,7 +31,7 @@
                                                                                 successBlock();}
                                                                     failBlock:failBlock];
     } else {
-        failBlock(@"Email o contraseña incorrectas");
+        failBlock(NSLocalizedString(@"Email o contraseña incorrectas", nil));
     }
 }
 
