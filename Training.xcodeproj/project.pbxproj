@@ -478,6 +478,7 @@
 				F4B495231A9788D6006132CB /* Frameworks */,
 				F4B495241A9788D6006132CB /* Resources */,
 				AA419658934D27410AF8C69D /* Copy Pods Resources */,
+				F4334FF91AB0C6010067DB33 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -638,6 +639,19 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
 			showEnvVarsInLog = 0;
+		};
+		F4334FF91AB0C6010067DB33 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "./Fabric.framework/run a0fbd8ccd7dba491c3bcb1fdcd79a2a3c7de7947 878e5eabccaf209c56f55de8845e47d7a01026a5c8a4ed3c3cd7c081f920735f";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -801,6 +815,10 @@
 			baseConfigurationReference = 680E6CBA43A6F0A3F732FB83 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = Training/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -812,6 +830,10 @@
 			baseConfigurationReference = 9C20BB7D8E4E45D25D6B9218 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = Training/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";

@@ -1,5 +1,8 @@
 PODS:
   - EXPhotoViewer (1.1.2)
+  - Fabric/Core (1.1.3)
+  - Fabric/Crashlytics (1.1.3):
+    - Fabric/Core
   - NSDate+TimeAgo (1.0.3)
   - ObjectiveSugar (1.1.0)
   - Toast (2.4)
@@ -7,6 +10,7 @@ PODS:
 
 DEPENDENCIES:
   - EXPhotoViewer (~> 1.1.2)
+  - Fabric/Crashlytics (~> 1.1.1)
   - NSDate+TimeAgo
   - ObjectiveSugar
   - Toast (~> 2.4)
@@ -14,6 +18,7 @@ DEPENDENCIES:
 
 SPEC CHECKSUMS:
   EXPhotoViewer: 0e9d3e4fbf5918ffeeadc047ed798d54f4a2a6b1
+  Fabric: b22dd33adbacc5a75f27222e2a6395cb2b4f1d2e
   NSDate+TimeAgo: f3533e0198fab05b716368b19f8c2185d53d6f3b
   ObjectiveSugar: f48793f5902c77cfc02a4ce46d2e8ecddcad4dc2
   Toast: 6a3c2b1d70e426b26d130971c369670eac7aa9ce
