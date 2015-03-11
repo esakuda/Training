@@ -16,6 +16,5 @@
 - (long)newsCount;
 - (NewsViewModel *)objectAtIndex:(unsigned long)index;
 - (void)getAllNewsSuccess:(void(^)(void))successBlock fail:(void(^)(NSString*))failBlock;
-- (BOOL)favoriteStateChange:(unsigned long)inde;
 
 @end

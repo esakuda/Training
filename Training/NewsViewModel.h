@@ -19,5 +19,6 @@
 - (UIImage *)getImage;
 - (BOOL)getFavorite;
 - (BOOL)favoriteStateChange;
+- (UIImage *)favoriteImage;
 
 @end

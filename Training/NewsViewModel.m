@@ -46,8 +46,16 @@
 }
 
 - (BOOL)favoriteStateChange{
-    [self.nModel favoriteStateChange:!self.nModel.favorite];
+    self.nModel.favorite = !self.nModel.favorite;
     return self.nModel.favorite;
+}
+
+- (UIImage *)favoriteImage{
+    if(self.nModel.favorite){
+        return [UIImage imageNamed:@"i-like-active.png"];
+    } else {
+        return [UIImage imageNamed:@"i-like-inactive.png"];
+    }
 }
 
 @end

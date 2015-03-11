@@ -13,7 +13,7 @@
 @interface NewsTableViewModel()
 
 @property UserRepository *repository;
-@property NSMutableArray *news;
+@property NSMutableArray *newsViewModel;
 
 @end
 
@@ -28,17 +28,17 @@
 }
 
 - (long)newsCount{
-    return [self.news count];
+    return [self.newsViewModel count];
 }
 
 - (NewsViewModel *)objectAtIndex:(unsigned long)index{
-    return [self.news objectAtIndex:index];
+    return [self.newsViewModel objectAtIndex:index];
 }
 
 - (void)getAllNewsSuccess:(void(^)(void))successBlock fail:(void(^)(NSString*))failBlock{
     [self.repository getUserDataSuccess:^(UserModel *user){
         [self initNews:user.news];
-        if(self.news != nil && [self.news count]){
+        if(self.newsViewModel != nil && [self.newsViewModel count]){
             successBlock();
         } else {
             failBlock(@"No hay noticias para mostrar");
@@ -47,15 +47,10 @@
                               failBlock:failBlock];
 }
 
-- (BOOL)favoriteStateChange:(unsigned long)index{
-    NewsViewModel *new = [self.news objectAtIndex:index];
-    return[new favoriteStateChange];
-}
-
 - (void)initNews:(NSMutableArray *)news{
-    self.news = [[NSMutableArray alloc] init];
+    self.newsViewModel = [[NSMutableArray alloc] init];
     for(int i = 0; i < [news count]; i++){
-        [self.news addObject:[[NewsViewModel alloc]initWithNew:[news objectAtIndex:i]]];
+        [self.newsViewModel addObject:[[NewsViewModel alloc]initWithNew:[news objectAtIndex:i]]];
     }
 }
 

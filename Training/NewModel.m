@@ -22,8 +22,4 @@
     return self;
 }
 
-- (void)favoriteStateChange:(BOOL)state{
-    self.favorite = state;
-}
-
 @end

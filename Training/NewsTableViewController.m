@@ -72,12 +72,9 @@
 }
 
 - (void)tapImageDetected:(UIGestureRecognizer *)sender{
-    BOOL favorite = [self.viewModel favoriteStateChange:[sender view].tag];
-    if(favorite){
-        ((UIImageView *)[sender view]).image = [UIImage imageNamed:@"i-like-active.png"];
-    } else {
-        ((UIImageView *)[sender view]).image = [UIImage imageNamed:@"i-like-inactive.png"];
-    }
+    NewsViewModel *new = [self.viewModel objectAtIndex:[sender view].tag];
+    [new favoriteStateChange];
+    ((UIImageView *)[sender view]).image = [new favoriteImage];
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
@@ -106,17 +103,13 @@
 }
 
 - (void)chargeCellData:(NewTableViewCell*)cell index:(unsigned long)index{
-    NewsViewModel *new = [self.viewModel objectAtIndex:index];
-    cell.nameTextField.text = [new getAuthorName];
-    cell.descriptionLabel.text = [new getDescriptionLabel];
-    cell.timeLabel.text = [new getTime];
-    cell.profileImage.image = [new getImage];;
+    NewsViewModel *newViewModel = [self.viewModel objectAtIndex:index];
+    cell.nameTextField.text = [newViewModel getAuthorName];
+    cell.descriptionLabel.text = [newViewModel getDescriptionLabel];
+    cell.timeLabel.text = [newViewModel getTime];
+    cell.profileImage.image = [newViewModel getImage];;
     cell.favoriteImage.tag = index;
-    
-    if([new getFavorite]){
-        cell.favoriteImage.image = [UIImage imageNamed:@"i-like-active.png"];
-    } else {
-        cell.favoriteImage.image = [UIImage imageNamed:@"i-like-inactive.png"];
-    }
+    cell.favoriteImage.image = [newViewModel favoriteImage];
 }
+
 @end
