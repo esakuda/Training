@@ -73,6 +73,7 @@
 		F4B4953A1A9788D6006132CB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4B495391A9788D6006132CB /* Images.xcassets */; };
 		F4B4953D1A9788D6006132CB /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F4B4953B1A9788D6006132CB /* LaunchScreen.xib */; };
 		F4B495491A9788D6006132CB /* TrainingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F4B495481A9788D6006132CB /* TrainingTests.m */; };
+		F4B68FAD1AB07C2A00F7ABEF /* NewsViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F4B68FAC1AB07C2A00F7ABEF /* NewsViewModel.m */; };
 		F4E934AE1AA755160022F985 /* ValidationAnswerModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F4E934AD1AA755160022F985 /* ValidationAnswerModel.m */; };
 		F4EEA9B41A9BB22A004F8BC8 /* SignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4EEA9B31A9BB22A004F8BC8 /* SignUpViewController.m */; };
 /* End PBXBuildFile section */
@@ -175,6 +176,8 @@
 		F4B495421A9788D6006132CB /* TrainingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TrainingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4B495471A9788D6006132CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F4B495481A9788D6006132CB /* TrainingTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TrainingTests.m; sourceTree = "<group>"; };
+		F4B68FAB1AB07C2A00F7ABEF /* NewsViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsViewModel.h; sourceTree = "<group>"; };
+		F4B68FAC1AB07C2A00F7ABEF /* NewsViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsViewModel.m; sourceTree = "<group>"; };
 		F4E934AC1AA755160022F985 /* ValidationAnswerModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ValidationAnswerModel.h; sourceTree = "<group>"; };
 		F4E934AD1AA755160022F985 /* ValidationAnswerModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ValidationAnswerModel.m; sourceTree = "<group>"; };
 		F4EEA9B21A9BB22A004F8BC8 /* SignUpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignUpViewController.h; sourceTree = "<group>"; };
@@ -289,6 +292,8 @@
 				F4A4542D1AA6440B00116B07 /* ProfileViewModel.m */,
 				F4A4543C1AA65C6F00116B07 /* NewsTableViewModel.h */,
 				F4A4543D1AA65C6F00116B07 /* NewsTableViewModel.m */,
+				F4B68FAB1AB07C2A00F7ABEF /* NewsViewModel.h */,
+				F4B68FAC1AB07C2A00F7ABEF /* NewsViewModel.m */,
 			);
 			name = ViewModel;
 			sourceTree = "<group>";
@@ -601,6 +606,7 @@
 				F4A44EFC1AAFA4CE003FA286 /* NewTableViewCell.m in Sources */,
 				F4A4542B1AA6396B00116B07 /* SignUpViewModel.m in Sources */,
 				F4A454281AA624F700116B07 /* FormViewModel.m in Sources */,
+				F4B68FAD1AB07C2A00F7ABEF /* NewsViewModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

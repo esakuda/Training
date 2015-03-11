@@ -106,14 +106,17 @@
 }
 
 - (void)chargeCellData:(NewTableViewCell*)cell index:(unsigned long)index{
-    cell.nameTextField.text = [self.viewModel getAuthorNameIndex:index];
-    cell.descriptionLabel.text = [self.viewModel getDescriptionLabelIndex:index];
-    cell.timeLabel.text = [self.viewModel getTimeIndex:index];
-    cell.profileImage.image = [self.viewModel getImageIndex:index];;
+    NewsViewModel *new = [self.viewModel objectAtIndex:index];
+    cell.nameTextField.text = [new getAuthorName];
+    cell.descriptionLabel.text = [new getDescriptionLabel];
+    cell.timeLabel.text = [new getTime];
+    cell.profileImage.image = [new getImage];;
     cell.favoriteImage.tag = index;
     
-    if([self.viewModel getFavoriteIndex:index]){
+    if([new getFavorite]){
         cell.favoriteImage.image = [UIImage imageNamed:@"i-like-active.png"];
+    } else {
+        cell.favoriteImage.image = [UIImage imageNamed:@"i-like-inactive.png"];
     }
 }
 @end

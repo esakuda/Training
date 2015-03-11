@@ -9,7 +9,6 @@
 #import "NewsTableViewModel.h"
 #import "UserRepository.h"
 #import "NewModel.h"
-#import "NSDate+TimeAgo.h"
 
 @interface NewsTableViewModel()
 
@@ -32,13 +31,13 @@
     return [self.news count];
 }
 
-- (NewModel *)objectAtIndex:(unsigned long)index{
+- (NewsViewModel *)objectAtIndex:(unsigned long)index{
     return [self.news objectAtIndex:index];
 }
 
 - (void)getAllNewsSuccess:(void(^)(void))successBlock fail:(void(^)(NSString*))failBlock{
     [self.repository getUserDataSuccess:^(UserModel *user){
-        self.news = user.news;
+        [self initNews:user.news];
         if(self.news != nil && [self.news count]){
             successBlock();
         } else {
@@ -49,29 +48,15 @@
 }
 
 - (BOOL)favoriteStateChange:(unsigned long)index{
-    NewModel *new = [self.news objectAtIndex:index];
-    [new favoriteStateChange: !new.favorite];
-    return new.favorite;
+    NewsViewModel *new = [self.news objectAtIndex:index];
+    return[new favoriteStateChange];
 }
 
-- (NSString *)getAuthorNameIndex:(unsigned long)index{
-    return ((NewModel*)[self.news objectAtIndex:index]).authorName;
-}
-
-- (NSString *)getDescriptionLabelIndex:(unsigned long)index{
-    return ((NewModel*)[self.news objectAtIndex:index]).data;
-}
-
-- (NSString *)getTimeIndex:(unsigned long)index{
-    return ((NewModel*)[self.news objectAtIndex:index]).time.timeAgoSimple;
-}
-
-- (UIImage *)getImageIndex:(unsigned long)index{
-    return ((NewModel*)[self.news objectAtIndex:index]).image;
-}
-
-- (BOOL)getFavoriteIndex:(unsigned long)index{
-    return ((NewModel*)[self.news objectAtIndex:index]).favorite;
+- (void)initNews:(NSMutableArray *)news{
+    self.news = [[NSMutableArray alloc] init];
+    for(int i = 0; i < [news count]; i++){
+        [self.news addObject:[[NewsViewModel alloc]initWithNew:[news objectAtIndex:i]]];
+    }
 }
 
 @end
