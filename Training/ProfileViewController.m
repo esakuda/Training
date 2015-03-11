@@ -77,34 +77,6 @@
         self.profileDescriptionText.text = description;
         [self.profileHeaderImageView setImage:headerImage];
         [self.profileImageView setImage:profileImage];
-    };
-    
-    [self.viewModel getDataSuccessBlock:successBlock failBlock:nil];
-    
-}
-
-- (void)tapImageDetected:(UIGestureRecognizer *)sender{
-    
-    UIImageView *image = ((UIImageView *)[sender view]);
-    if (!isFullScreen) {
-        [self showElements:NO];
-        image.hidden = NO;
-        [UIView animateWithDuration:0.3 delay:0 options:0 animations:^{
-            //save previous frame
-            prevFrame = image.frame;
-            [image setFrame:[[UIScreen mainScreen] bounds]];
-        }completion:^(BOOL finished){
-            isFullScreen = true;
-        }];
-        return;
-    } else {
-        [UIView animateWithDuration:0.3 delay:0 options:0 animations:^{
-            [image setFrame:prevFrame];
-        }completion:^(BOOL finished){
-            isFullScreen = false;
-            [self showElements:YES];
-        }];
-        return;
     }
                                      failBlock:nil];
 }

@@ -13,6 +13,8 @@
 		F4299BAA1AB0C1A1008B0E09 /* NewEditorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4F6A2A91AAA33EC001AD01A /* NewEditorViewController.m */; };
 
 		F40864EB1AA72CB000348B67 /* NewTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F40864EA1AA72CB000348B67 /* NewTableViewCell.m */; };
+		F4299BA91AB0C033008B0E09 /* NewsTableViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F4A4543D1AA65C6F00116B07 /* NewsTableViewModel.m */; };
+		F4299BAA1AB0C1A1008B0E09 /* NewEditorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4F6A2A91AAA33EC001AD01A /* NewEditorViewController.m */; };
 		F43E1A591A9F51F500EE944D /* header_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = F43E1A311A9F51F500EE944D /* header_logo.png */; };
 		F43E1A5A1A9F51F500EE944D /* header_logo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F43E1A321A9F51F500EE944D /* header_logo@2x.png */; };
 		F43E1A5B1A9F51F500EE944D /* i-add-item.png in Resources */ = {isa = PBXBuildFile; fileRef = F43E1A331A9F51F500EE944D /* i-add-item.png */; };
@@ -62,11 +64,9 @@
 		F49232A41AA902C800D58135 /* NewViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F49232A31AA902C800D58135 /* NewViewModel.m */; };
 		F492E7391A9CAD890084029F /* InformationAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = F492E7381A9CAD890084029F /* InformationAPI.m */; };
 		F492E73C1A9CAFAC0084029F /* FormInputViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F492E73B1A9CAFAC0084029F /* FormInputViewController.m */; };
-
 		F4A44EF61AAF8ED9003FA286 /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4A44EF51AAF8ED9003FA286 /* ProfileViewController.m */; };
 
 		F4A44EFC1AAFA4CE003FA286 /* NewTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F4A44EFB1AAFA4CE003FA286 /* NewTableViewCell.m */; };
-
 		F4A44EF81AAF9556003FA286 /* defaultCharge.png in Resources */ = {isa = PBXBuildFile; fileRef = F4A44EF71AAF9556003FA286 /* defaultCharge.png */; };
 		F4A454211AA6230600116B07 /* UserRepository.m in Sources */ = {isa = PBXBuildFile; fileRef = F4A454201AA6230600116B07 /* UserRepository.m */; };
 		F4A454251AA624D700116B07 /* LoginViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F4A454241AA624D700116B07 /* LoginViewModel.m */; };
@@ -89,7 +89,6 @@
 		F4EEA9B41A9BB22A004F8BC8 /* SignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4EEA9B31A9BB22A004F8BC8 /* SignUpViewController.m */; };
 
 		F4F6A2A71AAA32F5001AD01A /* NewEditorViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F4F6A2A61AAA32F5001AD01A /* NewEditorViewModel.m */; };
-		F4F6A2AA1AAA33EC001AD01A /* NewEditorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4F6A2A91AAA33EC001AD01A /* NewEditorViewController.m */; };
 		F4F855471AA8FABC005ADAA3 /* PostViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4F855461AA8FABC005ADAA3 /* PostViewController.m */; };
 
 /* End PBXBuildFile section */
@@ -109,7 +108,6 @@
 		9C20BB7D8E4E45D25D6B9218 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		DDEC3D75D486DCC06D14CC66 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		F40864E91AA72CB000348B67 /* NewTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewTableViewCell.h; sourceTree = "<group>"; };
-
 		F40864EA1AA72CB000348B67 /* NewTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewTableViewCell.m; sourceTree = "<group>"; };
 		F43E1A311A9F51F500EE944D /* header_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = header_logo.png; sourceTree = "<group>"; };
 		F43E1A321A9F51F500EE944D /* header_logo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "header_logo@2x.png"; sourceTree = "<group>"; };
@@ -164,11 +162,14 @@
 		F492E73B1A9CAFAC0084029F /* FormInputViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FormInputViewController.m; sourceTree = "<group>"; };
 		F4A44EF41AAF8ED9003FA286 /* ProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileViewController.h; sourceTree = "<group>"; };
 		F4A44EF51AAF8ED9003FA286 /* ProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileViewController.m; sourceTree = "<group>"; };
+
 		F4A44EF71AAF9556003FA286 /* defaultCharge.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = defaultCharge.png; sourceTree = "<group>"; };
 		F4A44EFA1AAF98C3003FA286 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
 		F4A44EFB1AAFA4CE003FA286 /* NewTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewTableViewCell.m; sourceTree = "<group>"; };
+
 		F4A44EF71AAF9556003FA286 /* defaultCharge.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = defaultCharge.png; sourceTree = "<group>"; };
 		F4A44EFA1AAF98C3003FA286 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
+		F4A44EFB1AAFA4CE003FA286 /* NewTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewTableViewCell.m; sourceTree = "<group>"; };
 		F4A4541F1AA6230600116B07 /* UserRepository.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserRepository.h; sourceTree = "<group>"; };
 		F4A454201AA6230600116B07 /* UserRepository.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserRepository.m; sourceTree = "<group>"; };
 		F4A454231AA624D700116B07 /* LoginViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewModel.h; sourceTree = "<group>"; };
@@ -327,15 +328,12 @@
 				F4A4542D1AA6440B00116B07 /* ProfileViewModel.m */,
 				F4A4543C1AA65C6F00116B07 /* NewsTableViewModel.h */,
 				F4A4543D1AA65C6F00116B07 /* NewsTableViewModel.m */,
-
 				F4B68FAB1AB07C2A00F7ABEF /* NewsViewModel.h */,
 				F4B68FAC1AB07C2A00F7ABEF /* NewsViewModel.m */,
-
 				F49232A21AA902C800D58135 /* NewViewModel.h */,
 				F49232A31AA902C800D58135 /* NewViewModel.m */,
 				F4F6A2A51AAA32F5001AD01A /* NewEditorViewModel.h */,
 				F4F6A2A61AAA32F5001AD01A /* NewEditorViewModel.m */,
-
 			);
 			name = ViewModel;
 			sourceTree = "<group>";
@@ -347,24 +345,13 @@
 				F4A454401AA661E100116B07 /* NewModel.m */,
 				F4A454331AA649E800116B07 /* UserModel.h */,
 				F4A454341AA649E800116B07 /* UserModel.m */,
-
 				F4E934AC1AA755160022F985 /* ValidationAnswerModel.h */,
 				F4E934AD1AA755160022F985 /* ValidationAnswerModel.m */,
 				F4A44EFB1AAFA4CE003FA286 /* NewTableViewCell.m */,
-
 				F40864E91AA72CB000348B67 /* NewTableViewCell.h */,
 				F40864EA1AA72CB000348B67 /* NewTableViewCell.m */,
 				F47B340B1AAF775600B29011 /* ValidationAnswerModel.h */,
 				F47B340C1AAF775600B29011 /* ValidationAnswerModel.m */,
-
-
-				F40864E91AA72CB000348B67 /* NewTableViewCell.h */,
-				F40864EA1AA72CB000348B67 /* NewTableViewCell.m */,
-
-
-				F47B340B1AAF775600B29011 /* ValidationAnswerModel.h */,
-				F47B340C1AAF775600B29011 /* ValidationAnswerModel.m */,
-
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -411,16 +398,8 @@
 				F4AA7BF21A9E1C7E0022D8E9 /* Imagenes prueba */,
 				F4B4952D1A9788D6006132CB /* AppDelegate.h */,
 				F4B4952E1A9788D6006132CB /* AppDelegate.m */,
-
 				F4B495301A9788D6006132CB /* NewsViewController.h */,
 				F4B495311A9788D6006132CB /* NewsViewController.m */,
-
-
-				F4B495301A9788D6006132CB /* NewsViewController.h */,
-				F4B495311A9788D6006132CB /* NewsViewController.m */,
-				F4B495331A9788D6006132CB /* SecondViewController.h */,
-				F4B495341A9788D6006132CB /* SecondViewController.m */,
-
 				F4B495361A9788D6006132CB /* Main.storyboard */,
 				F485B9D31AA0E3360051A197 /* Localizable.strings */,
 				F4EEA9B21A9BB22A004F8BC8 /* SignUpViewController.h */,
@@ -667,22 +646,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-
-
-				F4299BAA1AB0C1A1008B0E09 /* NewEditorViewController.m in Sources */,
-
-
-				F4A4543E1AA65C6F00116B07 /* NewsTableViewModel.m in Sources */,
-
 				F4F855471AA8FABC005ADAA3 /* PostViewController.m in Sources */,
+				F4299BAA1AB0C1A1008B0E09 /* NewEditorViewController.m in Sources */,
 				F40864EB1AA72CB000348B67 /* NewTableViewCell.m in Sources */,
+
 				F4A4543E1AA65C6F00116B07 /* NewsTableViewModel.m in Sources */,
-				F4B495351A9788D6006132CB /* SecondViewController.m in Sources */,
 
 
 				F492E7391A9CAD890084029F /* InformationAPI.m in Sources */,
 				F4A44EF61AAF8ED9003FA286 /* ProfileViewController.m in Sources */,
-				F4299BA81AB0B139008B0E09 /* NewsTableViewModel.m in Sources */,
+
 				F4A454351AA649E800116B07 /* UserModel.m in Sources */,
 				F4B4952F1A9788D6006132CB /* AppDelegate.m in Sources */,
 				F4F6A2A71AAA32F5001AD01A /* NewEditorViewModel.m in Sources */,
@@ -701,7 +674,6 @@
 				F4A454251AA624D700116B07 /* LoginViewModel.m in Sources */,
 				F4A4542E1AA6440B00116B07 /* ProfileViewModel.m in Sources */,
 				F4A4542B1AA6396B00116B07 /* SignUpViewModel.m in Sources */,
-				F4F6A2AA1AAA33EC001AD01A /* NewEditorViewController.m in Sources */,
 				F4A454281AA624F700116B07 /* FormViewModel.m in Sources */,
 				F4B68FAD1AB07C2A00F7ABEF /* NewsViewModel.m in Sources */,
 			);
