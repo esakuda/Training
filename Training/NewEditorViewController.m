@@ -32,16 +32,13 @@
 
 - (IBAction)createNew:(id)sender {
     NSString *data = [NSString stringWithFormat:@"%@", self.dataTextView.text];
-    NSLog(data);
     ValidationAnswerModel *ans = [self.viewModel checkInformationTitle:self.titleTextField.text data:data];
     if(ans.pass){
-        NSLog(@"valido??");
         [self.viewModel createNewWithArray:@{@"title":self.titleTextField.text,
                                              @"data":self.dataTextView.text,
                                              @"imageNew":self.nImageView.image
                                             }
                               success:^{
-                                    NSLog(@"SUCCESS!!");
                                   dispatch_async(dispatch_get_main_queue(), ^{
                                         [self.navigationController popViewControllerAnimated:YES];
                                   });
@@ -55,8 +52,8 @@
 }
 
 -(void)setImagePicker{
-    UITapGestureRecognizer *singleTap2 = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapImageDetected:)];
-    [self.nImageView addGestureRecognizer:singleTap2];
+    UITapGestureRecognizer *singleTap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapImageDetected:)];
+    [self.nImageView addGestureRecognizer:singleTap];
     self.imgPicker = [[UIImagePickerController alloc] init];
     self.imgPicker.allowsEditing = YES;
     self.imgPicker.delegate = self;
@@ -67,9 +64,7 @@
     [self presentViewController:self.imgPicker animated:YES completion:nil];
 }
 
-- (void)imagePickerController:(UIImagePickerController *)picker
-didFinishPickingMediaWithInfo:(NSDictionary *)info {
-    //¿Tendría que serializar la imagen y pasar la imagen en lugar de una url?
+- (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info {
     self.nImageView.image = info[@"UIImagePickerControllerEditedImage"];
     [self dismissViewControllerAnimated:YES completion:nil];
 }

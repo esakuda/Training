@@ -21,7 +21,7 @@
 //Crear el singleton
 @implementation InformationAPI
 
-+(InformationAPI*)getData{
++ (InformationAPI*)getData{
     static InformationAPI *_sharedInstance = nil;
     static dispatch_once_t oncePredicate;
     dispatch_once(&oncePredicate, ^{
@@ -33,13 +33,13 @@
     return _sharedInstance;
 }
 
--(void)addUser:(NSString*)email addPassword:(NSString*)password{
+- (void)addUser:(NSString*)email addPassword:(NSString*)password{
     [self.userData setObject:password forKey:email];
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
     [defaults setObject:self.userData forKey:@"userData"];
 }
 
--(void)initializeData{
+- (void)initializeData{
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
     self.userData = [defaults objectForKey:@"userData"];
     if (self.userData == nil){
@@ -67,7 +67,6 @@
 
 - (void)favoriteStateChangeIndex:(unsigned long)index success:(void(^)(BOOL))successBlock fail:(void(^)(void))failBlock{
     NewsViewModel *newViewModel= [[NewsViewModel alloc] initWithNew:[self.user.news objectAtIndex:index]];
-    BOOL favorite = [ newViewModel favoriteStateChange];
     successBlock(favorite);
 }
 
@@ -91,8 +90,7 @@
 }
 
 //Preguntar bien qué se debe mostrar :/
-- (BOOL)createNewWithArray:(NSDictionary *)nArray{
-    NSLog(@"creando la noticia");
+- (ValidationAnswerModel *)createNewWithArray:(NSDictionary *)nArray{
     NewModel *n1 = [[NewModel alloc] initWithArrayTitle:@{
                                                      @"authorName":self.user.name,
                                                      @"time":[NSDate date],

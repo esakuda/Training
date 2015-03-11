@@ -25,7 +25,6 @@
 
 - (NewModel *)initWithArrayTitle:(NSDictionary *)newsData{
     self = [self initWithArray:newsData];
-    NSLog(@"creando");
     if(self != nil)
         self.title = newsData[@"title"];
     return self;

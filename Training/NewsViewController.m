@@ -43,15 +43,4 @@
     }
 }
 
--(IBAction)unwindToTable:(UIStoryboardSegue *)segue{
-    /*
-     NewEditorViewController *source = [segue sourceViewController];
-     NewModel *new = source.new;
-     if (item != nil) {
-     [self.toDoItems addObject:item];
-     [self.tableView reloadData];
-     }*/
-    NSLog(@"volvi");
-}
-
 @end

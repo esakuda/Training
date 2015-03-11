@@ -62,7 +62,7 @@
                                     }];
 }
 
--(void)showElements:(BOOL)show{
+- (void)showElements:(BOOL)show{
     self.signUpButton.hidden = !show;
     self.loginButton.hidden = !show;
     self.emailText.hidden = !show;

@@ -11,7 +11,5 @@
 
 @interface NewsViewController : UIViewController <tableDelegate>
 
-- (IBAction)unwindToTable:(UIStoryboardSegue *)segue;
-
 @end
 

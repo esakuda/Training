@@ -17,7 +17,7 @@
 
 @implementation SignUpViewModel
 
--(SignUpViewModel *)init{
+- (SignUpViewModel *)init{
     self = [super init];
     if(self != nil){
         self.repository = [[UserRepository alloc] init];
@@ -25,7 +25,7 @@
     return self;
 }
 
--(ValidationAnswerModel *)validateEmail:(NSString *)email password:(NSString *)password confirmPassword:(NSString *)confirmPassword{
+- (ValidationAnswerModel *)validateEmail:(NSString *)email password:(NSString *)password confirmPassword:(NSString *)confirmPassword{
     NSString *errorMsg = nil;
     if(!((email.length == 0) || (password.length == 0) || (confirmPassword.length == 0))){
         if([self isValidEmail:email]){
