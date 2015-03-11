@@ -8,6 +8,7 @@
 
 #import "UserRepository.h"
 #import "InformationAPI.h"
+#import "ValidationAnswerModel.h"
 
 @implementation UserRepository
 
@@ -38,13 +39,11 @@
 }
 
 - (void)createNewWithArray:(NSDictionary *)nArray success:(void (^)(void))successBlock fail:(void (^)(NSString *))failBlock{
-    BOOL ans = [[InformationAPI getData] createNewWithArray:nArray];
-    if(ans){
-        NSLog(@"estaría llegando a ejecutar el bloque");
+    ValidationAnswerModel* ans = [[InformationAPI getData] createNewWithArray:nArray];
+    if(ans.pass){
         successBlock();
     } else {
-        NSLog(@"No me ejecuto");
-        //failBlock(ans.msgError);
+        failBlock(ans.errorMsg);
     }
 }
 

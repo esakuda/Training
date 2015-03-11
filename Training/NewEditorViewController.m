@@ -27,6 +27,7 @@
     [super viewDidLoad];
     self.viewModel = [[NewEditorViewModel alloc] init];
     [self setImagePicker];
+    [self setStyle];
 }
 
 - (IBAction)createNew:(id)sender {
@@ -77,5 +78,9 @@ didFinishPickingMediaWithInfo:(NSDictionary *)info {
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 
+- (void)setStyle{
+    self.dataTextView.layer.borderWidth = 0.5f;
+    self.dataTextView.layer.borderColor = [[UIColor lightGrayColor] CGColor];
+}
 
 @end
