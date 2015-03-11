@@ -9,7 +9,6 @@
 #import "PostViewController.h"
 #import "NewViewModel.h"
 #import "NewsViewModel.h"
-#import "NewModel.h"
 #import "UIView+Toast.h"
 
 @interface PostViewController ()
@@ -34,33 +33,10 @@
 - (void)chargeData{
     NewsViewModel *nModel = [self.viewModel getNew];
     self.headerImageView.image = [nModel getImage];
-    self.nameLabel.text = [nModel getAuthorName];
+    self.nameLabel.text = [nModel getAuthorName ];
     self.timeLabel.text = [nModel getTime];
     self.dataTextViewer.text = [nModel getDescriptionLabel];
     self.favoriteImageViewr.image = [nModel favoriteImage];
-}
-
-- (void)tapImageDetected:(UIGestureRecognizer *)sender{
-    [self.viewModel favoriteStateChangeSuccess:^(BOOL favorite){    if(favorite){
-                                                                        ((UIImageView *)[sender view]).image = [UIImage imageNamed:@"i-like-active.png"];
-                                                                    } else {
-                                                                        ((UIImageView *)[sender view]).image = [UIImage imageNamed:@"i-like-inactive.png"];
-                                                                    }
-                                                                }
-                                     failBlock:^{
-                                            [self.view makeToast:@"No hay conección disponible"];
-                                        }];
-}
-
-- (void)defineViewModel:(NewViewModel *)newViewModel{
-    if(self != nil)
-        self.viewModel = newViewModel;
-}
-
-- (void)setfavoriteImageViewAspect{
-    UITapGestureRecognizer *singleTap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapImageDetected:)];
-    [self.favoriteImageViewr addGestureRecognizer:singleTap];
-    self.favoriteImageViewr.userInteractionEnabled = YES;
 }
 
 - (void)tapImageDetected:(UIGestureRecognizer *)sender{

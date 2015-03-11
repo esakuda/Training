@@ -7,7 +7,6 @@
 //
 
 #import "InformationAPI.h"
-#import "NewModel.h"
 #import "NewsViewModel.h"
 
 @interface InformationAPI()

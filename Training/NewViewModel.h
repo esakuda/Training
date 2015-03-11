@@ -9,7 +9,6 @@
 #import <Foundation/Foundation.h>
 #import "NewsViewModel.h"
 
-
 @interface NewViewModel : NSObject
 
 - (void)favoriteStateChangeSuccess:(void(^)(BOOL))successBlock failBlock:(void(^)(void))failBlock;

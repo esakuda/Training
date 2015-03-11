@@ -20,7 +20,6 @@
 
 @implementation NewViewModel
 
-
 - (NewViewModel*)initWithModel:(NewsViewModel*)nModel{
     self = [super init];
     if(self != nil){
