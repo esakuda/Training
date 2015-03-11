@@ -10,7 +10,7 @@
 
 @implementation ValidationAnswerModel
 
--(ValidationAnswerModel *)initWithErrorMsg:(NSString *)msg{
+- (ValidationAnswerModel *)initWithErrorMsg:(NSString *)msg{
     self = [super init];
     if(self != nil){
         self.errorMsg = msg;
@@ -19,7 +19,7 @@
     return self;
 }
 
--(ValidationAnswerModel *)initPass{
+- (ValidationAnswerModel *)initPass{
     self = [super init];
     if(self != nil){
         self.pass = YES;

@@ -10,7 +10,7 @@
 
 @implementation NewModel
 
--(NewModel *)initWithArray:(NSDictionary *)newsData{
+- (NewModel *)initWithArray:(NSDictionary *)newsData{
     self = [super init];
     if(self != nil){
         self.authorName = newsData[@"authorName"];

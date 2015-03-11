@@ -7,19 +7,20 @@
 //
 
 #import "NewViewModel.h"
+#import "NewsViewModel.h"
 #import "NewModel.h"
 #import "UserRepository.h"
 
 @interface NewViewModel ()
 
 @property UserRepository *repository;
-@property NewModel *nModel;
+@property NewsViewModel *nModel;
 
 @end
 
 @implementation NewViewModel
 
-- (NewViewModel*)initWithModel:(NewModel*)nModel{
+- (NewViewModel*)initWithModel:(NewsViewModel*)nModel{
     self = [super init];
     if(self != nil){
         self.repository = [[UserRepository alloc] init];
@@ -29,13 +30,10 @@
 }
 
 - (void)favoriteStateChangeSuccess:(void(^)(BOOL))successBlock failBlock:(void(^)(void))failBlock{
-    
-    
-    NSLog(@"view Model");
-    [self.repository favoriteStateChange:self.nModel.newId success:successBlock fail:failBlock];
+    [self.repository favoriteStateChange:[self.nModel getId] success:successBlock fail:failBlock];
 }
 
-- (NewModel*)getNew{
+- (NewsViewModel*)getNew{
     return self.nModel;
 }
 

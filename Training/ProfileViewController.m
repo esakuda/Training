@@ -29,7 +29,6 @@
     [super viewDidLoad];
     self.viewModel = [[ProfileViewModel alloc] init];
     [self setViewInformation];
-    // Do any additional setup after loading the view, typically from a nib.
 }
 
 - (void)setViewInformation{
@@ -53,10 +52,8 @@
 }
 
 -(void)setViewStyle{
-    //revisar
     self.navigationItem.hidesBackButton = YES;
     
-    //image shape
     self.profileImageView.layer.cornerRadius = self.profileImageView.layer.frame.size.width/2;
     self.profileImageView.clipsToBounds = YES;
     self.profileImageView.userInteractionEnabled = YES;
@@ -64,7 +61,6 @@
 }
 
 -(void)chargeFunctionality{
-    //Si o si tienen que ser dos distintos para poderlos asignar??
     UITapGestureRecognizer *singleTap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapImageDetected:)];
     UITapGestureRecognizer *singleTap2 = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapImageDetected:)];
     

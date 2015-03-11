@@ -8,6 +8,7 @@
 
 #import "InformationAPI.h"
 #import "NewModel.h"
+#import "NewsViewModel.h"
 
 @interface InformationAPI()
 
@@ -63,8 +64,8 @@
 }
 
 - (void)favoriteStateChangeIndex:(unsigned long)index success:(void(^)(BOOL))successBlock fail:(void(^)(void))failBlock{
-    BOOL favorite = [[self.user.news objectAtIndex:index] favoriteStateChange];
-    NSLog(@"api");
+    NewsViewModel *newViewModel= [[NewsViewModel alloc] initWithNew:[self.user.news objectAtIndex:index]];
+    BOOL favorite = [ newViewModel favoriteStateChange];
     successBlock(favorite);
 }
 

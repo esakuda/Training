@@ -19,7 +19,7 @@
 
 @implementation NewsTableViewModel
 
--(NewsTableViewModel *)init{
+- (NewsTableViewModel *)init{
     self = [super init];
     if (self != nil){
         self.repository = [[UserRepository alloc] init];

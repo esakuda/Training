@@ -18,7 +18,7 @@
 
 @implementation ProfileViewModel
 
--(ProfileViewModel *)init{
+- (ProfileViewModel *)init{
     self = [super init];
     if(self != nil){
         self.repository = [[UserRepository alloc] init];
@@ -26,7 +26,7 @@
     return self;
 }
 
--(void)getProfileDataSuccessBlock:(void(^)(NSString*, NSString*, NSString*, UIImage *, UIImage *))success failBlock:(void(^)(NSString*))failBlock{
+- (void)getProfileDataSuccessBlock:(void(^)(NSString*, NSString*, NSString*, UIImage *, UIImage *))success failBlock:(void(^)(NSString*))failBlock{
     [self.repository getUserDataSuccess:^(UserModel *userModel){
                                                 success(userModel.name, userModel.location, userModel.profileDescription, userModel.profileImage, userModel.headerImage);}
                                  failBlock:failBlock];

@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		39533B23739B397524FC8E7B /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DDEC3D75D486DCC06D14CC66 /* libPods.a */; };
 		F40864EB1AA72CB000348B67 /* NewTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F40864EA1AA72CB000348B67 /* NewTableViewCell.m */; };
+		F4299BA81AB0B139008B0E09 /* NewsTableViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F4A4543D1AA65C6F00116B07 /* NewsTableViewModel.m */; };
 		F43E1A591A9F51F500EE944D /* header_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = F43E1A311A9F51F500EE944D /* header_logo.png */; };
 		F43E1A5A1A9F51F500EE944D /* header_logo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F43E1A321A9F51F500EE944D /* header_logo@2x.png */; };
 		F43E1A5B1A9F51F500EE944D /* i-add-item.png in Resources */ = {isa = PBXBuildFile; fileRef = F43E1A331A9F51F500EE944D /* i-add-item.png */; };
@@ -56,7 +57,6 @@
 		F492E7391A9CAD890084029F /* InformationAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = F492E7381A9CAD890084029F /* InformationAPI.m */; };
 		F492E73C1A9CAFAC0084029F /* FormInputViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F492E73B1A9CAFAC0084029F /* FormInputViewController.m */; };
 		F4A44EF61AAF8ED9003FA286 /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4A44EF51AAF8ED9003FA286 /* ProfileViewController.m */; };
-		F4A44EFC1AAFA4CE003FA286 /* NewTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F4A44EFB1AAFA4CE003FA286 /* NewTableViewCell.m */; };
 		F4A454211AA6230600116B07 /* UserRepository.m in Sources */ = {isa = PBXBuildFile; fileRef = F4A454201AA6230600116B07 /* UserRepository.m */; };
 		F4A454251AA624D700116B07 /* LoginViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F4A454241AA624D700116B07 /* LoginViewModel.m */; };
 		F4A454281AA624F700116B07 /* FormViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F4A454271AA624F700116B07 /* FormViewModel.m */; };
@@ -64,16 +64,12 @@
 		F4A4542E1AA6440B00116B07 /* ProfileViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F4A4542D1AA6440B00116B07 /* ProfileViewModel.m */; };
 		F4A454351AA649E800116B07 /* UserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F4A454341AA649E800116B07 /* UserModel.m */; };
 		F4A4543B1AA65C0900116B07 /* NewsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4A4543A1AA65C0900116B07 /* NewsTableViewController.m */; };
-		F4A4543E1AA65C6F00116B07 /* NewsTableViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F4A4543D1AA65C6F00116B07 /* NewsTableViewModel.m */; };
 		F4A454411AA661E100116B07 /* NewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F4A454401AA661E100116B07 /* NewModel.m */; };
 		F4A801E61A9B6A840093D0CD /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4A801E51A9B6A840093D0CD /* LoginViewController.m */; };
 		F4AA7BF61A9E1CB70022D8E9 /* fondo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F4AA7BF51A9E1CB70022D8E9 /* fondo.jpg */; };
 		F4B4952C1A9788D6006132CB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F4B4952B1A9788D6006132CB /* main.m */; };
 		F4B4952F1A9788D6006132CB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F4B4952E1A9788D6006132CB /* AppDelegate.m */; };
 		F4B495321A9788D6006132CB /* NewsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4B495311A9788D6006132CB /* NewsViewController.m */; };
-
-		F4B495351A9788D6006132CB /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4B495341A9788D6006132CB /* SecondViewController.m */; };
-
 		F4B495381A9788D6006132CB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4B495361A9788D6006132CB /* Main.storyboard */; };
 		F4B4953A1A9788D6006132CB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4B495391A9788D6006132CB /* Images.xcassets */; };
 		F4B4953D1A9788D6006132CB /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F4B4953B1A9788D6006132CB /* LaunchScreen.xib */; };
@@ -180,10 +176,6 @@
 		F4B4952E1A9788D6006132CB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		F4B495301A9788D6006132CB /* NewsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NewsViewController.h; sourceTree = "<group>"; };
 		F4B495311A9788D6006132CB /* NewsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NewsViewController.m; sourceTree = "<group>"; };
-		
-		F4B495331A9788D6006132CB /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
-		F4B495341A9788D6006132CB /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
-
 		F4B495371A9788D6006132CB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F4B495391A9788D6006132CB /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		F4B4953C1A9788D6006132CB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -308,7 +300,6 @@
 				F4A4542D1AA6440B00116B07 /* ProfileViewModel.m */,
 				F4A4543C1AA65C6F00116B07 /* NewsTableViewModel.h */,
 				F4A4543D1AA65C6F00116B07 /* NewsTableViewModel.m */,
-
 				F4B68FAB1AB07C2A00F7ABEF /* NewsViewModel.h */,
 				F4B68FAC1AB07C2A00F7ABEF /* NewsViewModel.m */,
 				F49232A21AA902C800D58135 /* NewViewModel.h */,
@@ -326,12 +317,9 @@
 				F4A454341AA649E800116B07 /* UserModel.m */,
 				F4E934AC1AA755160022F985 /* ValidationAnswerModel.h */,
 				F4E934AD1AA755160022F985 /* ValidationAnswerModel.m */,
-				F40864E91AA72CB000348B67 /* NewTableViewCell.h */,
 				F4A44EFB1AAFA4CE003FA286 /* NewTableViewCell.m */,
-
 				F40864E91AA72CB000348B67 /* NewTableViewCell.h */,
 				F40864EA1AA72CB000348B67 /* NewTableViewCell.m */,
-
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -377,28 +365,9 @@
 				F4AA7BF21A9E1C7E0022D8E9 /* Imagenes prueba */,
 				F4B4952D1A9788D6006132CB /* AppDelegate.h */,
 				F4B4952E1A9788D6006132CB /* AppDelegate.m */,
-
-				F4B495361A9788D6006132CB /* Main.storyboard */,
-
-				F4B495301A9788D6006132CB /* NewsViewController.h */,
-				F4B495311A9788D6006132CB /* NewsViewController.m */,
-				F4B495331A9788D6006132CB /* SecondViewController.h */,
-				F4B495341A9788D6006132CB /* SecondViewController.m */,
 				F4B495361A9788D6006132CB /* Main.storyboard */,
 				F485B9D31AA0E3360051A197 /* Localizable.strings */,
-				F4EEA9B21A9BB22A004F8BC8 /* SignUpViewController.h */,
-				F4EEA9B31A9BB22A004F8BC8 /* SignUpViewController.m */,
-				F492E73A1A9CAFAC0084029F /* FormInputViewController.h */,
-				F492E73B1A9CAFAC0084029F /* FormInputViewController.m */,
-				F4A801E41A9B6A840093D0CD /* LoginViewController.h */,
-				F4A801E51A9B6A840093D0CD /* LoginViewController.m */,
-				F4F855451AA8FABC005ADAA3 /* PostViewController.h */,
-				F4F855461AA8FABC005ADAA3 /* PostViewController.m */,
-				F4A454391AA65C0900116B07 /* NewsTableViewController.h */,
-				F4A4543A1AA65C0900116B07 /* NewsTableViewController.m */,
-
 				F485269A1AAA20840053A0BC /* TableDelegateProtocol.h */,
-
 				F4B495391A9788D6006132CB /* Images.xcassets */,
 				F4B4953B1A9788D6006132CB /* LaunchScreen.xib */,
 				F4B495291A9788D6006132CB /* Supporting Files */,
@@ -435,18 +404,20 @@
 		F4E934AF1AA75AC50022F985 /* Controler */ = {
 			isa = PBXGroup;
 			children = (
-				F4B495301A9788D6006132CB /* NewsViewController.h */,
-				F4B495311A9788D6006132CB /* NewsViewController.m */,
 				F4EEA9B21A9BB22A004F8BC8 /* SignUpViewController.h */,
 				F4EEA9B31A9BB22A004F8BC8 /* SignUpViewController.m */,
-				F4A44EF41AAF8ED9003FA286 /* ProfileViewController.h */,
-				F4A44EF51AAF8ED9003FA286 /* ProfileViewController.m */,
 				F492E73A1A9CAFAC0084029F /* FormInputViewController.h */,
 				F492E73B1A9CAFAC0084029F /* FormInputViewController.m */,
 				F4A801E41A9B6A840093D0CD /* LoginViewController.h */,
 				F4A801E51A9B6A840093D0CD /* LoginViewController.m */,
+				F4F855451AA8FABC005ADAA3 /* PostViewController.h */,
+				F4F855461AA8FABC005ADAA3 /* PostViewController.m */,
 				F4A454391AA65C0900116B07 /* NewsTableViewController.h */,
 				F4A4543A1AA65C0900116B07 /* NewsTableViewController.m */,
+				F4B495301A9788D6006132CB /* NewsViewController.h */,
+				F4B495311A9788D6006132CB /* NewsViewController.m */,
+				F4A44EF41AAF8ED9003FA286 /* ProfileViewController.h */,
+				F4A44EF51AAF8ED9003FA286 /* ProfileViewController.m */,
 			);
 			name = Controler;
 			sourceTree = "<group>";
@@ -630,18 +601,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-
-				F4A4543E1AA65C6F00116B07 /* NewsTableViewModel.m in Sources */,
-
 				F4F855471AA8FABC005ADAA3 /* PostViewController.m in Sources */,
-
 				F40864EB1AA72CB000348B67 /* NewTableViewCell.m in Sources */,
-				F4A4543E1AA65C6F00116B07 /* NewsTableViewModel.m in Sources */,
-				F4B495351A9788D6006132CB /* SecondViewController.m in Sources */,
-
 				F492E7391A9CAD890084029F /* InformationAPI.m in Sources */,
 				F4A44EF61AAF8ED9003FA286 /* ProfileViewController.m in Sources */,
 				F4E934AE1AA755160022F985 /* ValidationAnswerModel.m in Sources */,
+				F4299BA81AB0B139008B0E09 /* NewsTableViewModel.m in Sources */,
 				F4A454351AA649E800116B07 /* UserModel.m in Sources */,
 				F4B4952F1A9788D6006132CB /* AppDelegate.m in Sources */,
 				F4EEA9B41A9BB22A004F8BC8 /* SignUpViewController.m in Sources */,
@@ -655,7 +620,6 @@
 				F49232A41AA902C800D58135 /* NewViewModel.m in Sources */,
 				F4A454251AA624D700116B07 /* LoginViewModel.m in Sources */,
 				F4A4542E1AA6440B00116B07 /* ProfileViewModel.m in Sources */,
-				F4A44EFC1AAFA4CE003FA286 /* NewTableViewCell.m in Sources */,
 				F4A4542B1AA6396B00116B07 /* SignUpViewModel.m in Sources */,
 				F4A454281AA624F700116B07 /* FormViewModel.m in Sources */,
 				F4B68FAD1AB07C2A00F7ABEF /* NewsViewModel.m in Sources */,

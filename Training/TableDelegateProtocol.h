@@ -9,10 +9,12 @@
 
 #ifndef Training_TableDelegateProtocol_h
 #define Training_TableDelegateProtocol_h
-#include "NewModel.h"
+#include "NewsViewModel.h"
 
 @protocol tableDelegate <NSObject>
-- (void)showNew:(NewModel *)nModel;
+
+- (void)showNew:(NewsViewModel *)nModel;
+
 @end
 
 #endif

@@ -21,5 +21,4 @@
 - (UserModel *)getUser;
 - (void)favoriteStateChangeIndex:(unsigned long)index success:(void(^)(BOOL))successBlock fail:(void(^)(void))failBlock;
 
-
 @end

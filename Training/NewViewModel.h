@@ -7,12 +7,12 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "NewModel.h"
+#import "NewsViewModel.h"
 
 @interface NewViewModel : NSObject
 
 - (void)favoriteStateChangeSuccess:(void(^)(BOOL))successBlock failBlock:(void(^)(void))failBlock;
-- (NewModel*)getNew;
-- (NewViewModel*)initWithModel:(NewModel *)newModel;
+- (NewsViewModel*)getNew;
+- (NewViewModel*)initWithModel:(NewsViewModel *)newsViewModel;
 
 @end

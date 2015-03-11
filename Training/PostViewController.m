@@ -8,6 +8,7 @@
 
 #import "PostViewController.h"
 #import "NewViewModel.h"
+#import "NewsViewModel.h"
 #import "NewModel.h"
 #import "UIView+Toast.h"
 
@@ -31,18 +32,15 @@
 }
 
 - (void)chargeData{
-    NewModel *nModel = [self.viewModel getNew];
-    self.headerImageView.image = nModel.image;
-    self.nameLabel.text = nModel.authorName;
-    self.timeLabel.text = [nModel timeToString];
-    self.dataTextViewer.text = nModel.data;
-    if(nModel.favorite){
-        self.favoriteImageViewr.image = [UIImage imageNamed:@"i-like-active.png"];
-    }
+    NewsViewModel *nModel = [self.viewModel getNew];
+    self.headerImageView.image = [nModel getImage];
+    self.nameLabel.text = [nModel getAuthorName];
+    self.timeLabel.text = [nModel getTime];
+    self.dataTextViewer.text = [nModel getDescriptionLabel];
+    self.favoriteImageViewr.image = [nModel favoriteImage];
 }
 
 - (void)tapImageDetected:(UIGestureRecognizer *)sender{
-    NSLog(@"tap");
     [self.viewModel favoriteStateChangeSuccess:^(BOOL favorite){    if(favorite){
                                                                         ((UIImageView *)[sender view]).image = [UIImage imageNamed:@"i-like-active.png"];
                                                                     } else {

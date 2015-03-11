@@ -78,13 +78,10 @@
     [self setButtonAsLabelLink:self.termsAndConditionsButton];
 }
 
-//¿Está bien  que la validación vaya tan abajo?
 -(void)validateLogin{
-    LoginViewController * __weak weakSelf = self;
-    void(^successBlock)(void) = ^{
-        [weakSelf performSegueWithIdentifier:@"tabBarSegue" sender:self];
-    };
-    [self.viewModel isLogged:successBlock];
+    if([self.viewModel isLogged]){
+        [self performSegueWithIdentifier:@"tabBarSegue" sender:self];
+    }
 }
 
 @end

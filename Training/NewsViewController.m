@@ -8,13 +8,13 @@
 
 #import "NewsViewController.h"
 #import "NewsTableViewController.h"
-#import "NewModel.h"
+#import "NewsViewModel.h"
 #import "PostViewController.h"
 
 @interface NewsViewController ()
 
 @property (weak, nonatomic) IBOutlet UIButton *addButton;
-@property NewModel *nToShow;
+@property NewsViewModel *nToShow;
 
 @end
 
@@ -27,10 +27,10 @@
 }
 
 - (IBAction)addButton:(id)sender {
-    NSLog(@"segue a otra view");
+
 }
 
-- (void)showNew:(NewModel*)nModel{
+- (void)showNew:(NewsViewModel*)nModel{
     self.nToShow = nModel;
     [self performSegueWithIdentifier:@"postShow" sender:self];
 }

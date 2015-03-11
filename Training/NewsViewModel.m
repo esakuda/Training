@@ -45,6 +45,10 @@
     return self.nModel.favorite;
 }
 
+- (unsigned long)getId{
+    return self.nModel.newId;
+}
+
 - (BOOL)favoriteStateChange{
     self.nModel.favorite = !self.nModel.favorite;
     return self.nModel.favorite;

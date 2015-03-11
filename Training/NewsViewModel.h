@@ -20,5 +20,6 @@
 - (BOOL)getFavorite;
 - (BOOL)favoriteStateChange;
 - (UIImage *)favoriteImage;
+- (unsigned long)getId;
 
 @end
