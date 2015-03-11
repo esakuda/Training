@@ -8,4 +8,4 @@ pod 'TTTAttributedLabel', '~> 1.2.1'
 pod 'EXPhotoViewer', '~> 1.1.2'
 pod 'NSDate+TimeAgo'
 pod 'Fabric/Crashlytics', '~> 1.1.1'
-
+pod 'GoogleAnalytics-iOS-SDK', '~> 3.0.3'
