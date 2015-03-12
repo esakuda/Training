@@ -41,7 +41,7 @@
         if(self.newsViewModel != nil && [self.newsViewModel count]){
             successBlock();
         } else {
-            failBlock(NSLocalizedString(@"No hay noticias para mostrar", nil));
+            failBlock(NSLocalizedString(@"There are no news to show", nil));
         }
     }
                               failBlock:failBlock];

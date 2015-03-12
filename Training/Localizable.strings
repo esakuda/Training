@@ -8,16 +8,16 @@
 
 "Terms & Conditions" = "Terms & Conditions";
 "Post" = "Post";
-"No hay conección disponible" = "There is no conection";
-"Email o contraseña incorrectas" = "wrong email or password ";
-"La confirmación de la contraseña no concuerda." = "Wrong password cofitmation";
-"El email ingresado no es válido o ya se encuentra utilizado" = "Invalid email or is already in use";
-"Todos los campos son requeridos" = "All fields are requiered";
-"No hay noticias para mostrar" = "There are no news to show";
-"El título puede tener hasta 60 caracteres" = "Title limit is up to 60 characters";
-"La noticia puede tener hasta 250 caracteres" = "New limit is up to 250 characters";
-"El mail solicitado no se encuentra disponible" = "This email is not aviable";
-"No hay conección disponible" = "Connection is not aviable";
+"There is no conection" = "There is no conection";
+"Wrong email or password" = "Wrong email or password";
+"Wrong password cofitmation" = "Wrong password cofitmation";
+"Invalid email or is already in use" = "Invalid email or is already in use";
+"All fields are requiered" = "All fields are requiered";
+"There are no news to show" = "There are no news to show";
+"Title limit is up to 60 characters" = "Title limit is up to 60 characters";
+"New limit is up to 250 characters" = "New limit is up to 250 characters";
+"This email is not aviable" = "This email is not aviable";
+"Connection is not aviable" = "Connection is not aviable";
 
 
 

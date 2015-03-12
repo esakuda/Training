@@ -16,7 +16,7 @@
     if([[InformationAPI getData] chekCredentials:email password:password]){
         successBlock();
     } else {
-        failBlock(NSLocalizedString(@"Email o contraseña incorrectas", nil));
+        failBlock(NSLocalizedString(@"Wrong email or password", nil));
     }
 }
 
@@ -32,7 +32,7 @@
         [[InformationAPI getData] addUser:email addPassword:password];
         successBlock();
     } else {
-        failBlock(NSLocalizedString(@"El mail solicitado no se encuentra disponible", nil));
+        failBlock(NSLocalizedString(@"This email is not aviable", nil));
     }
 }
 

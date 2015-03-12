@@ -48,7 +48,7 @@
                                                                     }
                                                                 }
                                      failBlock:^{
-                                            [self.view makeToast:NSLocalizedString(@"No hay conección disponible", nil)];
+                                            [self.view makeToast:NSLocalizedString(@"Connection is not aviable", nil)];
                                         }];
 }
 

@@ -33,13 +33,13 @@
                 //es válido
                 return [[ValidationAnswerModel alloc] initPass];
             } else {
-                errorMsg = NSLocalizedString(@"La confirmación de la contraseña no concuerda.", nil);
+                errorMsg = NSLocalizedString(@"Wrong password cofitmation", nil);
             }
         } else {
-            errorMsg = NSLocalizedString(@"El email ingresado no es válido o ya se encuentra utilizado", nil);
+            errorMsg = NSLocalizedString(@"Invalid email or is already in use", nil);
         }
     } else {
-        errorMsg = NSLocalizedString(@"Todos los campos son requeridos", nil);
+        errorMsg = NSLocalizedString(@"All fields are requiered", nil);
     }
     
     return [[ValidationAnswerModel alloc] initWithErrorMsg:errorMsg];

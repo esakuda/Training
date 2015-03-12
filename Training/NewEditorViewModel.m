@@ -27,12 +27,12 @@
 
 - (ValidationAnswerModel *)checkInformationTitle:(NSString *)title data:(NSString *)data{
     if(![self validateString:title] || ![self validateString:data]){
-        return [[ValidationAnswerModel alloc] initWithErrorMsg:NSLocalizedString(@"Todos los campos son requeridos", nil)];
+        return [[ValidationAnswerModel alloc] initWithErrorMsg:NSLocalizedString(@"All fields are requiered", nil)];
     }
     if(title.length > 60){
-        return [[ValidationAnswerModel alloc] initWithErrorMsg:NSLocalizedString(@"El título puede tener hasta 60 caracteres",nil)];
+        return [[ValidationAnswerModel alloc] initWithErrorMsg:NSLocalizedString(@"Title limit is up to 60 characters",nil)];
     } else if(data.length > 250){
-        return [[ValidationAnswerModel alloc] initWithErrorMsg:NSLocalizedString(@"La noticia puede tener hasta 250 caracteres", nil)];
+        return [[ValidationAnswerModel alloc] initWithErrorMsg:NSLocalizedString(@"New limit is up to 250 characters", nil)];
     }
     return [[ValidationAnswerModel alloc] initPass];
 }
