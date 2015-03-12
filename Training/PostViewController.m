@@ -29,6 +29,7 @@
     self.navigationItem.title = NSLocalizedString(@"Post", nil);
     [self chargeData];
     [self setfavoriteImageViewAspect];
+}
 
 - (void)chargeData{
     NewsViewModel *nModel = [self.viewModel getNew];
@@ -40,7 +41,6 @@
 }
 
 - (void)tapImageDetected:(UIGestureRecognizer *)sender{
-    NSLog(@"tap");
     [self.viewModel favoriteStateChangeSuccess:^(BOOL favorite){    if(favorite){
                                                                         ((UIImageView *)[sender view]).image = [UIImage imageNamed:@"i-like-active.png"];
                                                                     } else {

@@ -62,8 +62,4 @@
     }
 }
 
-- (unsigned long)getId{
-    return self.nModel.newId;
-}
-
 @end

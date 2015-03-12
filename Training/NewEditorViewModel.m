@@ -26,8 +26,6 @@
 }
 
 - (ValidationAnswerModel *)checkInformationTitle:(NSString *)title data:(NSString *)data{
-    //Debería devolver la clase de respuescta que está en otra branch. Hay que esperar el pull request.
-    //Falta ver que no ingrese sólo espacios con alguna expresión regular.
     if(![self validateString:title] || ![self validateString:data]){
         return [[ValidationAnswerModel alloc] initWithErrorMsg:NSLocalizedString(@"Todos los campos son requeridos", nil)];
     }

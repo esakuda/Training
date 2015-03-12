@@ -8,14 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		39533B23739B397524FC8E7B /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DDEC3D75D486DCC06D14CC66 /* libPods.a */; };
-		F40864EB1AA72CB000348B67 /* NewTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F40864EA1AA72CB000348B67 /* NewTableViewCell.m */; };
-
-
 		F4299BA81AB0B139008B0E09 /* NewsTableViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F4A4543D1AA65C6F00116B07 /* NewsTableViewModel.m */; };
-
-		F4299BA91AB0C033008B0E09 /* NewsTableViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F4A4543D1AA65C6F00116B07 /* NewsTableViewModel.m */; };
 		F4299BAA1AB0C1A1008B0E09 /* NewEditorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4F6A2A91AAA33EC001AD01A /* NewEditorViewController.m */; };
-
 		F43E1A591A9F51F500EE944D /* header_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = F43E1A311A9F51F500EE944D /* header_logo.png */; };
 		F43E1A5A1A9F51F500EE944D /* header_logo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F43E1A321A9F51F500EE944D /* header_logo@2x.png */; };
 		F43E1A5B1A9F51F500EE944D /* i-add-item.png in Resources */ = {isa = PBXBuildFile; fileRef = F43E1A331A9F51F500EE944D /* i-add-item.png */; };
@@ -60,15 +54,12 @@
 		F462F7F01AA761CC0014E9D1 /* sakura.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F462F7EF1AA761CC0014E9D1 /* sakura.jpg */; };
 		F47B340D1AAF775600B29011 /* ValidationAnswerModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F47B340C1AAF775600B29011 /* ValidationAnswerModel.m */; };
 		F485B9D41AA0E3360051A197 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F485B9D31AA0E3360051A197 /* Localizable.strings */; };
+		F48E180B1AB216D600B9CA43 /* NewTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F4A44EFB1AAFA4CE003FA286 /* NewTableViewCell.m */; };
+		F48E180C1AB216FF00B9CA43 /* PostViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4F855461AA8FABC005ADAA3 /* PostViewController.m */; };
 		F49232A41AA902C800D58135 /* NewViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F49232A31AA902C800D58135 /* NewViewModel.m */; };
 		F492E7391A9CAD890084029F /* InformationAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = F492E7381A9CAD890084029F /* InformationAPI.m */; };
 		F492E73C1A9CAFAC0084029F /* FormInputViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F492E73B1A9CAFAC0084029F /* FormInputViewController.m */; };
 		F4A44EF61AAF8ED9003FA286 /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4A44EF51AAF8ED9003FA286 /* ProfileViewController.m */; };
-
-
-		F4A44EFC1AAFA4CE003FA286 /* NewTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F4A44EFB1AAFA4CE003FA286 /* NewTableViewCell.m */; };
-
-
 		F4A44EF81AAF9556003FA286 /* defaultCharge.png in Resources */ = {isa = PBXBuildFile; fileRef = F4A44EF71AAF9556003FA286 /* defaultCharge.png */; };
 		F4A454211AA6230600116B07 /* UserRepository.m in Sources */ = {isa = PBXBuildFile; fileRef = F4A454201AA6230600116B07 /* UserRepository.m */; };
 		F4A454251AA624D700116B07 /* LoginViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F4A454241AA624D700116B07 /* LoginViewModel.m */; };
@@ -90,7 +81,6 @@
 		F4B68FAD1AB07C2A00F7ABEF /* NewsViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F4B68FAC1AB07C2A00F7ABEF /* NewsViewModel.m */; };
 		F4EEA9B41A9BB22A004F8BC8 /* SignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4EEA9B31A9BB22A004F8BC8 /* SignUpViewController.m */; };
 		F4F6A2A71AAA32F5001AD01A /* NewEditorViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F4F6A2A61AAA32F5001AD01A /* NewEditorViewModel.m */; };
-		F4F855471AA8FABC005ADAA3 /* PostViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4F855461AA8FABC005ADAA3 /* PostViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -108,8 +98,6 @@
 		9C20BB7D8E4E45D25D6B9218 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		DDEC3D75D486DCC06D14CC66 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		F40864E91AA72CB000348B67 /* NewTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewTableViewCell.h; sourceTree = "<group>"; };
-		F40864EA1AA72CB000348B67 /* NewTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewTableViewCell.m; sourceTree = "<group>"; };
-
 		F40864EA1AA72CB000348B67 /* NewTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewTableViewCell.m; sourceTree = "<group>"; };
 		F43E1A311A9F51F500EE944D /* header_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = header_logo.png; sourceTree = "<group>"; };
 		F43E1A321A9F51F500EE944D /* header_logo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "header_logo@2x.png"; sourceTree = "<group>"; };
@@ -345,18 +333,8 @@
 				F4A44EFB1AAFA4CE003FA286 /* NewTableViewCell.m */,
 				F40864E91AA72CB000348B67 /* NewTableViewCell.h */,
 				F40864EA1AA72CB000348B67 /* NewTableViewCell.m */,
-
-				F40864E91AA72CB000348B67 /* NewTableViewCell.h */,
-				F40864EA1AA72CB000348B67 /* NewTableViewCell.m */,
-
 				F47B340B1AAF775600B29011 /* ValidationAnswerModel.h */,
 				F47B340C1AAF775600B29011 /* ValidationAnswerModel.m */,
-
-
-
-				F47B340B1AAF775600B29011 /* ValidationAnswerModel.h */,
-				F47B340C1AAF775600B29011 /* ValidationAnswerModel.m */,
-
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -407,9 +385,6 @@
 				F4B495311A9788D6006132CB /* NewsViewController.m */,
 				F4B495361A9788D6006132CB /* Main.storyboard */,
 				F485B9D31AA0E3360051A197 /* Localizable.strings */,
-
-				F485269A1AAA20840053A0BC /* TableDelegateProtocol.h */,
-
 				F4EEA9B21A9BB22A004F8BC8 /* SignUpViewController.h */,
 				F4EEA9B31A9BB22A004F8BC8 /* SignUpViewController.m */,
 				F492E73A1A9CAFAC0084029F /* FormInputViewController.h */,
@@ -459,20 +434,6 @@
 		F4E934AF1AA75AC50022F985 /* Controler */ = {
 			isa = PBXGroup;
 			children = (
-
-				F4EEA9B21A9BB22A004F8BC8 /* SignUpViewController.h */,
-				F4EEA9B31A9BB22A004F8BC8 /* SignUpViewController.m */,
-				F492E73A1A9CAFAC0084029F /* FormInputViewController.h */,
-				F492E73B1A9CAFAC0084029F /* FormInputViewController.m */,
-				F4A801E41A9B6A840093D0CD /* LoginViewController.h */,
-				F4A801E51A9B6A840093D0CD /* LoginViewController.m */,
-				F4F855451AA8FABC005ADAA3 /* PostViewController.h */,
-				F4F855461AA8FABC005ADAA3 /* PostViewController.m */,
-				F4A454391AA65C0900116B07 /* NewsTableViewController.h */,
-				F4A4543A1AA65C0900116B07 /* NewsTableViewController.m */,
-				F4B495301A9788D6006132CB /* NewsViewController.h */,
-				F4B495311A9788D6006132CB /* NewsViewController.m */,
-
 				F4A44EF41AAF8ED9003FA286 /* ProfileViewController.h */,
 				F4A44EF51AAF8ED9003FA286 /* ProfileViewController.m */,
 			);
@@ -659,22 +620,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F4F855471AA8FABC005ADAA3 /* PostViewController.m in Sources */,
-				F40864EB1AA72CB000348B67 /* NewTableViewCell.m in Sources */,
-
-				F4A4543E1AA65C6F00116B07 /* NewsTableViewModel.m in Sources */,
-
-
-				F4F855471AA8FABC005ADAA3 /* PostViewController.m in Sources */,
 				F4299BAA1AB0C1A1008B0E09 /* NewEditorViewController.m in Sources */,
-				F40864EB1AA72CB000348B67 /* NewTableViewCell.m in Sources */,
 				F492E7391A9CAD890084029F /* InformationAPI.m in Sources */,
 				F4A44EF61AAF8ED9003FA286 /* ProfileViewController.m in Sources */,
-				F4E934AE1AA755160022F985 /* ValidationAnswerModel.m in Sources */,
 				F4299BA81AB0B139008B0E09 /* NewsTableViewModel.m in Sources */,
-
-				F4299BA91AB0C033008B0E09 /* NewsTableViewModel.m in Sources */,
-
 				F4A454351AA649E800116B07 /* UserModel.m in Sources */,
 				F4B4952F1A9788D6006132CB /* AppDelegate.m in Sources */,
 				F4F6A2A71AAA32F5001AD01A /* NewEditorViewModel.m in Sources */,
@@ -683,9 +632,11 @@
 				F4A454411AA661E100116B07 /* NewModel.m in Sources */,
 				F4A4543B1AA65C0900116B07 /* NewsTableViewController.m in Sources */,
 				F4B4952C1A9788D6006132CB /* main.m in Sources */,
+				F48E180B1AB216D600B9CA43 /* NewTableViewCell.m in Sources */,
 				F4A801E61A9B6A840093D0CD /* LoginViewController.m in Sources */,
 				F492E73C1A9CAFAC0084029F /* FormInputViewController.m in Sources */,
 				F4A454211AA6230600116B07 /* UserRepository.m in Sources */,
+				F48E180C1AB216FF00B9CA43 /* PostViewController.m in Sources */,
 				F49232A41AA902C800D58135 /* NewViewModel.m in Sources */,
 				F47B340D1AAF775600B29011 /* ValidationAnswerModel.m in Sources */,
 				F4A454251AA624D700116B07 /* LoginViewModel.m in Sources */,

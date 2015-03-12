@@ -66,6 +66,7 @@
 
 - (void)favoriteStateChangeIndex:(unsigned long)index success:(void(^)(BOOL))successBlock fail:(void(^)(void))failBlock{
     NewsViewModel *newViewModel= [[NewsViewModel alloc] initWithNew:[self.user.news objectAtIndex:index]];
+    BOOL favorite = [ newViewModel favoriteStateChange];
     successBlock(favorite);
 }
 
