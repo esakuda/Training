@@ -9,3 +9,8 @@ pod 'EXPhotoViewer', '~> 1.1.2'
 pod 'NSDate+TimeAgo'
 pod 'Fabric/Crashlytics', '~> 1.1.1'
 pod 'GoogleAnalytics-iOS-SDK', '~> 3.0.3'
+
+target "TrainingTests", exclusive: true do
+	pod 'Specta',      '~> 0.2.1'
+    	pod 'Expecta',     '~> 0.3.0'
+end

@@ -76,11 +76,14 @@
 		F4B495381A9788D6006132CB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4B495361A9788D6006132CB /* Main.storyboard */; };
 		F4B4953A1A9788D6006132CB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4B495391A9788D6006132CB /* Images.xcassets */; };
 		F4B4953D1A9788D6006132CB /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F4B4953B1A9788D6006132CB /* LaunchScreen.xib */; };
-		F4B495491A9788D6006132CB /* TrainingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F4B495481A9788D6006132CB /* TrainingTests.m */; };
 		F4B68FAD1AB07C2A00F7ABEF /* NewsViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F4B68FAC1AB07C2A00F7ABEF /* NewsViewModel.m */; };
+		F4BDDE971AB238AD0084F0D4 /* FormViewModelSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = F4BDDE961AB238AD0084F0D4 /* FormViewModelSpec.m */; };
+		F4BDDE991AB242F60084F0D4 /* ProfileViewModelSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = F4BDDE981AB242F60084F0D4 /* ProfileViewModelSpec.m */; };
+		F4BDDE9B1AB246DB0084F0D4 /* NewEditorViewModelSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = F4BDDE9A1AB246DB0084F0D4 /* NewEditorViewModelSpec.m */; };
 		F4EEA9B41A9BB22A004F8BC8 /* SignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4EEA9B31A9BB22A004F8BC8 /* SignUpViewController.m */; };
 		F4F6A2A71AAA32F5001AD01A /* NewEditorViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F4F6A2A61AAA32F5001AD01A /* NewEditorViewModel.m */; };
 		F4F855471AA8FABC005ADAA3 /* PostViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4F855461AA8FABC005ADAA3 /* PostViewController.m */; };
+		F9027BD00C83CCF43871C30B /* libPods-TrainingTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4CE2337AF4623E91DDF4F161 /* libPods-TrainingTests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -94,8 +97,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4CE2337AF4623E91DDF4F161 /* libPods-TrainingTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TrainingTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		680E6CBA43A6F0A3F732FB83 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		9C20BB7D8E4E45D25D6B9218 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		B4B6DE6A402B0EBA7399A786 /* Pods-TrainingTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrainingTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TrainingTests/Pods-TrainingTests.debug.xcconfig"; sourceTree = "<group>"; };
+		C2D7B60BFDE53EB1D6B469EE /* Pods-TrainingTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrainingTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TrainingTests/Pods-TrainingTests.release.xcconfig"; sourceTree = "<group>"; };
 		DDEC3D75D486DCC06D14CC66 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		F40864E91AA72CB000348B67 /* NewTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewTableViewCell.h; sourceTree = "<group>"; };
 		F40864EA1AA72CB000348B67 /* NewTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewTableViewCell.m; sourceTree = "<group>"; };
@@ -188,9 +194,11 @@
 		F4B4953C1A9788D6006132CB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		F4B495421A9788D6006132CB /* TrainingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TrainingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4B495471A9788D6006132CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F4B495481A9788D6006132CB /* TrainingTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TrainingTests.m; sourceTree = "<group>"; };
 		F4B68FAB1AB07C2A00F7ABEF /* NewsViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsViewModel.h; sourceTree = "<group>"; };
 		F4B68FAC1AB07C2A00F7ABEF /* NewsViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsViewModel.m; sourceTree = "<group>"; };
+		F4BDDE961AB238AD0084F0D4 /* FormViewModelSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FormViewModelSpec.m; sourceTree = "<group>"; };
+		F4BDDE981AB242F60084F0D4 /* ProfileViewModelSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileViewModelSpec.m; sourceTree = "<group>"; };
+		F4BDDE9A1AB246DB0084F0D4 /* NewEditorViewModelSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewEditorViewModelSpec.m; sourceTree = "<group>"; };
 		F4E934AC1AA755160022F985 /* ValidationAnswerModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ValidationAnswerModel.h; sourceTree = "<group>"; };
 		F4E934AD1AA755160022F985 /* ValidationAnswerModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ValidationAnswerModel.m; sourceTree = "<group>"; };
 		F4EEA9B21A9BB22A004F8BC8 /* SignUpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignUpViewController.h; sourceTree = "<group>"; };
@@ -217,6 +225,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F9027BD00C83CCF43871C30B /* libPods-TrainingTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -227,6 +236,7 @@
 			isa = PBXGroup;
 			children = (
 				DDEC3D75D486DCC06D14CC66 /* libPods.a */,
+				4CE2337AF4623E91DDF4F161 /* libPods-TrainingTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -236,6 +246,8 @@
 			children = (
 				680E6CBA43A6F0A3F732FB83 /* Pods.debug.xcconfig */,
 				9C20BB7D8E4E45D25D6B9218 /* Pods.release.xcconfig */,
+				B4B6DE6A402B0EBA7399A786 /* Pods-TrainingTests.debug.xcconfig */,
+				C2D7B60BFDE53EB1D6B469EE /* Pods-TrainingTests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -381,23 +393,9 @@
 				F4AA7BF21A9E1C7E0022D8E9 /* Imagenes prueba */,
 				F4B4952D1A9788D6006132CB /* AppDelegate.h */,
 				F4B4952E1A9788D6006132CB /* AppDelegate.m */,
-				F4B495301A9788D6006132CB /* NewsViewController.h */,
-				F4B495311A9788D6006132CB /* NewsViewController.m */,
 				F4B495361A9788D6006132CB /* Main.storyboard */,
 				F485B9D31AA0E3360051A197 /* Localizable.strings */,
-				F4EEA9B21A9BB22A004F8BC8 /* SignUpViewController.h */,
-				F4EEA9B31A9BB22A004F8BC8 /* SignUpViewController.m */,
-				F492E73A1A9CAFAC0084029F /* FormInputViewController.h */,
-				F492E73B1A9CAFAC0084029F /* FormInputViewController.m */,
-				F4A801E41A9B6A840093D0CD /* LoginViewController.h */,
-				F4A801E51A9B6A840093D0CD /* LoginViewController.m */,
-				F4F6A2A81AAA33EC001AD01A /* NewEditorViewController.h */,
-				F4F6A2A91AAA33EC001AD01A /* NewEditorViewController.m */,
 				F485269A1AAA20840053A0BC /* TableDelegateProtocol.h */,
-				F4F855451AA8FABC005ADAA3 /* PostViewController.h */,
-				F4F855461AA8FABC005ADAA3 /* PostViewController.m */,
-				F4A454391AA65C0900116B07 /* NewsTableViewController.h */,
-				F4A4543A1AA65C0900116B07 /* NewsTableViewController.m */,
 				F4B495391A9788D6006132CB /* Images.xcassets */,
 				F4B4953B1A9788D6006132CB /* LaunchScreen.xib */,
 				F4B495291A9788D6006132CB /* Supporting Files */,
@@ -417,8 +415,10 @@
 		F4B495451A9788D6006132CB /* TrainingTests */ = {
 			isa = PBXGroup;
 			children = (
-				F4B495481A9788D6006132CB /* TrainingTests.m */,
+				F4BDDE981AB242F60084F0D4 /* ProfileViewModelSpec.m */,
 				F4B495461A9788D6006132CB /* Supporting Files */,
+				F4BDDE961AB238AD0084F0D4 /* FormViewModelSpec.m */,
+				F4BDDE9A1AB246DB0084F0D4 /* NewEditorViewModelSpec.m */,
 			);
 			path = TrainingTests;
 			sourceTree = "<group>";
@@ -434,6 +434,20 @@
 		F4E934AF1AA75AC50022F985 /* Controler */ = {
 			isa = PBXGroup;
 			children = (
+				F4B495301A9788D6006132CB /* NewsViewController.h */,
+				F4F855451AA8FABC005ADAA3 /* PostViewController.h */,
+				F4F855461AA8FABC005ADAA3 /* PostViewController.m */,
+				F4A454391AA65C0900116B07 /* NewsTableViewController.h */,
+				F4A4543A1AA65C0900116B07 /* NewsTableViewController.m */,
+				F4EEA9B21A9BB22A004F8BC8 /* SignUpViewController.h */,
+				F4EEA9B31A9BB22A004F8BC8 /* SignUpViewController.m */,
+				F492E73A1A9CAFAC0084029F /* FormInputViewController.h */,
+				F492E73B1A9CAFAC0084029F /* FormInputViewController.m */,
+				F4A801E41A9B6A840093D0CD /* LoginViewController.h */,
+				F4A801E51A9B6A840093D0CD /* LoginViewController.m */,
+				F4F6A2A81AAA33EC001AD01A /* NewEditorViewController.h */,
+				F4F6A2A91AAA33EC001AD01A /* NewEditorViewController.m */,
+				F4B495311A9788D6006132CB /* NewsViewController.m */,
 				F4A44EF41AAF8ED9003FA286 /* ProfileViewController.h */,
 				F4A44EF51AAF8ED9003FA286 /* ProfileViewController.m */,
 			);
@@ -468,9 +482,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F4B4954F1A9788D6006132CB /* Build configuration list for PBXNativeTarget "TrainingTests" */;
 			buildPhases = (
+				94F0222D922129223C0F1E7F /* Check Pods Manifest.lock */,
 				F4B4953E1A9788D6006132CB /* Sources */,
 				F4B4953F1A9788D6006132CB /* Frameworks */,
 				F4B495401A9788D6006132CB /* Resources */,
+				E60C9C10B7BAA689B2F86BDF /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -600,6 +616,21 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
+		94F0222D922129223C0F1E7F /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
 		AA419658934D27410AF8C69D /* Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -613,6 +644,21 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E60C9C10B7BAA689B2F86BDF /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TrainingTests/Pods-TrainingTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		F4334FF91AB0C6010067DB33 /* ShellScript */ = {
@@ -679,7 +725,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F4B495491A9788D6006132CB /* TrainingTests.m in Sources */,
+				F4BDDE9B1AB246DB0084F0D4 /* NewEditorViewModelSpec.m in Sources */,
+				F4BDDE971AB238AD0084F0D4 /* FormViewModelSpec.m in Sources */,
+				F4BDDE991AB242F60084F0D4 /* ProfileViewModelSpec.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -824,6 +872,7 @@
 		};
 		F4B495501A9788D6006132CB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B4B6DE6A402B0EBA7399A786 /* Pods-TrainingTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -843,6 +892,7 @@
 		};
 		F4B495511A9788D6006132CB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C2D7B60BFDE53EB1D6B469EE /* Pods-TrainingTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
