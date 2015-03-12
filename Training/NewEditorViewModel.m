@@ -46,7 +46,7 @@
         return NO;
     }
     
-    NSString *pattern = @"/.*\\S.*/";
+    NSString *pattern = @"[\\s]*";
     NSError *error = nil;
     NSRegularExpression *regex = [NSRegularExpression regularExpressionWithPattern:pattern options:NSRegularExpressionCaseInsensitive error:&error];
     
